@@ -1,0 +1,23 @@
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.DS_Store
+
+# Model weights, generated indexes and private inputs
+models/
+indexes/
+data/private/
+eval/raw/
+*.gguf
+*.safetensors
+
+# Keep the local planning workbook out of the code repository
+*.xlsx
