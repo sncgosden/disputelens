@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "population": "All 45 cases in eval/expanded/dev-cases.json; holdout not loaded",
+  "primary_cutoff": 5,
+  "secondary_cutoff": 20,
+  "passage_recall": "Distinct gold passage IDs with complete character coverage across the top k units divided by all distinct gold passage IDs. Merge overlapping spans; partial fragments do not get full credit.",
+  "fractional_passage_recall": "Mean covered-character fraction across gold passages; a diagnostic alongside strict recall.",
+  "gold_passage_precision": "Fully covered gold passages divided by distinct passage IDs returned in the top k units. Gold labels identify expected evidence, not every potentially useful passage; this is gold precision, not human-rated usefulness.",
+  "ndcg": "Unit-level graded NDCG with linear gains and log2(rank+1) discount. Unit gain is the largest covered-character fraction of any gold passage in that unit. Ideal ranking sorts all applicable units by the same gain. Different units containing repeated gold evidence can receive relevance; passage recall and precision deduplicate passage IDs.",
+  "aggregation": "Report macro means with explicit case denominators and case counts. Keep per-case scores and full/partial/missing evidence. Also report real/fixture, provider, scheme and query-type slices.",
+  "query_type": "exact_code when the original question contains a Visa-style 10.x/11.x/12.x/13.x code or Mastercard-style 48xx code; otherwise no_explicit_code. This literal slice is not a judgement of question difficulty.",
+  "missing_evidence": "Cases with labelled evidence absent from the applicable corpus stay in the denominator, score zero and carry a diagnostic. Do not omit failures.",
+  "no_gold_cases": "Retain in reports with null recall/NDCG and separate counts. Empty results do not prove the system answered or abstained correctly.",
+  "latency": "Record retrieval wall time separately from loading/model warm-up, note cache usage and report per-method median and p90. Do not treat rounded console seconds as exact.",
+  "controls": "Same questions, filters, source units and gold labels across methods. Fixed BM25 preprocessing and RRF settings. Gold consulted after retrieval only. Preserve prior baseline files.",
+  "status": "Metric implementation prepared; 45-case evaluation has not run"
+}

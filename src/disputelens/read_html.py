@@ -18,9 +18,10 @@ def read_article(source: dict, root: Path = PROJECT_ROOT) -> dict:
     if hashlib.sha256(raw).hexdigest() != provenance['sha256']:
         raise ValueError('HTML differs from its saved download fingerprint.')
     soup = BeautifulSoup(raw, 'html.parser')
-    article = soup.select_one('article#content')
+    selector = source.get('article_selector', 'article#content')
+    article = soup.select_one(selector)
     if article is None:
-        raise ValueError('Expected article#content not found; review page structure.')
+        raise ValueError(f'Expected article selector {selector!r} not found; review page structure.')
     for noise in article.select('script, style, nav, button, noscript, svg'):
         noise.decompose()
     base_url = provenance['resolved_url']

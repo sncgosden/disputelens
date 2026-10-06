@@ -1,6 +1,7 @@
 """Normalize parsed sources into common parent documents and evidence blocks."""
 
 import hashlib
+import argparse
 import json
 from pathlib import Path
 
@@ -52,11 +53,15 @@ def normalize_document(parsed: dict) -> dict:
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--expanded', action='store_true')
+    args = parser.parse_args()
+    suffix = '-expanded' if args.expanded else ''
     manifest = json.loads((ROOT / 'data/source-manifest.json').read_text())
     documents = []
     try:
         for source in manifest['sources']:
-            parsed_path = ROOT / 'data/parsed' / (source['source_id'] + '.json')
+            parsed_path = ROOT / ('data/parsed' + suffix) / (source['source_id'] + '.json')
             parsed_bytes = parsed_path.read_bytes()
             parsed = json.loads(parsed_bytes)
             fingerprint = hashlib.sha256((ROOT / source['path']).read_bytes()).hexdigest()
@@ -80,7 +85,7 @@ def main():
             raise ValueError('Empty evidence text or missing locator.')
     except (OSError, ValueError, KeyError) as error:
         raise SystemExit(f'Normalization stopped: {error}')
-    output = ROOT / 'data/normalized'
+    output = ROOT / ('data/normalized' + suffix)
     output.mkdir(parents=True, exist_ok=True)
     result = {
         'schema_version': '1.0',
