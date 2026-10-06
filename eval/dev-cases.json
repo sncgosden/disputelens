@@ -1,0 +1,123 @@
+[
+  {
+    "case_id": "E01",
+    "question": "In our test provider's policy, tracking says delivered but the customer says the parcel never arrived. Is tracking alone enough, and what should I check?",
+    "filters": {"corpus": "fixture", "provider": "DisputeLens fictional provider", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E01-C1", "text": "Delivered tracking alone is not conclusive proof of receipt at the agreed address.", "supporting_passage_ids": ["delivery-policy:section-2"]},
+      {"claim_id": "E01-C2", "text": "Check the order reference, agreed address, promised delivery date and items against tracking and delivery confirmation; retain relevant customer messages.", "supporting_passage_ids": ["delivery-policy:section-2"]}
+    ],
+    "relevant_passage_ids": ["delivery-policy:section-2"],
+    "answerability": "answerable", "split": "dev", "review_status": "approved",
+    "forbidden_claims": ["Tracking guarantees a successful dispute defence."],
+    "notes": "Evidence relevance, not dispute classification. Explicitly uses fictional test policy."
+  },
+  {
+    "case_id": "E02",
+    "question": "Under our test delivery policy, a customer ordered three items but only two arrived. What records should I gather?",
+    "filters": {"corpus": "fixture", "provider": "DisputeLens fictional provider", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E02-C1", "text": "Identify the missing item and retain shipment records for each parcel, plus replacement or refund records.", "supporting_passage_ids": ["delivery-policy:section-3"]},
+      {"claim_id": "E02-C2", "text": "Do not describe this partially delivered order as fully delivered.", "supporting_passage_ids": ["delivery-policy:section-3"]}
+    ],
+    "relevant_passage_ids": ["delivery-policy:section-3"],
+    "answerability": "answerable", "split": "dev", "review_status": "approved"
+  },
+  {
+    "case_id": "E03",
+    "question": "Under our test subscription policy, cancellation and renewal happened on the same day, but I have no timestamps or accepted cancellation terms. Can I decide whether the charge was allowed?",
+    "filters": {"corpus": "fixture", "provider": "DisputeLens fictional provider", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E03-C1", "text": "Request cancellation and renewal timestamps and the accepted cancellation terms; the ordering cannot be established from the date alone.", "supporting_passage_ids": ["subscription-policy:section-3", "subscription-policy:section-4"]},
+      {"claim_id": "E03-C2", "text": "Do not invent a notice period or conclude entitlement to a refund from the cancellation date alone.", "supporting_passage_ids": ["subscription-policy:section-3", "subscription-policy:section-4"]}
+    ],
+    "relevant_passage_ids": ["subscription-policy:section-3", "subscription-policy:section-4"],
+    "answerability": "needs_clarification", "split": "dev", "review_status": "approved",
+    "forbidden_claims": ["The same-day cancellation definitely entitles the customer to a refund."]
+  },
+  {
+    "case_id": "E04",
+    "question": "Using the saved Stripe guidance, can I add a missing receipt after submitting my dispute response?",
+    "filters": {"corpus": "real", "provider": "Stripe", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E04-C1", "text": "The saved Stripe guidance says the submitted response cannot be amended and additional files cannot be added.", "supporting_passage_ids": ["stripe-respond-to-disputes:block-39", "stripe-respond-to-disputes:block-60"]},
+      {"claim_id": "E04-C2", "text": "Assemble all relevant evidence before submitting the response.", "supporting_passage_ids": ["stripe-respond-to-disputes:block-39", "stripe-respond-to-disputes:block-60"]}
+    ],
+    "relevant_passage_ids": ["stripe-respond-to-disputes:block-39", "stripe-respond-to-disputes:block-60"],
+    "answerability": "answerable", "split": "dev", "review_status": "approved",
+    "notes": "Both passages independently support the answer. Scorer must distinguish sufficient support from retrieving every redundant passage."
+  },
+  {
+    "case_id": "E05",
+    "question": "Using the saved June 2024 Visa guide, a condition 13.1 dispute says the order did not arrive, but the agreed delivery date is still in the future. What evidence does the guide recommend?",
+    "filters": {"corpus": "real", "provider": null, "scheme": "Visa"},
+    "expected_claims": [
+      {"claim_id": "E05-C1", "text": "When the specified delivery date has not yet passed, provide documentation supporting the expected delivery date.", "supporting_passage_ids": ["visa-dispute-management-june-2024:page-40:passage-5"]}
+    ],
+    "relevant_passage_ids": ["visa-dispute-management-june-2024:page-40:passage-5"],
+    "answerability": "answerable", "split": "dev", "review_status": "approved",
+    "forbidden_claims": ["This guarantees the merchant will win."],
+    "notes": "Evaluate the named saved edition, not a claim about current Visa rules."
+  },
+  {
+    "case_id": "E06",
+    "question": "Using the saved June 2024 Visa guide, a condition 13.6 dispute concerns a refund I have already processed. What should my response contain?",
+    "filters": {"corpus": "real", "provider": null, "scheme": "Visa"},
+    "expected_claims": [
+      {"claim_id": "E06-C1", "text": "Provide documentation of the processed credit or reversal, including its amount and processing date.", "supporting_passage_ids": ["visa-dispute-management-june-2024:page-48:passage-6"]}
+    ],
+    "relevant_passage_ids": ["visa-dispute-management-june-2024:page-48:passage-6"],
+    "answerability": "answerable", "split": "dev", "review_status": "approved",
+    "notes": "Distinguish processed credit from a promise or pending refund."
+  },
+  {
+    "case_id": "E07",
+    "question": "Using the saved June 2024 Visa guide, for condition 13.2 a subscription was cancelled but the customer subsequently used the service. The dispute was processed on 25 October 2024. What proof does the guide ask for?",
+    "filters": {"corpus": "real", "provider": null, "scheme": "Visa"},
+    "expected_claims": [
+      {"claim_id": "E07-C1", "text": "For disputes processed on or after 19 October 2024, provide proof of service use after withdrawal of permission to bill and before the dispute processing date.", "supporting_passage_ids": ["visa-dispute-management-june-2024:page-42:passage-4"]}
+    ],
+    "relevant_passage_ids": ["visa-dispute-management-june-2024:page-42:passage-4"],
+    "answerability": "answerable", "split": "dev", "review_status": "approved",
+    "forbidden_claims": ["Any service use at any time is sufficient."],
+    "notes": "Tests preservation of the effective-date qualification and evidence time window."
+  },
+  {
+    "case_id": "E08",
+    "question": "According to our test refund policy, my refund is pending. Exactly how many days until it appears on the customer's statement?",
+    "filters": {"corpus": "fixture", "provider": "DisputeLens fictional provider", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E08-C1", "text": "This policy does not specify the number of days until a refund appears on the statement.", "supporting_passage_ids": ["refund-policy:section-4"]},
+      {"claim_id": "E08-C2", "text": "State that the refund is pending and seek clarification from the provider.", "supporting_passage_ids": ["refund-policy:section-4"]}
+    ],
+    "relevant_passage_ids": ["refund-policy:section-4"],
+    "answerability": "not_in_sources", "split": "dev", "review_status": "approved",
+    "forbidden_claims": ["An invented numeric refund-arrival estimate."],
+    "notes": "The requested duration is absent, but an explicit limitation passage is relevant evidence."
+  },
+  {
+    "case_id": "E09",
+    "question": "Our test provider's notification gives no response deadline. How long do I have to respond, and can you calculate the exact cutoff?",
+    "filters": {"corpus": "fixture", "provider": "DisputeLens fictional provider", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E09-C1", "text": "The two applicable current sources conflict: seven calendar days versus five business days.", "supporting_passage_ids": ["deadline-general-current:section-3", "deadline-support-current:section-3"]},
+      {"claim_id": "E09-C2", "text": "No precedence rule establishes a winner; cite both and ask the provider to confirm the deadline.", "supporting_passage_ids": ["deadline-support-current:section-4", "deadline-support-current:section-5"]},
+      {"claim_id": "E09-C3", "text": "Do not use the superseded fourteen-day policy as current guidance.", "supporting_passage_ids": ["deadline-general-current:section-5"]}
+    ],
+    "relevant_passage_ids": ["deadline-general-current:section-3", "deadline-support-current:section-3", "deadline-support-current:section-4", "deadline-support-current:section-5", "deadline-general-current:section-5"],
+    "answerability": "conflicting_sources", "split": "dev", "review_status": "approved",
+    "forbidden_claims": ["Choose the longer deadline without clarification.", "Present fourteen calendar days as the current rule."]
+  },
+  {
+    "case_id": "E10",
+    "question": "Using the saved Stripe guidance, I have three documents that all support the same evidence type. Should I upload them separately or combine them?",
+    "filters": {"corpus": "real", "provider": "Stripe", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E10-C1", "text": "Combine documents of the same evidence type into one file.", "supporting_passage_ids": ["stripe-respond-to-disputes:block-42", "stripe-respond-to-disputes:block-48"]},
+      {"claim_id": "E10-C2", "text": "Stripe permits one file per evidence type; multiple documents can form a multi-page file.", "supporting_passage_ids": ["stripe-respond-to-disputes:block-42"]}
+    ],
+    "relevant_passage_ids": ["stripe-respond-to-disputes:block-42", "stripe-respond-to-disputes:block-48"],
+    "answerability": "answerable", "split": "dev", "review_status": "approved",
+    "notes": "The longer passage supports both claims; the shorter passage supports only combining. Do not require both passages for a supported answer."
+  }
+]

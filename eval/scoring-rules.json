@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "defined_on": "2026-10-06",
+  "primary_k": 5,
+  "splits": "Report development and holdout separately, with case counts and real/fixture breakdowns. Never pool them into one headline score.",
+  "retrieval": {
+    "unit": "Gold source passages independent of chunk configuration. Markdown section IDs, HTML block IDs, and PDF passage IDs resolve to source text. Map chunks to passage text spans when chunking is implemented.",
+    "relevance": "A returned chunk is relevant only if its text contains evidence useful for a required fact, qualification, limitation or conflict. Mere source-ID overlap is insufficient. Review passage coverage mappings before comparison.",
+    "recall_at_k": "Distinct gold relevant passages covered by top k chunks / total gold relevant passages. A passage is covered when the needed evidence text is present; a clipped keyword alone does not count. Deduplicate passage IDs. Macro-average across eligible cases; show per-case values.",
+    "precision_at_k": "Relevant returned chunks / returned chunks, capped at k. Show returned count alongside precision so returning one result cannot look equivalent to returning five. An empty candidate list scores zero for cases with known relevant evidence.",
+    "ndcg_at_k": "Binary chunk relevance. DCG = sum(rel_i / log2(i+1)), ranks i start at 1. IDCG uses the best available ranking for the same filtered chunk corpus. Do not repeat credit for duplicate chunk IDs; overlapping chunks with no additional relevant evidence earn zero additional gain. Compute eligible ideal gains after mapping evidence for each chunk setting. Zero IDCG is excluded and reported explicitly.",
+    "evidence_sufficiency": "Separate diagnostic: do the selected passages jointly support all required answer facts? Redundant alternative passages need not all be retrieved. Do not replace recall with sufficiency or use any matched ID as automatic support.",
+    "absence": "not_in_sources describes the requested fact, not necessarily absence of relevant evidence. E08 has an explicit policy limitation passage and therefore remains eligible for retrieval metrics. A truly evidence-free case is excluded from recall/NDCG and reported in a separate safe-abstention check.",
+    "filter_leakage": "Count any wrong-corpus, inaccessible, superseded or otherwise inapplicable result. Report separately, even if the answer happens to be correct. Snapshot sources are not automatically treated as current rules."
+  },
+  "answer": {
+    "review_method": "Inspect each answer against the approved gold facts and exact supplied context. Use semantic equivalence, not exact wording. Record reviewer identity and per-claim decisions; automated citation-ID checks alone cannot score support.",
+    "correctness": "Strict case pass: all required gold facts correct, required behaviour observed, no material false claim or forbidden claim. Report passes / scored cases, plus failed and unscored cases. Useful clarification, conflict disclosure and source limitations can pass.",
+    "completeness": "Correctly addressed required gold claims / total required gold claims per case. Macro-average with per-case counts. Compound claims require all stated components. This metric does not excuse fabricated extra facts.",
+    "relevance": "Case pass when the answer directly addresses the merchant question with a usable answer, targeted clarification or source limitation, without material unrelated guidance. Report passes / scored cases and explanatory notes.",
+    "faithfulness": "Material factual answer claims supported by supplied context / all material factual claims made. Include dates, amounts, recommendations and asserted source limitations. General conversational phrasing is excluded. Answers with no factual claims are not assigned automatic 100%; report separately and score completeness/behaviour.",
+    "citation_validity": "Citations whose IDs resolve to supplied evidence / all emitted citations. No citations means not applicable for ID validity, not a pass.",
+    "citation_accuracy": "Emitted claim-citation pairs where the cited text actually supports the attached claim / all emitted claim-citation pairs. An existing ID can still be inaccurate. Missing citations are handled by coverage, not hidden in this ratio.",
+    "citation_coverage": "Material factual claims with at least one supporting supplied citation / all material factual claims. Joint claims may require multiple passages. Zero factual claims are reported separately.",
+    "behaviour": "Record whether the answer follows answerable / needs_clarification / conflicting_sources / not_in_sources behaviour. The decision must be justified, not inferred from model confidence."
+  },
+  "latency_and_cost": {
+    "latency": "Measure end-to-end and stage times with a monotonic clock; record model load/warmup separately. Report median and p90 with sample count; use a stated nearest-rank p90 convention. Include failed-call elapsed times in operational reporting. Five-case holdout p90 is effectively its maximum and is not a stable production estimate.",
+    "model_comparison": "Use identical frozen constructed contexts for 4B, 9B and Claude. Save model IDs, generation settings, prompts, retrieval configuration and source hashes. Never give one model gold evidence unavailable to another.",
+    "api_cost": "Use actual input/output/cache usage and checked provider prices. Include all attempted billable calls, retries and auxiliary paid calls. Show total spend, cost per attempted case and cost per successful useful answer. Unknown usage is unknown, not zero.",
+    "local_cost": "Zero API spend is reported separately from hardware, electricity and operational cost; do not claim local inference is economically free.",
+    "coverage": "List attempted, completed, failed and unscored cases. Report missing measurements explicitly rather than dropping them from the denominator."
+  },
+  "experiment_controls": [
+    "Compare one retrieval/prompt change at a time against the same development cases and sources.",
+    "Keep development negative results and label revisions with original versions.",
+    "Freeze settings before holdout; do not use holdout labels to repair chunking, prompts or ranking.",
+    "Small synthetic sets support prototype decisions, not claims of production reliability."
+  ],
+  "decision_use": "Choose architecture and model from measured quality, dangerous-error examples, latency and cost. Define numeric launch targets separately before baseline runs; these scoring definitions do not constitute measured results."
+}

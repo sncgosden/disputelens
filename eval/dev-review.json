@@ -1,0 +1,18 @@
+{
+  "reviewed_on": "2026-10-06",
+  "reviewer": "Codex under user-delegated product judgement",
+  "independent_human_labelling": false,
+  "reviewed_cases": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "E09", "E10"],
+  "method": "Expected facts checked against parsed source passages; selected Visa pages previously checked visually",
+  "decisions": [
+    "Score expected facts by meaning rather than exact wording.",
+    "Clarification, conflict disclosure and source limitations are useful correct behaviours.",
+    "E09 no longer supplies the deadline numbers in its question: retrieval must find the conflict.",
+    "E10 separates combining documents from the one-file limit: the short passage cannot support both facts.",
+    "Relevant passage coverage and sufficient support are separate metrics; redundant alternatives need not all be retrieved for a correct answer.",
+    "Matching citation IDs alone do not prove claim support; inspect the actual text.",
+    "Unsupported guarantees, invented facts and provider/corpus leakage are errors."
+  ],
+  "model_runs": 0,
+  "evaluation_provenance": "Small assistant-authored and assistant-reviewed synthetic development set. Separate holdout cases must be reserved before tuning."
+}

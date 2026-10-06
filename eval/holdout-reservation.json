@@ -1,0 +1,17 @@
+{
+  "reserved_on": "2026-10-06",
+  "case_file": "eval/holdout-cases.json",
+  "case_ids": ["E11", "E12", "E13", "E14", "E15"],
+  "reviewer": "Codex under user-delegated product judgement",
+  "independent_human_labelling": false,
+  "model_runs_at_reservation": 0,
+  "rules": [
+    "Use only development cases to compare or tune retrieval, chunking, prompts and models.",
+    "Freeze the pipeline configuration before running these cases.",
+    "Do not include questions, gold claims or relevance labels in embeddings, retrieval inputs or generation prompts beyond the selected test question.",
+    "Do not revise prompts or retrieval settings to repair observed holdout failures and report those repaired results as the original holdout score.",
+    "If a source or label error requires correction, retain the original case and document the revision separately."
+  ],
+  "scope": "Five reserved synthetic questions on new source facts. Shared sources and behaviours with development cases; this is a small sanity check, not independent production validation.",
+  "source_snapshot": "Existing parsed source IDs and locators; full source/configuration hashes frozen before final model comparison."
+}

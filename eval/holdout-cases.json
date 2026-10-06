@@ -1,0 +1,61 @@
+[
+  {
+    "case_id": "E11",
+    "question": "Using our test refund policy, I agreed a full refund but the provider shows two smaller refunds. What should I check before calling this resolved?",
+    "filters": {"corpus": "fixture", "provider": "DisputeLens fictional provider", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E11-C1", "text": "Identify each refund and compare their combined amount with the agreed refund amount; explain any outstanding balance.", "supporting_passage_ids": ["refund-policy:section-3"]},
+      {"claim_id": "E11-C2", "text": "Do not present a partial refund as a full refund.", "supporting_passage_ids": ["refund-policy:section-3"]}
+    ],
+    "relevant_passage_ids": ["refund-policy:section-3"],
+    "answerability": "answerable", "split": "holdout", "review_status": "approved",
+    "forbidden_claims": ["Two refund records automatically mean the full refund is complete."]
+  },
+  {
+    "case_id": "E12",
+    "question": "Our test provider's notification says respond by 12 October, but gives no time or timezone. What exact hour should I submit by?",
+    "filters": {"corpus": "fixture", "provider": "DisputeLens fictional provider", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E12-C1", "text": "Use the applicable notification deadline, but ask the provider to clarify the missing time and timezone.", "supporting_passage_ids": ["deadline-general-current:section-2", "deadline-support-current:section-2"]},
+      {"claim_id": "E12-C2", "text": "Do not invent an exact cutoff hour or substitute a general default deadline for the stated notification date.", "supporting_passage_ids": ["deadline-general-current:section-2"]}
+    ],
+    "relevant_passage_ids": ["deadline-general-current:section-2", "deadline-support-current:section-2"],
+    "answerability": "needs_clarification", "split": "holdout", "review_status": "approved",
+    "forbidden_claims": ["Assume midnight or a local timezone without evidence."]
+  },
+  {
+    "case_id": "E13",
+    "question": "Using the saved Stripe guidance, can I submit just a link to the courier tracking page as my delivery evidence?",
+    "filters": {"corpus": "real", "provider": "Stripe", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E13-C1", "text": "Do not rely on a link requiring the bank to open external tracking content; the saved guidance says banks do not review external content and excludes such links.", "supporting_passage_ids": ["stripe-respond-to-disputes:block-51", "stripe-respond-to-disputes:block-54"]}
+    ],
+    "relevant_passage_ids": ["stripe-respond-to-disputes:block-51", "stripe-respond-to-disputes:block-54"],
+    "answerability": "answerable", "split": "holdout", "review_status": "approved",
+    "forbidden_claims": ["A tracking link alone is acceptable evidence under this guidance."],
+    "notes": "Requires the parent list introduction plus its child item: tests whether context construction preserves their relationship."
+  },
+  {
+    "case_id": "E14",
+    "question": "Using the saved Stripe guidance, I already answered an inquiry and it has now escalated to a chargeback. Do I need to respond again?",
+    "filters": {"corpus": "real", "provider": "Stripe", "scheme": null},
+    "expected_claims": [
+      {"claim_id": "E14-C1", "text": "Yes. If an inquiry escalates to a chargeback, submit another response for the dispute.", "supporting_passage_ids": ["stripe-respond-to-disputes:block-15"]}
+    ],
+    "relevant_passage_ids": ["stripe-respond-to-disputes:block-15"],
+    "answerability": "answerable", "split": "holdout", "review_status": "approved",
+    "forbidden_claims": ["The inquiry response automatically satisfies the chargeback response requirement."]
+  },
+  {
+    "case_id": "E15",
+    "question": "Using the saved June 2024 Visa guide, I have a condition 13.1 dispute. The agreed delivery date passed and I confirm the goods were never provided to the customer. What does the guide say to do?",
+    "filters": {"corpus": "real", "provider": null, "scheme": "Visa"},
+    "expected_claims": [
+      {"claim_id": "E15-C1", "text": "For merchandise or services not delivered or provided to the customer, accept the dispute under the named guide's condition 13.1.", "supporting_passage_ids": ["visa-dispute-management-june-2024:page-41:passage-1"]}
+    ],
+    "relevant_passage_ids": ["visa-dispute-management-june-2024:page-41:passage-1"],
+    "answerability": "answerable", "split": "holdout", "review_status": "approved",
+    "forbidden_claims": ["Challenge the dispute with invented proof of delivery."],
+    "notes": "Tests the appropriate accept action rather than assuming the product should always recommend fighting disputes."
+  }
+]
