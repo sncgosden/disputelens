@@ -2,6 +2,22 @@
 
 A RAG portfolio product for small merchants who need to understand a dispute request, find applicable guidance and verify each answer against its source. The product covers shops, subscriptions, travel and services. Product scope, decision rules and trade-offs are the author's; implementation and source review were done with AI assistance (see How this was built).
 
+## The short version
+
+**Problem.** A merchant asks a dispute question and gets an answer that cites a real passage but states a rule for a different reason code, program or subtype. That is worse than no answer, because the merchant cannot see the mismatch.
+
+**What I built.** A retrieval pipeline over the Visa and Mastercard guides and four payment providers, grounded answers with checked citations, and a scope control that sits outside the model after a prompt-only version failed.
+
+**What I found.**
+- Valid citations did not prevent wrong-scope answers: a source-based review of seven priority cases found three problems that passed the citation check.
+- A word-overlap fix for needless clarifications passed its first test, then failed an attack set I wrote against it (8 of 12 questions slipped through). I rejected it.
+- A local-embedding replacement passed its thresholds only narrowly and did not rescue the case that started the work.
+- On 12 fresh Mastercard questions the scope gate changed 9 of 12 answers. On my own ratings 19 of 20 decided flags were needless. The open question is whether withholding is the right response at all; I propose disclosing scope beside each claim and testing it with merchants.
+
+**What is not established.** Every label and review so far is mine or AI-assisted, not independent. Sample sizes are 12 to 45. Independent labelling is the next step.
+
+**How I worked.** Each experiment has a protocol with thresholds written and hashed before it ran, in `eval/experiments/<name>/`, with the result and decision beside it. Failures are kept and not re-scored. Every paid run was capped in advance; spend per run is recorded in each experiment folder.
+
 ## How this was built
 
 This project was built with AI coding assistance. OpenAI Codex wrote most of the implementation and did the source checks on the evaluation questions; Claude drafted the synthetic questions and is the answer model under test. The author set the product scope, wrote the decision rules and thresholds before each experiment ran, chose what to adopt or reject, and approved every paid model call. Where an AI assisted a review, the files say so, and no label in this repository is described as independent unless it is.
