@@ -1,0 +1,23 @@
+{
+  "name": "scope-detector-v1",
+  "declared": "2026-10-08, before the detector was run on any case",
+  "purpose": "Offline check: can publisher section headings flag cited passages whose specialised scope (reason code or named subtype) the question never established? Advisory only; it never authorises or excludes evidence.",
+  "inputs": "Saved independent review bundle (development cases only). No model calls. Holdout not read.",
+  "rule": {
+    "qualifier_codes": "4-digit reason codes (4xxx) in the deepest heading below chapter level that contains any such code",
+    "qualifier_phrases": ["participating countries", "stand-in", "x-code", "required authorization"],
+    "established_if": "the code appears as a whole number in the question text, or the phrase appears in the question text (case-insensitive)",
+    "flagged_if": "any qualifier of the cited passage is not established"
+  },
+  "known_defective_passages": {"E13": ["S019", "S002"], "E22": ["S043", "S044", "S048", "S049"]},
+  "controls": ["E10", "E30", "E46"],
+  "applicability_rating_source": "manual-review-batch-0*.json faithfulness_applicability (assisted; 0 for E13/E22/E23; 1 for E25/E29/E53; 2 for 34 cases)",
+  "thresholds": {
+    "T1_known_defect_recall": "6 of 6 known defective passages flagged",
+    "T2_control_false_flags": "0 flagged cited passages in E10, E30, E46",
+    "T3_false_flag_rate": "at most 3 of the 34 cases rated applicability 2 contain any flagged cited passage"
+  },
+  "decision_rule": "Pass only if T1, T2 and T3 all hold. If any fails, record the detector as rejected for this version; revisions get a new version number and are not tuned on these results.",
+  "descriptive_only": "Report flags for E23, E25, E29, E53 and the full list of flagged cases; no threshold.",
+  "limits": ["Assisted ratings are the reference, not independent truth", "Heading qualifiers cannot confirm that a merchant is in a participating country; absence of a flag is not evidence of applicability", "Visa, Adyen, PayPal and Square sources use few reason codes, so the rule mostly speaks to the Mastercard guide"]
+}

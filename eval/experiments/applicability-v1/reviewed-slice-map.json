@@ -1,0 +1,516 @@
+{
+  "version": "mapping-slice-v1",
+  "inventory_path": "data/indexes/applicability-trials/inventory-a625a53e0b3cda9d2c02c109.json",
+  "inventory_sha256": "edcb64aa03a0dacef0db436dabfc4c27537434bb474aa237ee450473e1a94f1d",
+  "maps": [
+    {
+      "passage_id": "mastercard-chargeback-guide:page-410:paragraph-5",
+      "review_status": "reviewed",
+      "disposition": "reviewed_span",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "dispute_subtype": "domestic_installment_fraud"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Only domestic installment first/subsequent-code bullet reviewed. Maestro and UK reference outside span; no participating-country procedural authorization.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+        "No Cardholder Authorization (Message Reason Code 4837/37)"
+      ],
+      "text_sha256": "682a295d2dcba7fb0c2a27dd9aee427d0998688c2f26d9c751d9fc873353d148",
+      "span_start": 487,
+      "span_end": 932
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-367:paragraph-2",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4850",
+        "participating_countries_membership": true
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Installment Billing Dispute-Participating Countries (Reason Code 4850)",
+        "Transactions ineligible for chargeback"
+      ],
+      "text_sha256": "b913c7cc86e653219347e40bf06b28370de1b46c52e88955cec64bdc9740273c",
+      "span_start": 0,
+      "span_end": 388
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-370:paragraph-2",
+      "review_status": "reviewed",
+      "disposition": "reviewed_span",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4850",
+        "participating_countries_membership": true
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Isolated subsequent-installment subsection; prior INVALID ACCELERATION rule and trailing incomplete definition excluded. Timing remains qualified by section applicability.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Installment Billing Dispute-Participating Countries (Reason Code 4850)",
+        "Issuer chargeback",
+        "Subsequent installments charged back after chargeback of first installment for message reason code 4837"
+      ],
+      "text_sha256": "174a26184380d1f00aa54c5d4f580b4bbd6bfb1159b8fb8b730534093e576d4b",
+      "span_start": 559,
+      "span_end": 1125
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-374:paragraph-3",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4850",
+        "participating_countries_membership": true
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Installment Billing Dispute-Participating Countries (Reason Code 4850)",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "bfcf76940b41823518efa0da56b13cc1cbb173f7e92d7684d6ac2d4ea65688c0",
+      "span_start": 0,
+      "span_end": 1267
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-55:paragraph-3",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4808",
+        "dispute_subtype": "required_authorization_not_obtained"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Required Authorization Not Obtained",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "e0ba62ba01ea120cff93ce287f640f6b9d91f49045901b88d78d05f5540019d2",
+      "span_start": 0,
+      "span_end": 1276
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-55:paragraph-4",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4808",
+        "dispute_subtype": "required_authorization_not_obtained"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Required Authorization Not Obtained",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "ad4a5b37bb3ef570a5a3bce102ee9ec878f297ca07d9c470300239311c4d0e7d",
+      "span_start": 0,
+      "span_end": 1243
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-374:paragraph-2",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4850",
+        "participating_countries_membership": true
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Installment Billing Dispute-Participating Countries (Reason Code 4850)",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "f85c834063b930bfb67d87277f5fb99f84419582c185620b7c31a6bc6861f145",
+      "span_start": 0,
+      "span_end": 1280
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-312:paragraph-4",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4853",
+        "dispute_subtype": "no_show_hotel_charge"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "\"No-Show\u201d Hotel Charge",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "a7399b139689da5f6db8c5e25fcbfd0da286654277323f5e8fb7824b36693aa8",
+      "span_start": 0,
+      "span_end": 1171
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-281:paragraph-4",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4853",
+        "dispute_subtype": "issuer_dispute_of_recurring_transaction"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Issuer Dispute of a Recurring Transaction",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "c4e0fe8acec2be19ee34b82ed6c69088f9ffc66662e69d806201f5e9a5a0ed1a",
+      "span_start": 0,
+      "span_end": 1268
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-85:paragraph-3",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4808",
+        "dispute_subtype": "stand_in_or_x_code_approval_after_issuer_decline"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Stand-in or X-Code Approval after Issuer Decline",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "584e37ab231cb15e3cf93ad7e00367754ca8e4cf0e12209e34902eab103e50b1",
+      "span_start": 0,
+      "span_end": 1283
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-85:paragraph-2",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4808",
+        "dispute_subtype": "stand_in_or_x_code_approval_after_issuer_decline"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Stand-in or X-Code Approval after Issuer Decline",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "text_sha256": "c94d04ae9a15c3d25b8e1b811d0666b6ff9cecd5252f4d0404f89737e892db80",
+      "span_start": 0,
+      "span_end": 1318
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-418:paragraph-4",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4837"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate. Regional reporting branches remain conditional; prohibits neither branch from being explained as conditional.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+        "No Cardholder Authorization (Message Reason Code 4837/37)",
+        "No Cardholder Authorization",
+        "Issuer Chargeback"
+      ],
+      "text_sha256": "9b917853792c03e2540c924a5c07320a8f13ee6155ebb49cbe2b8df7ab6a1e70",
+      "span_start": 0,
+      "span_end": 1246
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-419:paragraph-2",
+      "review_status": "reviewed",
+      "disposition": "reviewed_span",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4837"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Cardholder email/letter/message option and complete conditional CAT2/lost-stolen-NRI clause only. Prior regional listing rules and unfinished Form0412 sentence excluded. Do not apply conditional extra statement to every transaction.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+        "No Cardholder Authorization (Message Reason Code 4837/37)",
+        "No Cardholder Authorization",
+        "Issuer Chargeback"
+      ],
+      "text_sha256": "b5ae76719c76ab157eb123d073ae4be473d9e40ccc386dcc8910690e618aae31",
+      "span_start": 501,
+      "span_end": 1196
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-419:paragraph-3",
+      "review_status": "reviewed",
+      "disposition": "reviewed_span",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4837"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Form0412 conversation and account-close/host-block requirements only. Listing requirement and geographic exceptions outside authorized span; complete exception continuation reviewed separately, no waiver of close/block.",
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+        "No Cardholder Authorization (Message Reason Code 4837/37)",
+        "No Cardholder Authorization",
+        "Issuer Chargeback"
+      ],
+      "text_sha256": "b302cc09d86d0b46fec91e2623906538dd6b1fd2ff572be9420094b2cf022e98",
+      "span_start": 437,
+      "span_end": 859
+    },
+    {
+      "passage_id": "visa-dispute-management-june-2024:page-37:paragraph-3",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Visa",
+        "reason_code": "12.6.1"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Dispute Management Guidelines for Visa Merchants",
+        "Condition 12.6"
+      ],
+      "text_sha256": "104bee7c918b8f0fbb5a080a0d6a85ad29271fd279725df341766610fc594cf9",
+      "span_start": 0,
+      "span_end": 210
+    },
+    {
+      "passage_id": "visa-dispute-management-june-2024:page-37:paragraph-2",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "scheme": "Visa",
+        "reason_code": "12.6.1"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "Dispute Management Guidelines for Visa Merchants",
+        "Condition 12.6"
+      ],
+      "text_sha256": "9368d51c046ce6096c1be85b8bced43dbb59680fd3721fd419892e8271379403",
+      "span_start": 0,
+      "span_end": 165
+    },
+    {
+      "passage_id": "adyen-visa-chargebacks:block-28",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "provider": "Adyen",
+        "scheme": "Visa",
+        "payment_flow": "allocation"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate. Date/local-processing branches require separate claim review; routing does not calculate days.",
+      "heading_path": [
+        "Visa chargebacks",
+        "Visa Allocation Flow",
+        "Chargeback"
+      ],
+      "text_sha256": "574eecc0b2ded9d888cd82348aa61c67503da0a3f29daa276bb22a7ab87efde7",
+      "span_start": 0,
+      "span_end": 279
+    },
+    {
+      "passage_id": "adyen-visa-chargebacks:block-27",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "provider": "Adyen",
+        "scheme": "Visa",
+        "payment_flow": "allocation"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate. Date/local-processing branches require separate claim review; routing does not calculate days.",
+      "heading_path": [
+        "Visa chargebacks",
+        "Visa Allocation Flow",
+        "Chargeback"
+      ],
+      "text_sha256": "038ac65e1e20ff4a9455997b6da9d91d6d3ab539fbe1086411054708aa6bc31c",
+      "span_start": 0,
+      "span_end": 513
+    },
+    {
+      "passage_id": "adyen-visa-chargebacks:block-31",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "provider": "Adyen",
+        "scheme": "Visa",
+        "payment_flow": "allocation"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate. Date/local-processing branches require separate claim review; routing does not calculate days.",
+      "heading_path": [
+        "Visa chargebacks",
+        "Visa Allocation Flow",
+        "Information Supplied"
+      ],
+      "text_sha256": "871146d235b3b6cc75686e9fa4f9a04e02c529e3a673aa4a15a7b036c2dacaf4",
+      "span_start": 0,
+      "span_end": 214
+    },
+    {
+      "passage_id": "paypal-uk-seller-protection:block-28",
+      "review_status": "reviewed",
+      "disposition": "reviewed_span",
+      "requirements": {
+        "provider": "PayPal",
+        "region": "UK",
+        "goods_type": "physical"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Physical-goods table span only. Shipment versus delivery columns remain distinct; do not infer alternate-address permission.",
+      "heading_path": [
+        "PayPal\u2019s Seller Protection Program",
+        "Establishing proof of shipment or proof of delivery"
+      ],
+      "text_sha256": "599bed466eaf95b17f38b37c3162e09496fa2d8a07bb2c80b3535b571f737987",
+      "span_start": 0,
+      "span_end": 1204
+    },
+    {
+      "passage_id": "paypal-uk-seller-protection:block-23",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "provider": "PayPal",
+        "region": "UK",
+        "claim_type": "item_not_received"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "PayPal\u2019s Seller Protection Program",
+        "Item Not Received Additional Requirements"
+      ],
+      "text_sha256": "8011868ab62872bafae467acb11dbec7adeb7efc49b6136ebeb3df07035263ae",
+      "span_start": 0,
+      "span_end": 170
+    },
+    {
+      "passage_id": "paypal-uk-seller-protection:block-24",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "provider": "PayPal",
+        "region": "UK",
+        "claim_type": "item_not_received"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "PayPal\u2019s Seller Protection Program",
+        "Item Not Received Additional Requirements"
+      ],
+      "text_sha256": "eaa7e8ffbc4f819bb9971a6c478a5c9042cfd1f99c887e4163fed490b40b7b4a",
+      "span_start": 0,
+      "span_end": 54
+    },
+    {
+      "passage_id": "paypal-uk-seller-protection:block-12",
+      "review_status": "reviewed",
+      "disposition": "reviewed_passage",
+      "requirements": {
+        "provider": "PayPal",
+        "region": "UK",
+        "goods_type": "physical"
+      },
+      "reviewer": "Codex assisted; independent review pending",
+      "notes": "Reviewed saved source text and full publisher ancestry; semantic entailment remains separate.",
+      "heading_path": [
+        "PayPal\u2019s Seller Protection Program",
+        "Basic Requirements"
+      ],
+      "text_sha256": "e50666c6ef5a1b1596925abb747d9b135c3b9ca51ab1c298b33ff533a3d7a45b",
+      "span_start": 0,
+      "span_end": 491
+    }
+  ],
+  "original_scope_origin": "Frozen structured pack settings only; no question inference.",
+  "matching_scenario_origin": "Simulated reviewed settings, not facts about original merchants.",
+  "remaining_gates": [
+    "Authorized spans omit some original expected/claimed evidence; whole-answer completeness not demonstrated.",
+    "E23 listing exception requires separately linked complete source spans; no whole-passage authorization.",
+    "E22 original question/gold scope gap retained.",
+    "Independent source-map review and end-to-end generation evaluation pending."
+  ]
+}

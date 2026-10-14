@@ -1,0 +1,149 @@
+{
+  "per_row": {
+    "S01": {
+      "label": "scoped",
+      "v2": true,
+      "v3": false
+    },
+    "S02": {
+      "label": "scoped",
+      "v2": true,
+      "v3": false
+    },
+    "S03": {
+      "label": "scoped",
+      "v2": false,
+      "v3": false
+    },
+    "S04": {
+      "label": "scoped",
+      "v2": false,
+      "v3": false
+    },
+    "S05": {
+      "label": "scoped",
+      "v2": false,
+      "v3": false
+    },
+    "S06": {
+      "label": "scoped",
+      "v2": true,
+      "v3": false
+    },
+    "S07": {
+      "label": "scoped",
+      "v2": true,
+      "v3": true
+    },
+    "S08": {
+      "label": "scoped",
+      "v2": true,
+      "v3": true
+    },
+    "S09": {
+      "label": "scoped",
+      "v2": false,
+      "v3": false
+    },
+    "S10": {
+      "label": "scoped",
+      "v2": true,
+      "v3": false
+    },
+    "S11": {
+      "label": "scoped",
+      "v2": true,
+      "v3": false
+    },
+    "S12": {
+      "label": "scoped",
+      "v2": false,
+      "v3": false
+    },
+    "U01": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U02": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U03": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U04": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U05": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U06": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U07": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U08": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U09": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U10": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U11": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    },
+    "U12": {
+      "label": "unscoped",
+      "v2": true,
+      "v3": true
+    }
+  },
+  "unscoped_flagged_v3": 12,
+  "unscoped_flagged_v2": 12,
+  "scoped_false_flags_v2": 7,
+  "scoped_false_flags_v3": 2,
+  "dev_flagged_cases_v3": {
+    "E13": [
+      "S002",
+      "S019"
+    ],
+    "E22": [
+      "S043",
+      "S044",
+      "S048",
+      "S049"
+    ]
+  },
+  "verdict": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true,
+    "overall_pass_excluding_T5": true
+  },
+  "protocol_sha256": "aeb04bde6897d8a0403a5bb5f980f1573550f41b73222d23592dc54f2ded57b2",
+  "stress_sha256": "7538ab1d7cb6d98f39024516de5abbbc4b73d16c1e15396bc598ae956a79f527"
+}

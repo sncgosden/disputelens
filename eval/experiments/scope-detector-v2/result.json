@@ -1,0 +1,65 @@
+{
+  "flags": {
+    "E13": {
+      "S019": [
+        "4850",
+        "participating countries"
+      ],
+      "S002": [
+        "participating countries"
+      ]
+    },
+    "E22": {
+      "S049": [
+        "4850",
+        "participating countries"
+      ],
+      "S043": [
+        "4808",
+        "required authorization"
+      ],
+      "S044": [
+        "4808",
+        "required authorization"
+      ],
+      "S048": [
+        "4850",
+        "participating countries"
+      ]
+    }
+  },
+  "verdict": {
+    "T1_known_defect_recall": {
+      "value": "6/6",
+      "pass": true
+    },
+    "T2_control_false_flags": {
+      "value": "none",
+      "pass": true
+    },
+    "T3_false_flag_rate": {
+      "value": "0/34",
+      "cases": [],
+      "pass": true
+    },
+    "T4_monotone": {
+      "value": "subset of v1",
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "removed_vs_v1": {
+    "E18": [
+      "S011"
+    ],
+    "E23": [
+      "S014",
+      "S044",
+      "S045"
+    ],
+    "E14": [
+      "S073"
+    ]
+  },
+  "protocol_sha256": "a402efff4d1548c0631afb40380f2f6a995fad4f4ad5dea3c7b41791f52eb771"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "scope-invariance-v1",
+  "declared": "2026-10-08, before the invariance check was written or run",
+  "motivation": "Reading E22's gold passages showed that the refund rule ('the issuer must not continue the dispute for the refunded amount...') is repeated in many reason-code sections of the Mastercard guide, so E22's gold (the Stand-in/X-Code section) is one arbitrary instance. Fail-closed (scope-gate v1/v2) would withhold an answer whose substance does not depend on the missing scope. Test whether a deterministic invariance check can tell repeated, scope-independent text from genuinely scope-bound text.",
+  "inputs": "Section-hierarchy passages (data/indexes/section-hierarchy/71bf6051f48778a5e9ca12c1/documents.json), parent mastercard-chargeback-guide, Chapter 2 only (Dual Message System). Passages are grouped by full heading path and joined in page/paragraph order before searching, so a sentence that wraps across a paragraph break is still found. Development cases E13 and E22 plus the E22 flagged-answer-v1 attempt. No model call. Holdout not read.",
+  "rule": {
+    "match": "a quote matches a section if its whitespace- and hyphen-gap-normalised form is a substring of the section's joined text",
+    "invariant": "a quote is scope-invariant if it matches at least 20 distinct sections spanning at least 4 of the 6 Chapter 2 reason-code families, where a family is the third-level heading",
+    "claim_invariant": "a claim is scope-invariant only if every one of its flagged-passage citations has an invariant quote; unflagged citations do not matter",
+    "gate_v3": "scope-gate-v2 behaviour, except that a claim whose flagged citations are all invariant is kept unprefixed with one fixed note appended to missing_information: 'The guide gives this same wording in N reason-code sections; check your own reason code for additional conditions.' Everything else gates exactly as v2."
+  },
+  "thresholds": {
+    "I1": "E22 baseline: the claims quoting the refund-resolves rule, the second-presentment documentation requirement and the two exceptions are invariant. The definition-of-refund claim is reported, not thresholded",
+    "I2": "E13: the claims citing S002 and S019 are not invariant (their quotes match at most 3 sections), so v3 still conditionalises them exactly as v2",
+    "I3": "Negative control: the specialised Stand-in/X-Code sentence in E22's gold (the Mainland China fee collection sentence, page 85) matches at most 3 sections and is not invariant",
+    "I4": "The other 38 valid baseline answers are byte-identical under v3, and every v3 output passes validate_answer with quotes unchanged and is deterministic across two runs",
+    "I5": "Report for E22 baseline and for the flagged-answer-v1 attempt: how many claims and words v3 keeps that v2 withheld, and the number of sections and families matched per quote"
+  },
+  "decision_rule": "Pass only if I1 to I4 hold. I5 is reported. A pass shows the invariance check separates repeated text from scope-bound text on development data. It does not show the rule is the same in every section: the quote can be identical while conditions beyond it differ, which is why the note and review stay.",
+  "limits": ["Designed after reading E22 and counting the repeats, so not independent; holdout is the independent test", "Sentence-level identity is not rule-level identity: neighbouring text may differ by section (the failed E22 regeneration noted that Addendum Dispute has different consequences)", "Thresholds (20 sections, 4 families) were chosen by me from the observed counts of 30 to 36 of 38 sections and are arbitrary", "Mastercard Chapter 2 only; Chapters 1, 3 and 4 and other schemes untouched", "Advisory prototype; wording of the note is a template"]
+}

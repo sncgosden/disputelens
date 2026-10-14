@@ -1,0 +1,17 @@
+{
+  "name": "scope-detector-v3-nearmiss",
+  "declared": "2026-10-08, before any detector ran on the near-miss rows",
+  "purpose": "Attack scope-detector v3. Its rule clears inherited codes when at least half of a subtype title's content words appear in the question. Near-miss questions share a word with the title without identifying the subtype. Under-flagging (letting a scope-bound passage through as established) is the dangerous direction, so it is thresholded.",
+  "near_miss_set": {"path": "eval/stress/mastercard-scope-v1/nearmiss.json", "sha256": "52a484c215c868896e6cef2b7c148961d645c0e57045ea228d68de1d3ed962d5", "rows": "12, all labelled unscoped by Claude, written after reading the v3 rule so adversarial by design, not independent"},
+  "also_run": {"scoped_and_unscoped_set": "eval/stress/mastercard-scope-v1/pairs.json sha256 7538ab1d7cb6d98f39024516de5abbbc4b73d16c1e15396bc598ae956a79f527"},
+  "thresholds": {
+    "N1": "v3 clears (fails to flag) at most 3 of the 12 near-miss rows",
+    "N2": "v2 flags all 12 near-miss rows (v2 is the conservative baseline; if it does not, the labels are suspect)"
+  },
+  "reported_not_thresholded": {
+    "sweep": "Operating points of the subtype rule over share in {0.34, 0.5, 0.67, 1.0} and minimum hits in {1, 2}: for each, scoped-set false flags (of 12), unscoped-set flags (of 12) and near-miss clears (of 12). Choosing a point after seeing both sets is tuning on the same labels and is said to be so.",
+    "E16_and_dev": "E16 cleared or not, and development flags, at each operating point"
+  },
+  "decision_rule": "If N1 and N2 hold, v3 is adopted as the candidate detector. If N1 fails, v3 is not adopted as is: the next version must be chosen from the sweep, declared as v4 with its own labels, and labelled as selected on seen data.",
+  "limits": ["Labels are mine", "Near-miss rows were written to defeat the rule I had just written", "Twelve rows; sweep is descriptive", "N02 (recurring) is ambiguous between two sibling subtypes; I labelled it unscoped because the question does not say which"]
+}

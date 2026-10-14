@@ -1,0 +1,24 @@
+{
+  "name": "scope-invariance-v2",
+  "declared": "2026-10-08, after reading the scope-invariance-v1 results and before any v2 code was written or run",
+  "supersedes": "scope-invariance-v1 (recorded as failed on I2 and I3; left unchanged and reproducible as gate version 3)",
+  "honest_status": "Not independent. v2 is designed after seeing v1's counts and after reading E13 and E22, so its positive and negative controls on those cases are regression checks. The new, less circular test is J3 (non-vacuity over the whole Chapter 2 text).",
+  "purpose": "Offline: decide whether a repeated sentence is scope-independent by checking (a) the claim as a whole, (b) that the text following the sentence is the same across the sections that contain it, and (c) ignoring very short boilerplate quotes. The control stays gate v2 (fail closed); this only asks whether an exemption is defensible.",
+  "inputs": "Section-hierarchy passages (data/indexes/section-hierarchy/71bf6051f48778a5e9ca12c1/documents.json), parent mastercard-chargeback-guide, Chapter 2 only, grouped by full heading path and joined in page/paragraph order. Development cases only. No model call. Holdout not read.",
+  "rule": {
+    "boilerplate": "a quote of fewer than 8 words is ignored; every other quote counts, including field labels",
+    "quote_invariant": "matches at least 20 distinct sections spanning at least 4 reason-code families (third-level heading)",
+    "context_stable": "the 25 words that follow the matched quote (or '<end>' if the section text ends) are identical in at least 75 percent of the matching sections",
+    "claim_invariant": "a claim is scope-invariant only if it has at least one non-boilerplate flagged quote, and every non-boilerplate flagged quote is quote_invariant and context_stable",
+    "gate_v4": "scope-gate-v2 behaviour, except that a claim that is claim_invariant is kept unprefixed and one fixed note is added to missing_information: 'The guide gives this same wording in N reason-code sections; check your own reason code for additional conditions.' (N = fewest sections among the claim's quotes). Everything else gates exactly as v2"
+  },
+  "thresholds": {
+    "J1": "E22 baseline claims 1, 2 and 3 (refund-resolves rule, the two exceptions, the second-presentment documentation requirement) are claim_invariant. Claim 4 (definition of a refund) is reported, not thresholded",
+    "J2": "E13 claims citing S002 and S019 are not claim_invariant, and E13 under gate v4 is byte-identical to E13 under gate v2",
+    "J3": "Non-vacuity over the whole of Chapter 2: take every distinct sentence of at least 12 words that appears in at least 20 sections spanning at least 4 families (the repeated set). The context-stability check must both accept and reject: at least one repeated sentence is context_stable and at least one is not. If none is rejected, the check is vacuous and the experiment fails",
+    "J4": "The other 38 valid baseline answers are byte-identical under gate v4, every gate v4 output passes validate_answer with quotes unchanged, and two runs give identical hashes",
+    "J5": "Reported, not thresholded: size of the repeated set and the share rejected; for the E22 refund-rule quote, the sections whose following 25 words differ from the modal text (including Addendum Dispute); words kept under v4 that v2 withheld, for the E22 baseline and for the flagged-answer-v1 E22 attempt"
+  },
+  "decision_rule": "Pass only if J1 to J4 hold. Even a pass only supports an advisory exemption behind gate v2: a stable 25-word window does not prove the whole rule is identical, and the thresholds (20 sections, 4 families, 75 percent, 8 words, 25 words) are mine. The holdout and an independent reviewer are the real tests.",
+  "limits": ["Designed after seeing v1's results and E13/E22; J1 and J2 are regression checks", "Thresholds are arbitrary and untuned beyond what v1's counts suggested", "25 following words is a crude proxy for 'same conditions'", "Mastercard Chapter 2 only", "Sentence splitting for J3 is a simple punctuation rule", "Advisory prototype; not wired into generation"]
+}

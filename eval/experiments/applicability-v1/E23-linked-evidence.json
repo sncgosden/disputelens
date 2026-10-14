@@ -1,0 +1,91 @@
+{
+  "version": "E23-linked-evidence-v1",
+  "status": "diagnostic_only",
+  "normalized_path": "data/normalized-expanded/documents.json",
+  "normalized_sha256": "a6e8f1806fa7e61001c36d770f1be66efb13523da3ed4680ba40e697f96bde9f",
+  "units": [
+    {
+      "unit_id": "form0412_document_option",
+      "pieces": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-419:paragraph-2",
+          "start": 1196,
+          "end": 1296,
+          "text": "      \u2022    Issuer completed Dispute Resolution Form-Fraud (Form 0412) stating the cardholder did not",
+          "full_text_sha256": "b5ae76719c76ab157eb123d073ae4be473d9e40ccc386dcc8910690e618aae31",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+            "pdf_page": 419,
+            "pdf_page_label": "419",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-419:paragraph-3",
+          "start": 0,
+          "end": 36,
+          "text": "          authorize the transaction.",
+          "full_text_sha256": "b302cc09d86d0b46fec91e2623906538dd6b1fd2ff572be9420094b2cf022e98",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+            "pdf_page": 419,
+            "pdf_page_label": "419",
+            "start_line": null
+          }
+        }
+      ],
+      "joined_text": "      \u2022    Issuer completed Dispute Resolution Form-Fraud (Form 0412) stating the cardholder did not\n          authorize the transaction.",
+      "scope": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4837"
+      },
+      "reviewer": "Codex assisted; independent review pending"
+    },
+    {
+      "unit_id": "listing_requirement_and_exceptions",
+      "pieces": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-419:paragraph-3",
+          "start": 859,
+          "end": 1331,
+          "text": "          \u2013   The issuer listed the account number on the Mastercard Stand-in Account File with a\n              \u201ccapture card\u201d response for 180-calendar days or until card expiration (whichever is\n              shorter).\n              This requirement does not apply when one of the following occurred:\n              \u2013   The transaction was a Mainland China domestic transaction;\n              \u2013   The card was issued in the Latin America and the Caribbean region, and the",
+          "full_text_sha256": "b302cc09d86d0b46fec91e2623906538dd6b1fd2ff572be9420094b2cf022e98",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+            "pdf_page": 419,
+            "pdf_page_label": "419",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-419:paragraph-4",
+          "start": 0,
+          "end": 316,
+          "text": "                 transaction did not occur at a CAT 2 device; or\n              \u2013   The card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s\n                 stand-in parameters are set to zero to decline all authorization attempts or are\n                 managed through an alternate host.",
+          "full_text_sha256": "e38ef205f47cf4d83f3783495511a0cbb6fc09f3e464e333b9ec6b1d17056414",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+            "pdf_page": 419,
+            "pdf_page_label": "419",
+            "start_line": null
+          }
+        }
+      ],
+      "joined_text": "          \u2013   The issuer listed the account number on the Mastercard Stand-in Account File with a\n              \u201ccapture card\u201d response for 180-calendar days or until card expiration (whichever is\n              shorter).\n              This requirement does not apply when one of the following occurred:\n              \u2013   The transaction was a Mainland China domestic transaction;\n              \u2013   The card was issued in the Latin America and the Caribbean region, and the\n                 transaction did not occur at a CAT 2 device; or\n              \u2013   The card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s\n                 stand-in parameters are set to zero to decline all authorization attempts or are\n                 managed through an alternate host.",
+      "scope": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4837"
+      },
+      "reviewer": "Codex assisted; independent review pending"
+    }
+  ],
+  "citation_contract": "Fragments keep separate passage IDs/locators. Joined text is for review; never present a cross-passage quote as one original citation.",
+  "exception_referent": "Stand-in Account File listing only; neither closure nor host blocking.",
+  "limitations": [
+    "Separate supplemental evidence, absent from original frozen generation pack.",
+    "Conditional regional exceptions still require appropriate settings or conditional presentation.",
+    "No answer generation or promotion decision."
+  ]
+}

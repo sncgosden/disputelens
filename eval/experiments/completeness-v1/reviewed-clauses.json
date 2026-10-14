@@ -1,0 +1,493 @@
+{
+  "review_type": "Codex assisted clause review; not independent",
+  "scope": "Targeted complaint/document/prerequisite checklist for E18/E23, not exhaustive publisher-rule inventory",
+  "cases": [
+    {
+      "case_id": "E18",
+      "attempt_path": "data/indexes/source-completion-trials/heading-corrected-pair/e6b665e13f10280d3a6a76c6/E18-claude-attempt.json",
+      "attempt_sha256": "fd55ee925737e6df8bb884dc7c13bf58e706c0844ce0638b0fe422a41a3a0ed4",
+      "context_pack_path": "data/indexes/source-completion-trials/e6b665e13f10280d3a6a76c6/E18-context.json",
+      "context_pack_sha256": "44eecba84234f3ddc89e5d068b9b588a7f288f77701d0146184e4761c3b22abb",
+      "clauses": [
+        {
+          "clause_id": "E18-refund_promised",
+          "requirement": "Promised refund not processed",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            1
+          ],
+          "citation_ids": [
+            "S040"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-policy_undisclosed",
+          "requirement": "Undisclosed policy and return/cancellation refused",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            1
+          ],
+          "citation_ids": [
+            "S040"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-no_response",
+          "requirement": "No response to return/cancellation",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            1
+          ],
+          "citation_ids": [
+            "S040"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-reduced_refund",
+          "requirement": "Reduced refund without proper disclosure",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            1
+          ],
+          "citation_ids": [
+            "S040"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-vat_credit",
+          "requirement": "VAT credit not issued",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            1
+          ],
+          "citation_ids": [
+            "S040"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-cardholder_option",
+          "requirement": "Cardholder letter/email/message or Form1221 option",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            2
+          ],
+          "citation_ids": [
+            "S040"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-merchant_option",
+          "requirement": "Merchant evidence supporting credit due",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S011"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-store_credit_option",
+          "requirement": "Improperly disclosed in-store credit proof plus explanation",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S011"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-condition_detail",
+          "requirement": "Explain how a qualifying condition was met",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            3
+          ],
+          "citation_ids": [
+            "S011"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-refund_detail",
+          "requirement": "Explain why refund is expected",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            3
+          ],
+          "citation_ids": [
+            "S011"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-purchase_detail",
+          "requirement": "Specific goods/services description",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            3
+          ],
+          "citation_ids": [
+            "S011"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-direct_document",
+          "requirement": "Document directly from cardholder/corporate entity",
+          "condition": "Commercial-card corporate-entity branch",
+          "coverage": "included",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S011"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E18-form_conversation",
+          "requirement": "Form1221 directly results from cardholder conversation",
+          "condition": "When using Form1221",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S011"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        }
+      ]
+    },
+    {
+      "case_id": "E23",
+      "attempt_path": "data/indexes/source-completion-trials/heading-corrected-pair/7628313a8ff1b59498784eee/E23-claude-attempt.json",
+      "attempt_sha256": "6abc52ffb9db97af6fde6877a9b36619f8a47446c2419a8e3e5f9f09ecf20e2e",
+      "context_pack_path": "data/indexes/source-completion-trials/7628313a8ff1b59498784eee/E23-context.json",
+      "context_pack_sha256": "dff78f4508ea3bda75cbed06ed95f547ff0dbd9633ace85942e8fec456ad45b7",
+      "clauses": [
+        {
+          "clause_id": "E23-system_scope",
+          "requirement": "Qualify Dual Message System scope",
+          "condition": "Message system not supplied",
+          "coverage": "included",
+          "applicability": "scope_unknown",
+          "answer_claim_numbers": [
+            1
+          ],
+          "citation_ids": [
+            "S014"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-prohibition_gap",
+          "requirement": "Full prohibited-dispute list remains unavailable",
+          "condition": "Previous section absent; needs source review",
+          "coverage": "acknowledged_source_gap",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S014"
+          ],
+          "rationale": "The answer acknowledges the source gap; this is not an omitted available rule."
+        },
+        {
+          "clause_id": "E23-complaint",
+          "requirement": "Cardholder contacted issuer denying authorization",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            2
+          ],
+          "citation_ids": [
+            "S014"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-fraud_date",
+          "requirement": "Report fraud on/before chargeback date",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            3
+          ],
+          "citation_ids": [
+            "S014"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-fraud_database",
+          "requirement": "Fraud and Loss Database for non-China-domestic transactions",
+          "condition": "Not Mainland China domestic",
+          "coverage": "included",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [
+            3
+          ],
+          "citation_ids": [
+            "S014"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-china_reporting",
+          "requirement": "Risk Management reporting for China domestic",
+          "condition": "Mainland China domestic",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S014"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-cardholder_document",
+          "requirement": "Cardholder document stating unauthorized transaction",
+          "condition": "Within the requested source section",
+          "coverage": "included",
+          "applicability": "question_general",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S044"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-form_option",
+          "requirement": "Issuer-completed Form0412 stating unauthorized transaction",
+          "condition": "When using Form0412",
+          "coverage": "partial",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S044",
+            "S045"
+          ],
+          "rationale": "The related claim mentions the option/duty but omits a required qualification or detail."
+        },
+        {
+          "clause_id": "E23-cat2_certification",
+          "requirement": "Conditional lost/stolen/NRI certification with document/form",
+          "condition": "Lost/stolen/NRI card-read, not key-entered, at CAT2",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S044",
+            "S045"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-form_conversation",
+          "requirement": "Form0412 directly results from cardholder conversation",
+          "condition": "When using Form0412",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S045"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-form_close",
+          "requirement": "Close account before chargeback",
+          "condition": "When using Form0412",
+          "coverage": "included",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S045"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-form_block",
+          "requirement": "Block account on host before chargeback",
+          "condition": "When using Form0412",
+          "coverage": "included",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S045"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-form_listing",
+          "requirement": "Capture-card Stand-in listing before chargeback",
+          "condition": "When using Form0412",
+          "coverage": "partial",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S045"
+          ],
+          "rationale": "The related claim mentions the option/duty but omits a required qualification or detail."
+        },
+        {
+          "clause_id": "E23-listing_duration",
+          "requirement": "Listing lasts180calendar days or expiry, shorter",
+          "condition": "When listing is required",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S045"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-listing_only_exceptions",
+          "requirement": "Exceptions qualify listing only",
+          "condition": "Form0412 listing branch",
+          "coverage": "included",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [
+            4
+          ],
+          "citation_ids": [
+            "S045"
+          ],
+          "rationale": "Supported content is explicitly present in the referenced answer claim(s)."
+        },
+        {
+          "clause_id": "E23-china_exception",
+          "requirement": "China domestic exception waives Form0412 listing",
+          "condition": "Mainland China domestic",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S045"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-lac_exception",
+          "requirement": "LAC exception requires non-CAT2 transaction",
+          "condition": "LAC-issued card AND non-CAT2",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S045",
+            "S072"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-germany_exception",
+          "requirement": "Germany BIN exception requires zero stand-in parameters or alternate host",
+          "condition": "Germany BIN/range AND qualifying stand-in setup",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S072"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-cat2_block",
+          "requirement": "CAT2 lost/stolen/NRI host-blocking duty",
+          "condition": "Lost/stolen/NRI card-read, not key-entered, at CAT2",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S071"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-cat2_token",
+          "requirement": "Deactivate token for qualifying contactless Mastercard token transaction",
+          "condition": "CAT2 branch AND contactless Mastercard token",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S071"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-cat2_listing",
+          "requirement": "Qualified CAT2 PAN listing with duration and regional branch",
+          "condition": "CAT2 branch, regional qualifications apply",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S071",
+            "S044"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        },
+        {
+          "clause_id": "E23-corporate_complaint",
+          "requirement": "Former employee corporate-card complaint alternative",
+          "condition": "Corporate cardholder no longer employed; company/government representative",
+          "coverage": "omitted",
+          "applicability": "conditional_facts_unknown",
+          "answer_claim_numbers": [],
+          "citation_ids": [
+            "S014",
+            "S072"
+          ],
+          "rationale": "Available conditional requirement is not stated in the saved answer; unknown facts do not make its source unavailable."
+        }
+      ]
+    }
+  ]
+}

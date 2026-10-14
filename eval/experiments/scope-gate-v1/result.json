@@ -1,0 +1,35 @@
+{
+  "results": {
+    "E13": {
+      "action": "conditionalised",
+      "withheld_claims": 2,
+      "withheld_words": 100,
+      "status_after": "partial",
+      "unconditional_claims_after": 1
+    },
+    "E22": {
+      "action": "fail_closed",
+      "withheld_claims": 4,
+      "withheld_words": 188,
+      "status_after": "needs_clarification",
+      "unconditional_claims_after": 0
+    },
+    "E22-flagged-answer-v1": {
+      "action": "fail_closed",
+      "withheld_claims": 4,
+      "withheld_words": 170,
+      "status_after": "needs_clarification",
+      "unconditional_claims_after": 0
+    }
+  },
+  "unchanged_count": 38,
+  "verdict": {
+    "G1": true,
+    "G2": true,
+    "G3": true,
+    "G4": true,
+    "G5": true,
+    "overall_pass": true
+  },
+  "protocol_sha256": "214b816d2f492367d882a738c139bfa0cc64c910ae8a55d7d6cb62522e32115d"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "paired_gate_not_met",
+  "case_id": "E10",
+  "four_b": "complete; correct same credential/date/amount criterion; assisted source review",
+  "four_b_seconds": 215.87653387500905,
+  "nine_b": "timeout; no final answer to score",
+  "nine_b_seconds": 300.04243612498976,
+  "nine_b_attempt_path": "data/indexes/answer-trials/E10-0010298d7d5fe9352bb411f8.json",
+  "nine_b_attempt_sha256": "72cafa5c749fff7f94854590dbbdffd8a44c890e4d1c9312df55e772754631a7",
+  "context_budget": "11311 prompt+8192 output+64reserve fits32768",
+  "runtime_conditions": "Both models loaded; concurrent workloads explicitly accepted by user. No isolation assumption.",
+  "interpretation": "Context fit does not establish completion. 9B fails300s completion gate under observed workload; no claim that model intrinsically slower or incapable.",
+  "next_gate": "Before full45-case local runs, user chooses/executes separately declared runtime experiment; preserve failures and no automatic retry.",
+  "holdout_accessed": false
+}

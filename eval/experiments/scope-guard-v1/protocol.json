@@ -1,0 +1,126 @@
+{
+  "experiment": "scope-guard-v1",
+  "status": "prepared_not_run",
+  "hypothesis": "Explicit claim-level applicability and exception referent checks reduce observed scope errors without losing supported answers.",
+  "changed_variable": "System prompt only; frozen baseline prompt unchanged.",
+  "baseline_system_sha256": "597b9e90fd41a4157d71d1f609a6c6eea5505a60b80105a0793d70fa56230484",
+  "candidate_system_sha256": "d31afccb76145c7d668cff85e4bd61866da3a0eeaa0005ec3eff80412c89d33d",
+  "candidate_path": "eval/experiments/scope-guard-v1/candidate-system.txt",
+  "cases": [
+    {
+      "case_id": "E13",
+      "role": "target",
+      "question": "I sell on a domestic installment plan. A customer says the first installment was fraud and my acquirer cites Mastercard reason code 4837. How does the guide say the issuer must handle later installments?",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard",
+        "region": null
+      },
+      "pack_path": "data/indexes/context-eval/9588eef5a0cd81e960abe04c/packs/E13.json",
+      "pack_sha256": "0574197518fe804cacdbe5416d88913530c22388758b6646874c28ee0b8834c2",
+      "baseline_attempt_path": "data/indexes/answer-trials/E13-claude-191f0257c06b531180e72826.json",
+      "baseline_attempt_sha256": "2c6721d2a8fc401cb6e0abc966d6b5c9c95b46873634a35b22e5a490f84c4821",
+      "semantic_acceptance": "Keep first-4837/later-4850 distinction. Do not apply Participating Countries deadlines/reference/docs without established region; omit unasked specialized advice."
+    },
+    {
+      "case_id": "E22",
+      "role": "target",
+      "question": "I already refunded a customer before my acquirer answered the chargeback. Does that refund end the dispute under Mastercard's rules, and what counts as a refund?",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard",
+        "region": null
+      },
+      "pack_path": "data/indexes/context-eval/9588eef5a0cd81e960abe04c/packs/E22.json",
+      "pack_sha256": "21a12dd49f77b29353d6a16466c3aa1b371f9c9155e654d1945f4d51ca4a82e3",
+      "baseline_attempt_path": "data/indexes/answer-trials/E22-claude-12d1b3c79bc71b368e36bc11.json",
+      "baseline_attempt_sha256": "8e3c701b1f9b8607a3f69545752b65cf8ccb8400c60197c65fa9c937b8309262",
+      "semantic_acceptance": "Keep supported general refund definition/documentation/exception branches. Do not generalize extra fines/fees from specialized reason-code sections; scope uncertainty must constrain claims, not just appear at end."
+    },
+    {
+      "case_id": "E23",
+      "role": "target",
+      "question": "A cardholder says they never authorized a purchase at my shop. Before the issuer can file a Mastercard chargeback for 'No Cardholder Authorization', what conditions does the issuer have to meet?",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard",
+        "region": null
+      },
+      "pack_path": "data/indexes/context-eval/9588eef5a0cd81e960abe04c/packs/E23.json",
+      "pack_sha256": "ecb7f383ef2bbf2180b2a563a20794cbe7a26e1ad00d3109fd17d843842459d7",
+      "baseline_attempt_path": "data/indexes/answer-trials/E23-claude-f76a7813960645b3b8efb03e.json",
+      "baseline_attempt_sha256": "5e563eba23dd819ebfe749e2888bc959498429574343bb01e201c7bcfd60eefe",
+      "semantic_acceptance": "Keep issuer complaint/documentation/fraud reporting conditions. Do not make Stand-in listing exceptions waive account closure or host blocking; do not invent missing regional exception conditions."
+    },
+    {
+      "case_id": "E10",
+      "role": "regression_control",
+      "question": "Fictional scenario: a diner says they were charged twice for one meal, and the notice cites Visa Condition 12.6.1, Duplicate Processing. What exactly is the cardholder claiming?",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa",
+        "region": null
+      },
+      "pack_path": "data/indexes/context-eval/9588eef5a0cd81e960abe04c/packs/E10.json",
+      "pack_sha256": "2dd6d766674cb4f45383227c22644353cf759c099450ac6c69e2bd6f138ae1b3",
+      "baseline_attempt_path": "data/indexes/answer-trials/E10-claude-c060225efa4f54473c3e5f6a.json",
+      "baseline_attempt_sha256": "1b30e3d73930428c179aacde585d2caba1e3c05e12c134e4d33a7a297e71e77a",
+      "semantic_acceptance": "Preserve same credential/date/amount duplicate criterion; no unnecessary clarification."
+    },
+    {
+      "case_id": "E30",
+      "role": "regression_control",
+      "question": "I use Adyen. How long do I have to upload Visa Allocation defense documents for locally processed US payments with disputes opened on 2 June 2025 and 5 August 2025, and a Germany-processed payment with a dispute opened on 5 August 2025? Can I add documents later?",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": "Visa",
+        "region": null
+      },
+      "pack_path": "data/indexes/context-eval/9588eef5a0cd81e960abe04c/packs/E30.json",
+      "pack_sha256": "8669c7367eabbb4be8535d602f251693f3c366ed631b784121de858f30552e22",
+      "baseline_attempt_path": "data/indexes/answer-trials/E30-claude-daf7a3758c42d7b6898c200e.json",
+      "baseline_attempt_sha256": "707a87a355f4ae3a0310b8628e0bdbd1e6f613edebf1d3b34b66090fab97dde3",
+      "semantic_acceptance": "Preserve June US 18/August locally processed US 9/August Germany 18-day answers and no later updates; no unnecessary clarification."
+    },
+    {
+      "case_id": "E46",
+      "role": "regression_control",
+      "question": "Fictional example: an imaginary seller shipped a physical parcel abroad and the buyer claims it never arrived. What proof of delivery does PayPal UK Seller Protection expect, and does the choice of carrier matter?",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null,
+        "region": "UK"
+      },
+      "pack_path": "data/indexes/context-eval/9588eef5a0cd81e960abe04c/packs/E46.json",
+      "pack_sha256": "833fef4687c104b29ce946d24e81824e0cbae3422df565dcbf18ae86bb1bcf14",
+      "baseline_attempt_path": "data/indexes/answer-trials/E46-claude-afd34571f5dc5a4709574e1a.json",
+      "baseline_attempt_sha256": "c6584886acb1199d0b837d781f6e998e39e15c2abad5e291bf0337570754717a",
+      "semantic_acceptance": "Preserve physical delivery evidence and carrier/correct-address requirements; no unnecessary clarification."
+    }
+  ],
+  "generation_contract": {
+    "planned_model": "claude-sonnet-5-5",
+    "temperature": "provider default",
+    "max_output_tokens": 8192,
+    "planned_new_calls": 6,
+    "paid_run_authorized": false,
+    "budget_status": "not yet estimated or reserved",
+    "retries": 0,
+    "baseline_comparison": "Saved historical outputs; not a contemporaneous randomized comparison; hosted weights may differ.",
+    "protocol_correction": "Before any calls: 0.2 draft corrected to provider default to match frozen Claude baseline."
+  },
+  "promotion_gate": {
+    "targets": "All 3 citation-valid; faithfulness/applicability 2 and correctness at least 2 under existing rubric; requested completeness must not regress.",
+    "controls": "All 3 citation-valid; correctness/faithfulness/question completeness 2; no unjustified abstention.",
+    "review": "Every clause checked against scoped passage and quoted extract; record all failures. Codex assistance cannot be described as independent human validation.",
+    "decision": "Passing six selected development cases only supports a candidate; do not claim general robustness or silently replace baseline.",
+    "failed_gate": "Do not promote. Retain results and diagnose; no automatic retries."
+  },
+  "excluded": "No retrieval/context/gold/validator/pricing changes; no holdout access; no original failure repair."
+}

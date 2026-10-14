@@ -1,0 +1,124 @@
+{
+  "report": {
+    "E13:S030": {
+      "result": "candidates",
+      "searched": true,
+      "context_headroom_words": 232,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-cde075e584d868fff42c",
+          "stem": "list",
+          "headings": [],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "window_words": 129,
+          "shared": 0,
+          "chunk_words": 378
+        }
+      ]
+    },
+    "E13:S034": {
+      "result": "candidates",
+      "searched": true,
+      "context_headroom_words": 232,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-cde075e584d868fff42c",
+          "stem": "list",
+          "headings": [],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "window_words": 129,
+          "shared": 0,
+          "chunk_words": 378
+        }
+      ]
+    },
+    "E18:S008": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E23:S007": {
+      "result": "candidates",
+      "searched": true,
+      "context_headroom_words": 92,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-cde075e584d868fff42c",
+          "stem": "list",
+          "headings": [],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "window_words": 129,
+          "shared": 0,
+          "chunk_words": 378
+        }
+      ]
+    },
+    "E23:S024": {
+      "result": "candidates",
+      "searched": true,
+      "context_headroom_words": 92,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-cde075e584d868fff42c",
+          "stem": "list",
+          "headings": [],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "window_words": 129,
+          "shared": 0,
+          "chunk_words": 378
+        }
+      ]
+    },
+    "E23:S068": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E15:S007": {
+      "result": "candidates",
+      "searched": true,
+      "context_headroom_words": 22,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-cde075e584d868fff42c",
+          "stem": "list",
+          "headings": [],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "window_words": 129,
+          "shared": 0,
+          "chunk_words": 378
+        }
+      ]
+    },
+    "E15:S039": {
+      "result": "candidates",
+      "searched": true,
+      "context_headroom_words": 22,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-cde075e584d868fff42c",
+          "stem": "list",
+          "headings": [],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "window_words": 129,
+          "shared": 0,
+          "chunk_words": 378
+        }
+      ]
+    },
+    "E15:S077": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E19:S011": {
+      "result": "not applicable",
+      "searched": false
+    }
+  },
+  "verdict": {
+    "T1": false,
+    "T2": false,
+    "T3": true,
+    "T4": true,
+    "overall_pass": false
+  },
+  "protocol_sha256": "9cd85e620d6dc03fee7f42e55b648fae4e5ebb3f3148b75a1b6d40e180fe0ea3"
+}

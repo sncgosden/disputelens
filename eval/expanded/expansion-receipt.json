@@ -1,0 +1,30 @@
+{
+  "completed_on": "2026-10-06",
+  "sources": 13,
+  "real_sources": 7,
+  "fixture_sources": 6,
+  "pdf_pages": {
+    "visa-dispute-management-june-2024": 67,
+    "mastercard-chargeback-guide": 1153
+  },
+  "evidence_blocks": 6667,
+  "layouts": {
+    "400": {
+      "chunks": 1818,
+      "oversized_intact_blocks": 44,
+      "sha256": "7ad888787baab137dcaf81195033f97daa10b495db52b9d1bb45e12641be187d"
+    },
+    "250": {
+      "chunks": 2900,
+      "oversized_intact_blocks": 155,
+      "sha256": "72d806c3b4dcd69e2dc06756b514a4e3baedeaba578c4ebdbdf1d7569498a34e"
+    }
+  },
+  "questions": 60,
+  "development": 45,
+  "holdout": 15,
+  "claude_cost_usd": 0.662444,
+  "paid_drafting_calls": 8,
+  "git_sync": "Not performed. Sebastian controls commits and pushes.",
+  "next_gate": "Token-capacity and oversized-block checks before embedding. No search-quality or model-answer results yet."
+}

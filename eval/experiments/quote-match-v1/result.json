@@ -1,0 +1,30 @@
+{
+  "e13_used_hyphen_rule": true,
+  "baseline_differing": [],
+  "H3_failed_baseline": {
+    "E06": "still invalid: Invalid grounded answer: Answered status cannot list unanswered parts",
+    "E17": "still invalid: Invalid grounded answer: Claim 4: supporting extract does not match ci",
+    "E21": "still invalid: Invalid grounded answer: Answered status cannot list unanswered parts",
+    "E54": "still invalid: Invalid grounded answer: Answered status cannot list unanswered parts",
+    "E55": "still invalid: Invalid grounded answer: Malformed JSON or fields"
+  },
+  "negative_controls": {
+    "case": "E13",
+    "rejected": {
+      "changed_word": true,
+      "changed_number": true,
+      "removed_not": true,
+      "stitched_a": true,
+      "stitched_b": true,
+      "altered_letter_near_hyphen": true
+    }
+  },
+  "verdict": {
+    "H1": true,
+    "H2": true,
+    "H4": true,
+    "H5": true,
+    "overall_pass": true
+  },
+  "protocol_sha256": "4b48122234501f13a328c9149ee36b8a3a7c39ad25359c6c33e58916760e03b4"
+}

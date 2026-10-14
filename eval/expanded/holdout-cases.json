@@ -1,0 +1,521 @@
+[
+  {
+    "case_id": "E04",
+    "question": "For a transaction completed on 14 April 2024, my notice cites Visa 11.3, No Authorization/Late Presentment. What does that mean, and does this guide cover that transaction date?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Visa",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E04-C1",
+        "text": "Condition 11.3, No Authorization/Late Presentment, is a cardholder dispute notified by the card processor. It means the transaction was processed without the required authorization, or it was not processed within the required transaction processing time limit.",
+        "supporting_passage_ids": [
+          "visa-dispute-management-june-2024:page-31:paragraph-2",
+          "visa-dispute-management-june-2024:page-31:paragraph-3"
+        ]
+      },
+      {
+        "claim_id": "E04-R2",
+        "text": "This edition labels Condition 11.3 No Authorization/Late Presentment effective for transactions completed on or after 13 April 2024.",
+        "supporting_passage_ids": [
+          "visa-dispute-management-june-2024:page-31:paragraph-1"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "visa-dispute-management-june-2024:page-31:paragraph-2",
+      "visa-dispute-management-june-2024:page-31:paragraph-3",
+      "visa-dispute-management-june-2024:page-31:paragraph-1"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "notes": "Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E08",
+    "question": "This is a fictional case: a cardholder disputes a sale under Visa Condition 12.4, Incorrect Account Number. How should the merchant respond if the card number matches the receipt, if it does not match, or if the sale was never authorized?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Visa",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E08-C1",
+        "text": "If the payment credential on the dispute matches the credential on the merchant's receipt copy, the merchant provides a copy of the receipt. If the dispute relates to a transaction processed on a payment credential not on the issuer's master file, it also provides a copy of the authorization log.",
+        "supporting_passage_ids": [
+          "visa-dispute-management-june-2024:page-35:paragraph-5"
+        ]
+      },
+      {
+        "claim_id": "E08-C2",
+        "text": "If the credential on the dispute does not match the credential on the merchant's receipt copy, or the transaction was not authorized, the merchant should accept the dispute.",
+        "supporting_passage_ids": [
+          "visa-dispute-management-june-2024:page-35:paragraph-5"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "visa-dispute-management-june-2024:page-35:paragraph-2",
+      "visa-dispute-management-june-2024:page-35:paragraph-5"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "notes": "Question is framed as a fictional merchant scenario; evidence is the real Visa guide. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E12",
+    "question": "A buyer says the item I shipped arrived damaged and my processor flagged it as Visa Condition 13.3. What complaints does this condition cover, and what are the common causes listed for it?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Visa",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E12-C1",
+        "text": "Condition 13.3 is Not as Described or Defective Merchandise/Services. The cardholder may claim the merchandise or services did not match the description on the receipt or other documentation, did not match a verbal description for a telephone transaction, were received damaged or defective, or were of disputed quality. There is also a travel-agency Visa Commercial Card Virtual Account scenario.",
+        "supporting_passage_ids": [
+          "visa-dispute-management-june-2024:page-43:paragraph-2",
+          "visa-dispute-management-june-2024:page-43:paragraph-3"
+        ]
+      },
+      {
+        "claim_id": "E12-C2",
+        "text": "The common causes listed are sending the wrong merchandise, merchandise damaged during shipment, inaccurately describing the merchandise or services at the time of purchase, and not performing the services as described.",
+        "supporting_passage_ids": [
+          "visa-dispute-management-june-2024:page-43:paragraph-3"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "visa-dispute-management-june-2024:page-43:paragraph-2",
+      "visa-dispute-management-june-2024:page-43:paragraph-3"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "notes": "Source version: June 2024 edition; downloaded edition awaiting extraction check. The response guidance is cut off in the supplied passage. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E16",
+    "question": "Fictional scenario: Harbor Street Outfitters, an invented merchant, faces a Mastercard Dual Message cardholder dispute saying the jacket's color and size were not as described and the return policy was not honored. What claims does the guide cover, and what must the cardholder's supporting document include?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E16-C1",
+        "text": "The listed conditions include the cardholder claiming the quality or workmanship, or the specified color, size or quantity, is not as described, and the merchant not honoring contract terms such as a 100 percent money back guarantee, written promises, guaranteed delivery commitments, or return policy.",
+        "supporting_passage_ids": [
+          "mastercard-chargeback-guide:page-134:paragraph-2"
+        ]
+      },
+      {
+        "claim_id": "E16-C2",
+        "text": "The cardholder email, letter, message or Form 1221 must include both a description of the complaint in sufficient detail for all parties to understand the dispute, documenting how each condition was met, and a reasonably specific description of the goods/services purchased.",
+        "supporting_passage_ids": [
+          "mastercard-chargeback-guide:page-134:paragraph-2"
+        ]
+      },
+      {
+        "claim_id": "E16-C3",
+        "text": "The cardholder email, letter or message must come directly from the cardholder (or, for a commercial card, the corporate entity), and a completed Dispute Resolution Form must be the direct result of a conversation with the cardholder.",
+        "supporting_passage_ids": [
+          "mastercard-chargeback-guide:page-134:paragraph-3"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "mastercard-chargeback-guide:page-134:paragraph-2",
+      "mastercard-chargeback-guide:page-134:paragraph-3"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "notes": "Source version: 13 May 2025 edition. Question scenario is fictional. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E20",
+    "question": "Fictional scenario: Dunmore Corner Store, an invented business that hosts an ATM, hears that a Mastercard Single Message System chargeback used message reason code 17 for a cash withdrawal. What does the guide say that code is for, and who may use it?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E20-C1",
+        "text": "In the Single Message System, the issuer may use message reason code 17 (Cash Dispute-ATM Only) to dispute an ATM cash withdrawal.",
+        "supporting_passage_ids": [
+          "mastercard-chargeback-guide:page-689:paragraph-11"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "mastercard-chargeback-guide:page-689:paragraph-11"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "notes": "Source version: 13 May 2025 edition. Question scenario is fictional. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E24",
+    "question": "A customer claims my shop charged them the wrong amount. If the issuer files a Mastercard 'Transaction Amount Differs' chargeback, can it reverse the whole sale or only part of it?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E24-c1",
+        "text": "For a Transaction Amount Differs chargeback, only a partial transaction amount representing the difference between the correct and incorrect amounts may be charged back.",
+        "supporting_passage_ids": [
+          "mastercard-chargeback-guide:page-606:paragraph-4"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "mastercard-chargeback-guide:page-606:paragraph-4"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "The full transaction amount can always be charged back.",
+      "The excerpt lists the specific situations where this chargeback is unavailable."
+    ],
+    "notes": "The supplied passage is cut off before the list of exclusions, so no exclusions should be claimed. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E28",
+    "question": "This is a fictional example only. An imaginary merchant on Adyen defended a chargeback, the issuer declined the defense and opened pre-arbitration. What can the merchant do, and what are the consequences of accepting versus declining?",
+    "filters": {
+      "corpus": "real",
+      "provider": "Adyen",
+      "scheme": null,
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E28-c1",
+        "text": "Pre-arbitration exists only in some flows. If the merchant is eligible and the flow supports it, it can accept or decline the pre-arbitration case itself, which requires additional configuration and approval from Adyen.",
+        "supporting_passage_ids": [
+          "adyen-dispute-flow:block-12"
+        ]
+      },
+      {
+        "claim_id": "E28-c2",
+        "text": "Accepting the pre-arbitration means the dispute is lost and the merchant receives a second chargeback. Declining lets the case be sent to scheme arbitration, and Adyen recommends declining only if the merchant is confident the chargeback is not valid and its earlier defense materials were sufficient.",
+        "supporting_passage_ids": [
+          "adyen-dispute-flow:block-12"
+        ]
+      },
+      {
+        "claim_id": "E28-c3",
+        "text": "If the scheme rules in favor of the issuer in scheme arbitration, the merchant can incur a fee of up to USD 600, which is added to the second chargeback.",
+        "supporting_passage_ids": [
+          "adyen-dispute-flow:block-12"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "adyen-dispute-flow:block-12"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "Every merchant can decline pre-arbitration without Adyen approval.",
+      "Declining pre-arbitration guarantees a win."
+    ],
+    "notes": "Fictional scenario; the answer applies to Adyen only. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E32",
+    "question": "Adyen flagged a Visa transaction as an RDR chargeback. Can I send a defense for it, and does it cost me chargeback fees or affect my dispute count?",
+    "filters": {
+      "corpus": "real",
+      "provider": "Adyen",
+      "scheme": "Visa",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E32-C1",
+        "text": "An RDR chargeback cannot be defended, because a transaction qualifies as an RDR only when it follows certain rules and parameters and is resolved before becoming a dispute.",
+        "supporting_passage_ids": [
+          "adyen-visa-chargebacks:block-65"
+        ]
+      },
+      {
+        "claim_id": "E32-C2",
+        "text": "Transactions that go through the Visa RDR flow incur no chargeback or interchange fees and are not included in the dispute count.",
+        "supporting_passage_ids": [
+          "adyen-visa-chargebacks:block-66"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "adyen-visa-chargebacks:block-65",
+      "adyen-visa-chargebacks:block-66"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "RDR chargebacks can be defended like regular chargebacks."
+    ],
+    "notes": "Adyen/Visa RDR only. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E36",
+    "question": "Fictional example: a pretend shop owner using Square in the UK wants a staff member to view and respond to disputes and get alerts. How do team member permissions affect who can respond and who is notified?",
+    "filters": {
+      "corpus": "real",
+      "provider": "Square",
+      "scheme": null,
+      "region": "UK"
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E36-C1",
+        "text": "Besides account owners, team members with the 'Respond to disputes' permission enabled can view and respond to disputes, and only those team members receive dispute notifications in Square Dashboard and by email or SMS.",
+        "supporting_passage_ids": [
+          "square-uk-disputes:block-11"
+        ]
+      },
+      {
+        "claim_id": "E36-C2",
+        "text": "Full-access team members can be set up to get notifications in Square Dashboard, but team members with only the 'View disputes' permission won't receive any notifications.",
+        "supporting_passage_ids": [
+          "square-uk-disputes:block-11"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "square-uk-disputes:block-11"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "View disputes permission gives email or SMS notifications."
+    ],
+    "notes": "Question framed as fictional per instructions. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E40",
+    "question": "As a fictional example, a made-up gym owner using Square in the UK learns the customer no longer wants to pursue a payment dispute. According to Square, how can the customer cancel it?",
+    "filters": {
+      "corpus": "real",
+      "provider": "Square",
+      "scheme": null,
+      "region": "UK"
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E40-C1",
+        "text": "If the customer no longer wants to dispute a payment, they can contact their card-issuing bank and ask for the active dispute to be cancelled or withdrawn.",
+        "supporting_passage_ids": [
+          "square-uk-disputes:block-50"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "square-uk-disputes:block-50"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "The merchant can cancel the customer's dispute through Square."
+    ],
+    "notes": "Question framed as fictional per instructions. The customer, not the merchant, contacts the issuing bank. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E44",
+    "question": "I make products to order and sell them via PayPal in the UK. When do I need to dispatch them to stay within Seller Protection requirements?",
+    "filters": {
+      "corpus": "real",
+      "provider": "PayPal",
+      "scheme": null,
+      "region": "UK"
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E44-C1",
+        "text": "For pre-ordered or made-to-order goods, the seller must ship within the timeframe specified in the listing.",
+        "supporting_passage_ids": [
+          "paypal-uk-seller-protection:block-15"
+        ]
+      },
+      {
+        "claim_id": "E44-C2",
+        "text": "Otherwise, PayPal recommends shipping all items within seven days after receipt of payment.",
+        "supporting_passage_ids": [
+          "paypal-uk-seller-protection:block-15"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "paypal-uk-seller-protection:block-15"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "Seven days is a mandatory deadline for made-to-order goods"
+    ],
+    "notes": "Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E48",
+    "question": "I use PayPal in the UK. The item arrived, but the buyer told their card issuer it was not what they ordered. Is this Significantly Not as Described claim covered by Seller Protection?",
+    "filters": {
+      "corpus": "real",
+      "provider": "PayPal",
+      "scheme": null,
+      "region": "UK"
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E48-C1",
+        "text": "Items where the buyer claims, either with PayPal or with their card issuer, that the item sent isn't what was ordered (Significantly Not as Described claims) are listed as ineligible for PayPal UK Seller Protection.",
+        "supporting_passage_ids": [
+          "paypal-uk-seller-protection:block-44"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "paypal-uk-seller-protection:block-44"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "Significantly Not as Described claims are covered if proof of delivery is provided"
+    ],
+    "notes": "Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E52",
+    "question": "I'm preparing evidence in Stripe for a Mastercard dispute and have several screenshots and PDFs. What do I need to know about how to organise the files and how big or long they can be?",
+    "filters": {
+      "corpus": "real",
+      "provider": "Stripe",
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E52-C1",
+        "text": "For evidence submitted through the Stripe Dashboard, items of the same evidence type should be combined into a single file.",
+        "supporting_passage_ids": [
+          "stripe-respond-to-disputes:block-48"
+        ]
+      },
+      {
+        "claim_id": "E52-C2",
+        "text": "Stripe says to limit the evidence file size to a combined maximum of 4.5 MB.",
+        "supporting_passage_ids": [
+          "stripe-respond-to-disputes:block-49"
+        ]
+      },
+      {
+        "claim_id": "E52-C3",
+        "text": "For Mastercard, Stripe says to limit the evidence file length to a combined maximum of 19 pages.",
+        "supporting_passage_ids": [
+          "stripe-respond-to-disputes:block-50"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "stripe-respond-to-disputes:block-48",
+      "stripe-respond-to-disputes:block-49",
+      "stripe-respond-to-disputes:block-50"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "The 19-page limit applies to every card network."
+    ],
+    "notes": "The 19-page limit is stated specifically for Mastercard evidence. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E56",
+    "question": "This is a fictional DisputeLens test scenario. Under the test delivery policy, a customer ordered three items but only two arrived. What records should I gather, and how should I describe the order?",
+    "filters": {
+      "corpus": "fixture",
+      "provider": "DisputeLens fictional provider",
+      "scheme": null,
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E56-C1",
+        "text": "Under this fictional policy, the merchant should identify the missing items and keep shipment records for each parcel and any record of a replacement or refund.",
+        "supporting_passage_ids": [
+          "delivery-policy:section-3"
+        ]
+      },
+      {
+        "claim_id": "E56-C2",
+        "text": "The merchant should not describe a partially delivered order as fully delivered.",
+        "supporting_passage_ids": [
+          "delivery-policy:section-3"
+        ]
+      }
+    ],
+    "relevant_passage_ids": [
+      "delivery-policy:section-3"
+    ],
+    "answerability": "answerable",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "The order can be described as fully delivered if one parcel was delivered."
+    ],
+    "notes": "Fictional fixture policy. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  },
+  {
+    "case_id": "E60",
+    "question": "This is a fictional DisputeLens test scenario. How many pounds will my bank charge me to appeal a recurring-payment chargeback under these test-provider policies?",
+    "filters": {
+      "corpus": "fixture",
+      "provider": "DisputeLens fictional provider",
+      "scheme": null,
+      "region": null
+    },
+    "expected_claims": [
+      {
+        "claim_id": "E60-C1",
+        "text": "The permitted fictional policies do not specify a bank appeal fee in pounds. State that the amount is unavailable and ask the bank/provider rather than estimating it.",
+        "supporting_passage_ids": []
+      }
+    ],
+    "relevant_passage_ids": [],
+    "answerability": "not_in_sources",
+    "split": "holdout",
+    "review_status": "approved",
+    "forbidden_claims": [
+      "The cancellation policy sets a response deadline in days."
+    ],
+    "notes": "Missing-source case; cancellation rules are not a response deadline. Source facts reviewed by Codex on 2026-10-06 under delegated PM judgement. Synthetic merchant scenario; source corpus determines whether policy is real or a fixture. Not independently human-labelled."
+  }
+]

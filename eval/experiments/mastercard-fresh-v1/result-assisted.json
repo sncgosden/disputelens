@@ -1,0 +1,26 @@
+{
+  "v2": {
+    "wrong_caught": 1,
+    "wrong_missed": 0,
+    "applies_flagged": 19,
+    "applies_not_flagged": 0,
+    "unsure": 8
+  },
+  "semantic": {
+    "wrong_caught": 1,
+    "wrong_missed": 0,
+    "applies_flagged": 19,
+    "applies_not_flagged": 0,
+    "unsure": 8
+  },
+  "wrong_scope_claims": 1,
+  "decision": "assisted_only_no_decision",
+  "detail": {
+    "semantic_misses_nothing_v2_catches": true,
+    "needless_flag_reduction_25pct": false
+  },
+  "declared_decision_if_independent": "inconclusive_on_safety",
+  "labels_sha256": "3c1b1067051e677cee660f0cac001b8f54ce4ac986174ce1b3415cb0f3ac3f3a",
+  "independent": false,
+  "claims_rated": 28
+}

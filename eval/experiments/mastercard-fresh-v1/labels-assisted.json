@@ -1,0 +1,59 @@
+{
+  "labeller": "Claude (assistant), the same assistant that wrote the questions and built the detectors",
+  "independent": false,
+  "read_with_flags_known": "partly: I had seen per-answer gate actions and the per-claim flag table before rating, so this is not blind",
+  "criteria": "yes = a merchant in the question's situation can rely on the claim. no = it holds only for a different program, region or reason code than the question describes (e.g. Maestro Europe when no Maestro is mentioned). unsure = it depends on a fact the question does not give (e.g. Single Message System versus Dual Message System, a gratuity or currency branch, a section-specific escalation rule whose generality I could not check). Conditional claims that state their condition and sit inside the same situation are rated yes.",
+  "ratings": {
+    "F01": [
+      "unsure"
+    ],
+    "F02": [
+      "yes",
+      "no",
+      "unsure",
+      "unsure"
+    ],
+    "F03": [
+      "yes"
+    ],
+    "F04": [
+      "yes",
+      "yes",
+      "yes",
+      "unsure"
+    ],
+    "F05": [
+      "yes",
+      "yes",
+      "yes",
+      "yes"
+    ],
+    "F06": [
+      "yes",
+      "yes",
+      "yes",
+      "yes"
+    ],
+    "F07": [],
+    "F08": [
+      "yes"
+    ],
+    "F09": [],
+    "F10": [
+      "yes",
+      "yes",
+      "yes",
+      "yes"
+    ],
+    "F11": [
+      "unsure",
+      "unsure"
+    ],
+    "F12": [
+      "yes",
+      "unsure",
+      "unsure"
+    ]
+  },
+  "dated": "2026-10-12"
+}

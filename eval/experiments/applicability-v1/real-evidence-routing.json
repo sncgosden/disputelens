@@ -1,0 +1,84 @@
+{
+  "experiment": "real-evidence-routing-v1",
+  "case_id": "E22",
+  "pack_path": "data/indexes/context-eval/9588eef5a0cd81e960abe04c/packs/E22.json",
+  "pack_sha256": "21a12dd49f77b29353d6a16466c3aa1b371f9c9155e654d1945f4d51ca4a82e3",
+  "scopes": {
+    "mastercard-chargeback-guide:page-85:paragraph-2": {
+      "review_status": "reviewed",
+      "reviewer": "Codex publisher-bookmark assessment; independent validation pending",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4808",
+        "dispute_subtype": "stand_in_or_x_code_approval_after_issuer_decline"
+      },
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Stand-in or X-Code Approval after Issuer Decline",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "evidence_text_sha256": "c94d04ae9a15c3d25b8e1b811d0666b6ff9cecd5252f4d0404f89737e892db80"
+    },
+    "mastercard-chargeback-guide:page-85:paragraph-3": {
+      "review_status": "reviewed",
+      "reviewer": "Codex publisher-bookmark assessment; independent validation pending",
+      "requirements": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4808",
+        "dispute_subtype": "stand_in_or_x_code_approval_after_issuer_decline"
+      },
+      "heading_path": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2\u00a0Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Stand-in or X-Code Approval after Issuer Decline",
+        "Acquirer Second Presentment",
+        "Refund previously issued"
+      ],
+      "evidence_text_sha256": "584e37ab231cb15e3cf93ad7e00367754ca8e4cf0e12209e34902eab103e50b1"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "original_structured_scope",
+      "trusted_scope": {
+        "scheme": "Mastercard"
+      },
+      "expected_mapped_applicable": 0,
+      "expected_mapped_clarification": 2
+    },
+    {
+      "id": "simulated_confirmed_subtype",
+      "trusted_scope": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4808",
+        "dispute_subtype": "stand_in_or_x_code_approval_after_issuer_decline"
+      },
+      "expected_mapped_applicable": 2,
+      "expected_mapped_clarification": 0
+    },
+    {
+      "id": "simulated_wrong_code",
+      "trusted_scope": {
+        "scheme": "Mastercard",
+        "message_system": "dual",
+        "reason_code": "4853",
+        "dispute_subtype": "stand_in_or_x_code_approval_after_issuer_decline"
+      },
+      "expected_mapped_applicable": 0,
+      "expected_mapped_inapplicable": 2
+    }
+  ],
+  "limitations": [
+    "Only two actual source passages reviewed; unmapped evidence must not be called general.",
+    "Simulated settings are fixtures, not new facts about original E22 scenario.",
+    "Mapped expected-text coverage is not whole-answer quality, independent review or production readiness.",
+    "No filtered context pack or answer is produced."
+  ]
+}

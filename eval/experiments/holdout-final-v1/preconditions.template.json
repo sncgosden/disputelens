@@ -1,0 +1,7 @@
+{
+  "NOTE": "Copy to preconditions.json ONLY after Sebastian's explicit go-ahead. Claude must not create preconditions.json on its own.",
+  "go_ahead": {"by": "Sebastian", "holdout_authorised": false, "at": ""},
+  "budget": {"max_calls": 15, "max_usd": 2.00},
+  "pytest_log": "docs/local-learning/terminal-logs/run-XXXX",
+  "review_plan": "assisted_accepted"
+}

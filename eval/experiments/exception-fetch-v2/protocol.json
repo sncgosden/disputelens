@@ -1,0 +1,30 @@
+{
+  "name": "exception-fetch-v2",
+  "declared": "2026-10-08, before the fetch was run",
+  "supersedes": "exception-fetch-v1 (rejected, left unchanged)",
+  "purpose": "Offline: for passages that exception-resolver-v2 left ambiguous, find the guide's own requirement sentence using the publisher's section hierarchy (not page-header chunk headings), fetch the sentence only, label how related it is, and cost a reserved clarification budget in evicted evidence. No generation, no retrieval-pipeline change.",
+  "inputs": "Section-hierarchy chunks (data/indexes/section-hierarchy/71bf6051f48778a5e9ca12c1/chunks.json, parent mastercard-chargeback-guide) and the saved bundle's 10 ambiguous passages (their headings already carry the full hierarchy). Development cases only. No model calls. Holdout not read.",
+  "rule": {
+    "applicable": "unchanged from v1: ambiguous passages whose exception items carry distinctive tokens; others 'not applicable, not searched'",
+    "candidate_sentence": "unchanged from v1: resolver-v2 requirement statement containing at least one exception token, sentences re-joined across wrapped lines",
+    "relatedness": "depth of the shared heading-path prefix between the passage and the candidate chunk, measured after the guide title and chapter (levels 3 onward). Label: 'same step' if the full paths are equal, 'same section, different step' if they share the reason-code section (prefix covers at least the 'No Cardholder Authorization (Message Reason Code ...)' level) but differ below it, 'unrelated' otherwise. Ranking: deeper shared prefix first, ties by shorter chunk.",
+    "fetch": "the candidate sentence only, no neighbouring lines, cited by chunk id",
+    "reserved_budget": "100 words reserved for clarification sentences inside the 6000-word context cap",
+    "eviction": "if a case's headroom (6000 minus words used) is below the sentence length, evict whole evidence passages not cited by the saved answer, smallest sufficient set first"
+  },
+  "passages": {
+    "section_has_answer_elsewhere": ["E23:S007", "E15:S039"],
+    "other_applicable": ["E13:S030", "E13:S034", "E23:S024", "E15:S007"],
+    "not_applicable": ["E18:S008", "E23:S068", "E15:S077", "E19:S011"]
+  },
+  "thresholds": {
+    "T1": "Relatedness is measurable: every returned candidate has a shared prefix depth of at least 1 level after the chapter (v1 measured 0 for all), and E23 S007 and E15 S039 return the Listing sentence ranked first with stem 'list'",
+    "T2": "Every fetch is at most 60 words and at most 3 candidates are returned per passage",
+    "T3": "The 4 not-applicable passages return 'not applicable' without any search",
+    "T4": "The 4 other applicable passages each return a candidate or 'none found'; none is dropped",
+    "T5": "No passage is labelled resolved. Every returned candidate carries its relatedness label and is marked 'possibly related, scope not confirmed' (the fetch never decides governance)",
+    "T6": "The reserved 100 words are costed for all 3 cases (E13, E23, E15): report headroom, words to evict, and passages evicted. Pass only if the sentence can be admitted in every case without evicting any passage the saved answer cites"
+  },
+  "decision_rule": "Pass only if T1 to T6 hold. Report each case's eviction cost. Whether the sentence governs a given exception stays a source-review question and is not decided by this experiment.",
+  "limits": ["Designed after reading E23, E15 and fetch-v1, so not independent; holdout is the independent test", "Token list and requirement form are Mastercard-guide specific", "Same-section depth cannot show which exception a sentence governs; the experiment only measures reach and cost", "Advisory; not wired into retrieval or generation"]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "holdout-final-v1",
+  "declared": "2026-10-08, before any holdout file was read, listed, counted or hashed by me",
+  "status": "DECLARED, NOT AUTHORISED TO RUN. Running requires every precondition below.",
+  "purpose": "One-shot independent test of the frozen DisputeLens configuration on the 15 reserved holdout cases: does the scope control hold on cases it was not built on, and what do the two gate variants cost in withheld or recovered content?",
+  "frozen_files_sha256": {
+    "src/disputelens/context_pack.py": "a956ee10b8ff8c4fd9d37ce81e9924ea52f2e7ed27c61555e049a90b09de4821",
+    "src/disputelens/grounded_answer.py": "5ebe888a52b016a3e387e58ff87d7b4668fd33a009a7d871aeb27235a31c7fc2",
+    "src/disputelens/scope_detector.py": "6496d921d740497a7a072951a43e0395ed87860896d6e390ffde06e287074cfd",
+    "src/disputelens/scope_gate.py": "b5f24acc8b3e29f1e657d318b6f94833b7d3b442f19ab31068f9f1fe9a56bbc3",
+    "src/disputelens/scope_invariance.py": "dad938ab828094fcf8ed1e42d9eabc2e68c1891d5718d8313dca68049aae8ee1",
+    "src/disputelens/quote_match.py": "9bb2ad8b6e8a30233667a203df2044af440f7b9db8e74bfb8ce1098a580fbfda",
+    "data/claude-pricing.json": "18c88aeff9c5549897a5c8be010f00ea7892ca52d4cc8faa0b2080e9bb1f0759",
+    "eval/scoring-rules.json": "4f0d123d9b774b1748e75602ad5035cb391e1c56d9732156bf662fcfd773c8d9",
+    "eval/experiments/scope-detector-v2/protocol.json": "a402efff4d1548c0631afb40380f2f6a995fad4f4ad5dea3c7b41791f52eb771",
+    "eval/experiments/scope-gate-v1/protocol.json": "214b816d2f492367d882a738c139bfa0cc64c910ae8a55d7d6cb62522e32115d",
+    "eval/experiments/scope-gate-v2/protocol.json": "7fe5fbdec4801298cf7bfb4f936c20dd8cce5cb903a8f17a2dd1bf76f6ee403e",
+    "eval/experiments/scope-invariance-v2/protocol.json": "2df6360772335716240a524e9d9be25cb70bfdc8fce00e1c172fc07f5306446e",
+    "eval/experiments/quote-match-v1/protocol.json": "4b48122234501f13a328c9149ee36b8a3a7c39ad25359c6c33e58916760e03b4"
+  },
+  "freeze_rule": "If any file above differs at run time the runner refuses to start. A change means a new declared version, not an edit.",
+  "generation": {
+    "model": "claude-sonnet-5-5",
+    "system": "grounded_answer.SYSTEM (the baseline prompt used for the 45 development attempts)",
+    "max_output_tokens": 8192,
+    "one_call_per_case": true,
+    "retries": 0,
+    "context": "frozen context builder output for each holdout question, no gold evidence, no hand edits",
+    "local_models": "4B and 9B are NOT run on the holdout. Reason: in development neither produced a usable answer set (4B 6 of 12 valid at about 280 s each, 9B timed out), so holdout runs add cost without informing the decision. This deviates from plan row 87 ('all models get the same holdout test') and is a product call recorded here; Sebastian may overrule before the run."
+  },
+  "arms": {
+    "A_baseline": "the 15 generated answers exactly as validated by the frozen strict validator; no scope control",
+    "B_gate_v2": "scope-detector v2 on cited passages, then scope-gate v2 wording (conditionalise or fail closed)",
+    "C_gate_v4": "gate v2 plus the claim-level invariance exemption (scope-invariance-v2 rule)"
+  },
+  "arm_note": "B and C are deterministic post-processing of the same 15 generated answers, so there is one set of 15 paid calls, not three.",
+  "also_reported_not_an_arm": "how many strict validation failures the tolerant quote matcher (quote-match-v1) would have passed",
+  "budget": {
+    "max_calls": 15,
+    "reservation_cap_usd": 2.0,
+    "expected_usd": "about 0.5 (development averaged about 0.03 per call)",
+    "free_token_count_stage_first": true,
+    "stop_rule": "stop after 3 consecutive failed calls; failures stay in every denominator; no retries",
+    "holdout_loaded_only_by": "the final runner, once, after all preconditions"
+  },
+  "preconditions": [
+    "Sebastian gives an explicit go-ahead for the holdout run and for a bounded paid-call budget (15 calls, cap above)",
+    "Full offline test suite passes in his terminal and the log is saved: bash docs/local-learning/run-logged.sh python -m pytest -q --ignore=tests/test_expansion.py",
+    "Every file hash above matches at run time",
+    "Count stage (free) completes and its buffered maximum is within the cap",
+    "Review plan below is accepted (assisted, same assistant, not independent) or an independent reviewer is arranged"
+  ],
+  "measurements": {
+    "per_arm_answers": "15 per arm, with counts of unchanged, conditionalised, invariant_note and fail_closed outcomes",
+    "review": "each of the 15 answers is read against its gold and its cited passages for: unconditional wrong-scope claims, completeness, relevance. Reviewer identity and the fact that it is assisted are recorded. The reviewer sees the answer first and the arm outputs second.",
+    "detector_confusion": "flagged and not flagged versus review (material scope issue or not), as raw counts",
+    "retrieval_and_answer_metrics": "recall@5/20 and NDCG@5 on the 15 cases, citation validity, completeness, faithfulness, latency median and p90 with n, API cost actual, all per eval/scoring-rules.json and reported separately from development, never pooled"
+  },
+  "thresholds": {
+    "P1": "After arm B, no answer states a procedure that review judges wrong-scope as an unconditional instruction (zero missed). Any miss is reported as a detector-recall failure and the headline result",
+    "P2": "Arm B changes at most 2 of the 15 answers that review judges to have no scope problem",
+    "P3": "No claim exempted in arm C is judged by review to depend on an unestablished scope (zero)",
+    "P4": "At least 12 of 15 generated answers pass the strict structural validator (development: 40 of 45)",
+    "P5": "Reported, not thresholded: completeness, relevance, retrieval metrics, latency, cost, words recovered by C over B"
+  },
+  "decision_rule": {
+    "all_P1_to_P4_pass": "gate v2 is supported as the default scope control on unseen cases; arm C is adopted as an advisory exemption only if P3 passes and an independent reviewer agrees; otherwise it stays documented",
+    "P1_fails": "the scope control is not shown to generalise; the headline result is the missed case, with a new versioned detector designed on development data only",
+    "any_other_fail": "report as a limit; no change justified by one holdout sample alone"
+  },
+  "no_tuning_rule": "Holdout results must not change prompts, detector rules, thresholds, context building, gold or review criteria. Any fix made after seeing results is a new version and must be evaluated on new cases; the holdout is then spent and said to be.",
+  "limits": [
+    "15 cases: results are counts, not rates; an interval would be wide",
+    "Review is assisted by the same assistant that designed the controls, so it is not independent",
+    "Detector rules and gate were designed on the development set; the holdout is the first unseen test",
+    "Mastercard-heavy corpus; other schemes weakly tested",
+    "Exception binding (E23-type) and completeness are not controlled by this configuration",
+    "One generation per case; model variance not measured"
+  ],
+  "runner": "Not yet written. To be written offline with a dry-run mode that refuses to load any holdout file unless all preconditions are recorded in a signed precondition file."
+}

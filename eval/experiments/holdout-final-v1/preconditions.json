@@ -1,0 +1,6 @@
+{
+  "go_ahead": {"by": "Sebastian", "holdout_authorised": true, "at": "2026-10-08", "instruction": "ok go (in reply to: run the holdout, 15 calls, $2.00 cap, assisted review, local models excluded, one-shot, no tuning)"},
+  "budget": {"max_calls": 15, "max_usd": 2.00},
+  "pytest_log": "docs/local-learning/terminal-logs/run-20261008T095706Z-5bVB1v",
+  "review_plan": "assisted_accepted"
+}

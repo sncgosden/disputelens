@@ -1,0 +1,272 @@
+{
+  "E22_baseline": [
+    {
+      "claim": 1,
+      "flagged_quotes": 1,
+      "claim_invariant": true,
+      "quotes": [
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    },
+    {
+      "claim": 2,
+      "flagged_quotes": 2,
+      "claim_invariant": true,
+      "quotes": [
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        },
+        {
+          "sections": 38,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.921,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    },
+    {
+      "claim": 3,
+      "flagged_quotes": 2,
+      "claim_invariant": true,
+      "quotes": [
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.944,
+          "context_stable": true,
+          "substantive": true
+        },
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    },
+    {
+      "claim": 4,
+      "flagged_quotes": 2,
+      "claim_invariant": true,
+      "quotes": [
+        {
+          "sections": 37,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.784,
+          "context_stable": true,
+          "substantive": true
+        },
+        {
+          "sections": 37,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.946,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    }
+  ],
+  "E13": [
+    {
+      "claim": 1,
+      "flagged_quotes": 0,
+      "claim_invariant": false,
+      "quotes": []
+    },
+    {
+      "claim": 2,
+      "flagged_quotes": 2,
+      "claim_invariant": false,
+      "quotes": [
+        {
+          "sections": 1,
+          "families": 1,
+          "invariant": false,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        },
+        {
+          "sections": 1,
+          "families": 1,
+          "invariant": false,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    },
+    {
+      "claim": 3,
+      "flagged_quotes": 3,
+      "claim_invariant": false,
+      "quotes": [
+        {
+          "sections": 1,
+          "families": 1,
+          "invariant": false,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        },
+        {
+          "sections": 4,
+          "families": 1,
+          "invariant": false,
+          "stable_share": 0.75,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    }
+  ],
+  "E22_attempt": [
+    {
+      "claim": 1,
+      "flagged_quotes": 1,
+      "claim_invariant": true,
+      "quotes": [
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    },
+    {
+      "claim": 2,
+      "flagged_quotes": 1,
+      "claim_invariant": true,
+      "quotes": [
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.944,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    },
+    {
+      "claim": 3,
+      "flagged_quotes": 2,
+      "claim_invariant": true,
+      "quotes": [
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 1.0,
+          "context_stable": true,
+          "substantive": true
+        },
+        {
+          "sections": 38,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.921,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    },
+    {
+      "claim": 4,
+      "flagged_quotes": 3,
+      "claim_invariant": false,
+      "quotes": [
+        {
+          "sections": 37,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.784,
+          "context_stable": true,
+          "substantive": true
+        },
+        {
+          "sections": 3,
+          "families": 3,
+          "invariant": false,
+          "stable_share": 0.667,
+          "context_stable": false,
+          "substantive": true
+        },
+        {
+          "sections": 36,
+          "families": 4,
+          "invariant": true,
+          "stable_share": 0.861,
+          "context_stable": true,
+          "substantive": true
+        }
+      ]
+    }
+  ],
+  "repeated_set": {
+    "size": 83,
+    "context_stable": 62,
+    "rejected": 21,
+    "rejected_examples": [
+      "The Central Site Business Date is present in PDS 0158 (Business Activity), subfield 5 (Cen",
+      "The Central Site Business Date of the disputed transaction is counted as day zero.",
+      "The combination of Primary Account Number and Acquirer Reference Data contained in the cha",
+      "The chargeback was processed past the time frame specified for the chargeback.",
+      "As a result, a difference in PANs must not be the sole reason for an acquirer\u2019s second pre"
+    ]
+  },
+  "refund_rule_following": {
+    "sections": 36,
+    "modal": "Upon completion of all of the chargeback cycles, if a properly documented pre-arbitration/arbitration case is filed, Mastercard will likely rule in favor of the acquirer.",
+    "modal_share": 1.0,
+    "differing_sections": []
+  },
+  "reported": {
+    "E22": {
+      "v2_action": "fail_closed",
+      "v4_action": "invariant_note",
+      "v4_status": "partial",
+      "claims_kept_unprefixed": 4,
+      "claims_of": 4,
+      "words_kept_that_v2_withheld": 188
+    },
+    "E22-flagged-answer-v1": {
+      "v2_action": "fail_closed",
+      "v4_action": "conditionalised",
+      "v4_status": "partial",
+      "claims_kept_unprefixed": 3,
+      "claims_of": 4,
+      "words_kept_that_v2_withheld": 117
+    }
+  },
+  "verdict": {
+    "J1": true,
+    "J2": true,
+    "J3": true,
+    "J4": true,
+    "overall_pass": true
+  },
+  "protocol_sha256": "2df6360772335716240a524e9d9be25cb70bfdc8fce00e1c172fc07f5306446e"
+}

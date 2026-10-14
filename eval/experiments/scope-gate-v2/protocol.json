@@ -1,0 +1,22 @@
+{
+  "name": "scope-gate-v2",
+  "declared": "2026-10-08, before the wording change was written or run",
+  "supersedes": "scope-gate-v1 wording only (v1 left unchanged and reproducible)",
+  "purpose": "Offline: make the gate's clarification and conditional text readable for a merchant by naming the guide's own section titles instead of bare codes and phrases. Gate decisions (which claims are flagged, kept, conditionalised or withheld) must not change.",
+  "wording": {
+    "clarification": "Your question does not say which type of dispute this is. The rules I found apply only to specific disputes, for example: <up to 3 section titles>. Which reason code or dispute type is your chargeback?",
+    "conditional_prefix": "Only if your dispute is <one section title>: ",
+    "title_source": "for each flagged cited passage, the deepest heading below chapter level that contains a code or phrase the detector flagged; verbatim, whitespace-normalised; ranked by number of flagged cited passages, then alphabetical; at most 3 in the clarification, 1 per claim in the prefix (the most frequent among that claim's passages)",
+    "no_other_generated_text": true
+  },
+  "inputs": "Same as scope-gate-v1: 40 citation-valid baseline answers plus the E22 flagged-answer-v1 attempt. No model call, no holdout.",
+  "thresholds": {
+    "W1": "Gate decisions identical to v1: same action per answer, same claims withheld or conditionalised, 38 unchanged byte-identical",
+    "W2": "Every section title in any output appears verbatim in a heading of a passage that the answer cited and the detector flagged",
+    "W3": "Clarification text is at most 70 words and names at least 1 and at most 3 titles",
+    "W4": "Every gated output passes validate_answer, quotes unchanged; two runs give identical hashes",
+    "W5": "No clarification or prefix contains a bare qualifier list (no standalone reason-code number list outside a title)"
+  },
+  "decision_rule": "Pass only if W1 to W5 hold. Readability is judged by me, which is not independent; it is reported with the printed E13 and E22 outputs, not thresholded.",
+  "limits": ["Tuned on E13 and E22", "Section titles are the publisher's; some are still jargon", "Readability is an assisted judgement and needs merchants to confirm", "Detector recall is untouched"]
+}

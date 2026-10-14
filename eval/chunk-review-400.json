@@ -1,0 +1,19 @@
+{
+  "reviewed_on": "2026-10-06",
+  "reviewer": "Codex",
+  "chunk_file": "data/chunks/chunks-400.json",
+  "configuration_sha256": "31045c1491d9bac3a48144e875bf9adee0f4c79771498cdf470a6dc30d762e59",
+  "chunk_count": 62,
+  "word_count_range": [12, 389],
+  "neighbour_fields_present": true,
+  "samples": [
+    {"passage_id": "delivery-policy:section-2", "finding": "Delivered tracking qualification retained alongside records to check; Markdown line locator present."},
+    {"passage_id": "visa-dispute-management-june-2024:page-48:passage-6", "finding": "Processed-refund condition retains amount/date evidence requirement; PDF file page 48 and label 45 retained."},
+    {"passage_id": "stripe-respond-to-disputes:block-39", "finding": "Response-finality guidance retained; source URL anchor present. The 389-word chunk also contains several other submission topics."},
+    {"passage_id": "stripe-respond-to-disputes:block-10", "finding": "HTML table headers, rows and links preserved together."},
+    {"passage_id": "refund-policy:section-4", "finding": "No refund-arrival duration is specified; source limitation and provider clarification retained."}
+  ],
+  "decision": "Keep this as the baseline, not as an established optimum. Compare smaller chunks to test whether the broad Stripe submission chunk creates retrieval noise.",
+  "coverage": "Five representative chunks reviewed, not all chunks. Neighbour-field presence checked across the corpus; separate tests validate document-boundary behaviour.",
+  "retrieval_results": "Not yet measured."
+}

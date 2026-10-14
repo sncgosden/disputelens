@@ -1,0 +1,158 @@
+[
+  {
+    "case_id": "F01",
+    "question": "A customer who bought a vacation-ownership package from my resort says they want out of the contract. What does the Mastercard guide say about how the issuer can dispute it?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "described",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F02",
+    "question": "A customer's card was charged twice for one delivery, two identical charges a minute apart. What does Mastercard's guide say the issuer has to show?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "described",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F03",
+    "question": "A cardholder says the cash machine at my kiosk gave out no cash but their account was debited. What must the issuer provide to charge it back?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "described",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F04",
+    "question": "I run a subscription box. A customer says they cancelled before the renewal and I charged them anyway. How does the guide treat that kind of dispute?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "described",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F05",
+    "question": "A cardholder says the designer bag I sold was a fake. What does the guide require for that kind of dispute?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "described",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F06",
+    "question": "A customer was billed for damage to a rental car after returning it. What does the guide say about disputing charges for damage?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "described",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F07",
+    "question": "A customer disputes a charge from three months ago. Is a chargeback still allowed, and what time limits apply?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "generic",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F08",
+    "question": "What documents can the issuer send with a chargeback, and what must they contain?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "generic",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F09",
+    "question": "We resubmitted the transaction after the cardholder complained. Can the issuer still charge it back?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "generic",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F10",
+    "question": "My acquirer says the issuer filed a pre-arbitration case against me. What happens next and what can I expect?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "generic",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F11",
+    "question": "What happens when the issuer disagrees with my response to a chargeback? Can they escalate?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "generic",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  },
+  {
+    "case_id": "F12",
+    "question": "A customer says the amount on the receipt was different from what they were charged. What are the options for the issuer?",
+    "filters": {
+      "corpus": "real",
+      "provider": null,
+      "scheme": "Mastercard",
+      "region": null
+    },
+    "intended_kind": "generic",
+    "split": "fresh",
+    "notes": "Written 9 Oct 2026 before any retrieval for these questions. intended_kind is my label, not ground truth; the independent labeller rates the answers."
+  }
+]

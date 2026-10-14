@@ -15,6 +15,7 @@
         "corpus": {"enum": ["real", "fixture"]},
         "provider": {"type": ["string", "null"]},
         "scheme": {"type": ["string", "null"]},
+        "region": {"type": ["string", "null"]},
         "as_of_date": {"type": ["string", "null"], "format": "date"}
       }
     },

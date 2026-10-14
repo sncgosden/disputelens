@@ -1,0 +1,57 @@
+{
+  "experiment": "applicability-mapping-slice-v1",
+  "status": "preregistered_not_run",
+  "objective": "Test applicability routing while preserving evidence needed for supported answers.",
+  "selection": "Purposeful development slice; not random, independent or held-out.",
+  "cases": [
+    {
+      "case_id": "E13",
+      "role": "general code distinction plus participating-country specialization",
+      "focus": "Review evidence supporting requested first/subsequent code distinction and every passage cited by baseline/candidate."
+    },
+    {
+      "case_id": "E22",
+      "role": "unknown subtype and known gold-scope defect",
+      "focus": "Review both frozen expected passages and every passage cited by baseline/candidate. Keep scope defect explicit."
+    },
+    {
+      "case_id": "E23",
+      "role": "exception referent",
+      "focus": "Review core conditions and every passage cited by baseline/candidate. Scope routing alone cannot validate exception attachment."
+    },
+    {
+      "case_id": "E10",
+      "role": "regression control",
+      "focus": "Preserve duplicate-transaction criterion evidence."
+    },
+    {
+      "case_id": "E30",
+      "role": "regression control",
+      "focus": "Preserve country/date timing and document-update evidence."
+    },
+    {
+      "case_id": "E46",
+      "role": "regression control",
+      "focus": "Preserve physical delivery/address/carrier evidence."
+    }
+  ],
+  "mapping_universe": "Unique passages cited by saved baseline and scope-guard candidate outputs, plus passages supporting frozen expected claims. Deduplicate by passage ID; record hashes and full headings. Do not map entire corpus yet.",
+  "review_rules": [
+    "Mapping unit must match requirement scope. If one passage mixes policies/rails, label mixed and withhold whole-passage authorization pending span-specific mapping.",
+    "Record source requirement and proof of its ancestry; do not assume gold is applicable.",
+    "Do not infer trusted settings from text. Explicit simulated settings are separate fixtures, never original merchant facts.",
+    "Unmapped evidence remains unreviewed. Do not filter production packs."
+  ],
+  "acceptance_thresholds": {
+    "review_accounting": "100% of mapping-universe passages have a disposition: reviewed, mixed-needs-span-review, or unreviewed-with-reason. No silent omissions.",
+    "routing_correctness": "100% of reviewed test scenarios match predeclared applicable/clarification/inapplicable outcomes; zero wrong-scope authorizations.",
+    "regression_retention": "100% of reviewed claim-support evidence retained for each control under explicitly confirmed matching scenario settings. Any missing requirement is a failed gate.",
+    "target_general_retention": "Preserve reviewed evidence for E13 requested general code distinction without authorizing unrelated specialist advice. Mixed passage may require span mapping; do not call this gate passed until implemented.",
+    "unknown_scope": "Every specialized reviewed passage with missing essential setting is withheld from answer evidence and names missing setting; no automatic authorization from question wording.",
+    "exception_semantics": "E23 requires a separate claim-to-exception-referent review; routing pass cannot satisfy this semantic gate.",
+    "gold_integrity": "E22 original expected-text coverage and applicability reported separately; zero silent gold/score changes.",
+    "deployment": "Even all slice gates passing authorizes only a separately declared next experiment, not rollout."
+  },
+  "spend": "Zero model calls during inventory/mapping/routing; define generation budget only after routing gates.",
+  "next": "Build a hash-checked inventory from saved outputs/expected passages; inspect mixed-scope passages before mapping."
+}

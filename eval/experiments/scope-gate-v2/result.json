@@ -1,0 +1,28 @@
+{
+  "shown": {
+    "E13": {
+      "prefixes": [
+        "Only if your dispute is Installment Billing Dispute-Participating Countries (Reason Code 4850)",
+        "Only if your dispute is Installment Billing Dispute-Participating Countries (Reason Code 4850)"
+      ],
+      "ask": "Your question does not say which type of dispute this is. The rules I found apply only to specific disputes, for example: Installment Billing Dispute-Participating Countries (Reason Code 4850). Which reason code or dispute type is your chargeback?"
+    },
+    "E22": {
+      "prefixes": [],
+      "ask": "Your question does not say which type of dispute this is. The rules I found apply only to specific disputes, for example: Installment Billing Dispute-Participating Countries (Reason Code 4850); Required Authorization Not Obtained. Which reason code or dispute type is your chargeback?"
+    },
+    "E22-flagged-answer-v1": {
+      "prefixes": [],
+      "ask": "Your question does not say which type of dispute this is. The rules I found apply only to specific disputes, for example: Authorization-related Chargeback (Message Reason Code 4808/08); Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854); Stand-in or X-Code Approval after Issuer Decline. Which reason code or dispute type is your chargeback?"
+    }
+  },
+  "verdict": {
+    "W1": true,
+    "W2": true,
+    "W3": true,
+    "W4": true,
+    "W5": true,
+    "overall_pass": true
+  },
+  "protocol_sha256": "7fe5fbdec4801298cf7bfb4f936c20dd8cce5cb903a8f17a2dd1bf76f6ee403e"
+}

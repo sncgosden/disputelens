@@ -1,0 +1,25 @@
+{
+  "name": "exception-fetch-v1",
+  "declared": "2026-10-08, before the fetch was run",
+  "purpose": "Offline: for flagged passages that exception-resolver-v2 left ambiguous, search the same source's chunk store for a requirement statement (the guide's own sentence naming what the exception waives) in a related section, and cost it in words. No generation, no retrieval-pipeline change.",
+  "inputs": "Mastercard guide chunks (data/chunks-expanded/chunks-400-overlap-40.json, parent mastercard-chargeback-guide) and the saved bundle's 10 ambiguous passages. Development cases only. No model calls. Holdout not read.",
+  "rule": {
+    "applicable": "ambiguous passages whose exception items carry distinctive tokens (Mainland China, Latin America and the Caribbean, Germany, CAT 2); others are 'not applicable, fetch not attempted'",
+    "candidate_sentence": "resolver-v2 requirement statement (starts with Listing, Closing or Blocking and contains 'required') that contains at least one of the passage's exception tokens",
+    "ranking": "number of shared heading words (lowercased, 4+ letters, excluding generic words issuer, chargeback, submission, case, dispute, message, reason, code) between the candidate chunk's headings below chapter level and the passage's; ties broken by shorter chunk",
+    "fetch_window": "the candidate sentence plus the two list lines directly around it, counted in words"
+  },
+  "passages": {
+    "section_has_answer_elsewhere": ["E23:S007", "E15:S039"],
+    "other_applicable": ["E13:S030", "E13:S034", "E23:S024", "E15:S007"],
+    "not_applicable": ["E18:S008", "E23:S068", "E15:S077", "E19:S011"]
+  },
+  "thresholds": {
+    "T1": "For E23 S007 and E15 S039 the top-ranked candidate lies under a heading path containing 'No Cardholder Authorization' and names the stem 'list'",
+    "T2": "Every fetch window is at most 120 words and at most 3 candidates are returned per passage",
+    "T3": "The 4 not-applicable passages return 'not applicable' without any search",
+    "T4": "The 4 other applicable passages each return either a candidate or 'none found'; none is dropped"
+  },
+  "decision_rule": "Pass only if T1 to T4 hold. Report the top candidate for the 4 other applicable passages for source review; do not trust them until reviewed. Report each case's context headroom (6000 minus words used) against the fetch cost.",
+  "limits": ["Designed after reading E23 and E15, so not independent; holdout is the independent test", "Token list and requirement form are Mastercard-guide specific", "Heading overlap is a crude relatedness measure; every returned candidate needs source review before use", "Advisory; not wired into retrieval or generation"]
+}

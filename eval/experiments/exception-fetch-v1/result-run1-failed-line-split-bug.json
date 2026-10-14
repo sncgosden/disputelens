@@ -1,0 +1,64 @@
+{
+  "report": {
+    "E13:S030": {
+      "result": "none found",
+      "searched": true,
+      "context_headroom_words": 232,
+      "candidates": []
+    },
+    "E13:S034": {
+      "result": "none found",
+      "searched": true,
+      "context_headroom_words": 232,
+      "candidates": []
+    },
+    "E18:S008": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E23:S007": {
+      "result": "none found",
+      "searched": true,
+      "context_headroom_words": 92,
+      "candidates": []
+    },
+    "E23:S024": {
+      "result": "none found",
+      "searched": true,
+      "context_headroom_words": 92,
+      "candidates": []
+    },
+    "E23:S068": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E15:S007": {
+      "result": "none found",
+      "searched": true,
+      "context_headroom_words": 22,
+      "candidates": []
+    },
+    "E15:S039": {
+      "result": "none found",
+      "searched": true,
+      "context_headroom_words": 22,
+      "candidates": []
+    },
+    "E15:S077": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E19:S011": {
+      "result": "not applicable",
+      "searched": false
+    }
+  },
+  "verdict": {
+    "T1": false,
+    "T2": true,
+    "T3": true,
+    "T4": true,
+    "overall_pass": false
+  },
+  "protocol_sha256": "9cd85e620d6dc03fee7f42e55b648fae4e5ebb3f3148b75a1b6d40e180fe0ea3"
+}

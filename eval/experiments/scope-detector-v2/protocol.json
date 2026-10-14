@@ -1,0 +1,22 @@
+{
+  "name": "scope-detector-v2",
+  "declared": "2026-10-08, before v2 was run",
+  "supersedes": "scope-detector-v1 (kept unchanged; its result.json and decision.md stay as recorded)",
+  "reason_for_change": "v1 produced three false flags traced by source check: family headings that list several codes including the asked code (E14, S073 is the 4853 section itself), and questions that name the dispute section in words without its code (E18, E23).",
+  "honest_status": "These changes were designed after seeing v1 results on the same 45 development cases, so v2 results are NOT independent validation. Independent evidence must come from the final holdout run.",
+  "rule_changes": [
+    "R1: a passage is NOT flagged for codes if ANY code in its deepest coded heading appears in the question (family heading containing the asked code)",
+    "R2: a passage is NOT flagged if the question text contains the name of any heading in its path below chapter level, with the parenthetical removed, where the name has at least two words (user named the section in words)",
+    "R3: named subtype phrases are still flagged when absent from the question, as in v1"
+  ],
+  "unchanged": ["v1 qualifier phrases", "v1 known defective passages", "v1 controls", "applicability rating source"],
+  "thresholds": {
+    "T1_known_defect_recall": "6 of 6 known defective passages still flagged (v2 must not lose a known defect)",
+    "T2_control_false_flags": "0 flagged cited passages in E10, E30, E46",
+    "T3_false_flag_rate": "at most 1 of the 34 cases rated applicability 2 contains any flagged cited passage",
+    "T4_monotone": "v2 flags must be a subset of v1 flags (v2 may only relax)"
+  },
+  "decision_rule": "Pass only if T1 to T4 all hold. Otherwise record v2 as rejected; further changes get v3, not edits to v2.",
+  "descriptive_only": "Report which v1 flags v2 removed and which remain; any remaining non-defect flag is listed for source review, not explained away.",
+  "limits": ["Assisted ratings are the reference", "Name matching can over-establish scope if a question happens to repeat a heading phrase; inspect every removed flag", "Advisory only; not wired into the pipeline"]
+}

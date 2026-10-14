@@ -1,0 +1,33 @@
+{
+  "case_id": "E22",
+  "status": "confirmed_scope_metadata_gap_in_question_gold_alignment",
+  "reviewer": "Codex; independent review pending",
+  "source_pdf_path": "data/raw/mastercard-chargeback-guide/source.pdf",
+  "source_pdf_sha256": "6526537019edd3cf0878ed7ac551d4849e4bd84b5dc6dc9b1804e52abb490fde",
+  "evidence": {
+    "publisher_bookmark_pdf_page": 84,
+    "publisher_heading_path": [
+      "Chapter 2 Dual Message System Chargebacks",
+      "Authorization-related Chargeback (Message Reason Code 4808/08)",
+      "Stand-in or X-Code Approval after Issuer Decline",
+      "Acquirer Second Presentment",
+      "Refund previously issued"
+    ],
+    "gold_passage_ids": [
+      "mastercard-chargeback-guide:page-85:paragraph-2",
+      "mastercard-chargeback-guide:page-85:paragraph-3"
+    ],
+    "next_bookmark_pdf_page": 86
+  },
+  "finding": "E22 question gives no reason code or subtype. Gold passages are in a specialized publisher section; their presence in gold does not establish general applicability. Earlier description of these as general guidance was incorrect.",
+  "implications": [
+    "Do not exempt these passages from scope flags merely because they are gold.",
+    "Existing question/gold completeness scores describe coverage of frozen expected text, not proof that the expected answer applies.",
+    "Applicability remains unestablished, not proven inapplicable; do not label policy text false.",
+    "Baseline gold and outputs remain unchanged; record defect as an evaluation limitation.",
+    "Any revised benchmark must explicitly supply the source subsection scope or request clarification, be separately versioned and reviewed."
+  ],
+  "decision": "Retain diagnostic flags and frozen baseline. Prepare a separately versioned applicability contract before filtering or generating again.",
+  "model_calls": 0,
+  "holdout_accessed": false
+}

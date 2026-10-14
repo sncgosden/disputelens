@@ -1,0 +1,71 @@
+{
+  "results": {
+    "E13:S030": {
+      "outcome": "resolved",
+      "stem": "list",
+      "by": [
+        "S034"
+      ]
+    },
+    "E13:S034": {
+      "outcome": "resolved",
+      "stem": "list",
+      "by": [
+        "S030"
+      ]
+    },
+    "E18:S008": {
+      "outcome": "ambiguous",
+      "reason": "no distinctive exception tokens"
+    },
+    "E23:S007": {
+      "outcome": "ambiguous",
+      "reason": "no sibling sentence names a requirement"
+    },
+    "E23:S024": {
+      "outcome": "ambiguous",
+      "reason": "no sibling sentence names a requirement"
+    },
+    "E23:S045": {
+      "outcome": "resolved",
+      "stem": "list",
+      "by": [
+        "S044"
+      ]
+    },
+    "E23:S068": {
+      "outcome": "ambiguous",
+      "reason": "no distinctive exception tokens"
+    },
+    "E15:S007": {
+      "outcome": "ambiguous",
+      "reason": "no sibling sentence names a requirement"
+    },
+    "E15:S039": {
+      "outcome": "ambiguous",
+      "reason": "no sibling sentence names a requirement"
+    },
+    "E15:S077": {
+      "outcome": "ambiguous",
+      "reason": "no distinctive exception tokens"
+    },
+    "E15:S085": {
+      "outcome": "resolved",
+      "stem": "list",
+      "by": [
+        "S084"
+      ]
+    },
+    "E19:S011": {
+      "outcome": "ambiguous",
+      "reason": "no distinctive exception tokens"
+    }
+  },
+  "verdict": {
+    "T1_E23_S045_resolves_to_list": true,
+    "T2_no_close_or_block_in_E23": true,
+    "T3_every_flag_has_one_outcome": true,
+    "overall_pass": true
+  },
+  "protocol_sha256": "5abd9b270d46e145e26bb50f4d577785ab272061197ba6faf8a039f902b2832c"
+}

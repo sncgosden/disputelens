@@ -1,0 +1,192 @@
+{
+  "report": {
+    "E13:S030": {
+      "result": "candidates",
+      "searched": true,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-dcaa4a21aeb4a20d0964",
+          "stem": "list",
+          "headings": [
+            "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+            "No Cardholder Authorization (Message Reason Code 4837/37)",
+            "No Cardholder Authorization",
+            "Issuer Chargeback"
+          ],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "words": 48,
+          "depth": 3,
+          "relatedness": "same section, different step",
+          "status": "possibly related, scope not confirmed",
+          "chunk_words": 236
+        }
+      ]
+    },
+    "E13:S034": {
+      "result": "candidates",
+      "searched": true,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-dcaa4a21aeb4a20d0964",
+          "stem": "list",
+          "headings": [
+            "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+            "No Cardholder Authorization (Message Reason Code 4837/37)",
+            "No Cardholder Authorization",
+            "Issuer Chargeback"
+          ],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "words": 48,
+          "depth": 3,
+          "relatedness": "same section, different step",
+          "status": "possibly related, scope not confirmed",
+          "chunk_words": 236
+        }
+      ]
+    },
+    "E18:S008": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E23:S007": {
+      "result": "candidates",
+      "searched": true,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-dcaa4a21aeb4a20d0964",
+          "stem": "list",
+          "headings": [
+            "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+            "No Cardholder Authorization (Message Reason Code 4837/37)",
+            "No Cardholder Authorization",
+            "Issuer Chargeback"
+          ],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "words": 48,
+          "depth": 3,
+          "relatedness": "same section, different step",
+          "status": "possibly related, scope not confirmed",
+          "chunk_words": 236
+        }
+      ]
+    },
+    "E23:S024": {
+      "result": "candidates",
+      "searched": true,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-dcaa4a21aeb4a20d0964",
+          "stem": "list",
+          "headings": [
+            "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+            "No Cardholder Authorization (Message Reason Code 4837/37)",
+            "No Cardholder Authorization",
+            "Issuer Chargeback"
+          ],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "words": 48,
+          "depth": 3,
+          "relatedness": "same section, different step",
+          "status": "possibly related, scope not confirmed",
+          "chunk_words": 236
+        }
+      ]
+    },
+    "E23:S068": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E15:S007": {
+      "result": "candidates",
+      "searched": true,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-dcaa4a21aeb4a20d0964",
+          "stem": "list",
+          "headings": [
+            "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+            "No Cardholder Authorization (Message Reason Code 4837/37)",
+            "No Cardholder Authorization",
+            "Issuer Chargeback"
+          ],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "words": 48,
+          "depth": 3,
+          "relatedness": "same section, different step",
+          "status": "possibly related, scope not confirmed",
+          "chunk_words": 236
+        }
+      ]
+    },
+    "E15:S039": {
+      "result": "candidates",
+      "searched": true,
+      "candidates": [
+        {
+          "chunk_id": "mastercard-chargeback-guide:chunk-dcaa4a21aeb4a20d0964",
+          "stem": "list",
+          "headings": [
+            "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+            "No Cardholder Authorization (Message Reason Code 4837/37)",
+            "No Cardholder Authorization",
+            "Issuer Chargeback"
+          ],
+          "sentence": "\u2013 Listing the PAN on the Mastercard Stand-in Account File is not required when the card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s stand-in parameters are set to zero to decline all authorization attempts or are managed through an alternate host.",
+          "words": 48,
+          "depth": 3,
+          "relatedness": "same section, different step",
+          "status": "possibly related, scope not confirmed",
+          "chunk_words": 236
+        }
+      ]
+    },
+    "E15:S077": {
+      "result": "not applicable",
+      "searched": false
+    },
+    "E19:S011": {
+      "result": "not applicable",
+      "searched": false
+    }
+  },
+  "costs": {
+    "E13": {
+      "headroom": 232,
+      "words_to_evict": 0,
+      "evicted": [],
+      "cited_evicted": 0,
+      "feasible": true,
+      "sentence_words": 48
+    },
+    "E23": {
+      "headroom": 92,
+      "words_to_evict": 8,
+      "evicted": [
+        "S046"
+      ],
+      "cited_evicted": 0,
+      "feasible": true,
+      "sentence_words": 48
+    },
+    "E15": {
+      "headroom": 22,
+      "words_to_evict": 78,
+      "evicted": [
+        "S085"
+      ],
+      "cited_evicted": 0,
+      "feasible": true,
+      "sentence_words": 48
+    }
+  },
+  "verdict": {
+    "T1": true,
+    "T2": true,
+    "T3": true,
+    "T4": true,
+    "T5": true,
+    "T6": true,
+    "overall_pass": true
+  },
+  "protocol_sha256": "ecbb0a1aaaffab0cc20f80418e93a8684de569350d0d53fa93f41d6328469654"
+}

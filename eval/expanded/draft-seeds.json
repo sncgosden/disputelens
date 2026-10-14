@@ -1,0 +1,2374 @@
+{
+  "normalized_sha256": "a6e8f1806fa7e61001c36d770f1be66efb13523da3ed4680ba40e697f96bde9f",
+  "seed_provenance": "Codex selected evidence and coverage before Claude drafted questions.",
+  "seeds": [
+    {
+      "case_id": "E01",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-40:passage-1",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 13.1",
+            "Introduction"
+          ],
+          "text": "Condition 13.1\nMerchandise/Services Not Received\nYour card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 13.1, Merchandise/Services Not Received.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=40",
+            "pdf_page": 40,
+            "pdf_page_label": "37",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-40:passage-3",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 13.1",
+            "What caused the dispute?"
+          ],
+          "text": "There are several common causes for this type of dispute:\n– The merchandise was not delivered and received by the agreed-upon delivery date, time or\nto the agreed upon location.\n– The merchandise was not available for pick-up at the agreed location or by agreed date.\n– The services were not available and/or not provided to the customer.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=40",
+            "pdf_page": 40,
+            "pdf_page_label": "37",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E02",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-26:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 10.4"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 10.4, Other Fraud – Card-Absent Environment.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=26",
+            "pdf_page": 26,
+            "pdf_page_label": "23",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-26:paragraph-4",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 10.4"
+          ],
+          "text": "What caused the dispute?\nThe most common causes of this type of dispute are:\n–                                   You processed a card-absent transaction from a person who was fraudulently using a\n   payment credential.\n–                                   The cardholder had their payment credential taken by fraudulent means.\n–               Due to an unclear or confusing merchant name the cardholder believes the transaction to\n   be fraudulent\nHow should I respond?\n–                The transaction was authenticated with Visa Secure.\n   Advise your card processor that the transaction was Visa Secure-authenticated at time of\n   authorization.\n–                          The cardholder has two or more completed transactions (settled 120 calendar days prior\n   to the dispute) which the issuer did not report as Fraud Activity to Visa, with at least two\n   data elements (device ID, device fingerprint, or the IP address) the same as the disputed\n   transaction.\n                                   Provide the following details of the two previous transactions (settled between 120–365\n   calendar days prior to the dispute processing date) and the disputed transaction:\n     –                  Detailed description of merchandise or services purchased for the disputed\n         Transactions and the 2 previous Transactions",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=26",
+            "pdf_page": 26,
+            "pdf_page_label": "23",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E03",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-30:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 11.2"
+          ],
+          "text": "Your card processor has notified you that an issuer is disputing a transaction that you\nprocessed. The dispute falls under Condition 11.2, Declined Authorization.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=30",
+            "pdf_page": 30,
+            "pdf_page_label": "27",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-30:paragraph-3",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 11.2"
+          ],
+          "text": "Why did I get this notification?\nA transaction was processed after receiving a Decline or Pickup response.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=30",
+            "pdf_page": 30,
+            "pdf_page_label": "27",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E04",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-31:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 11.3"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 11.3, No Authorization/Late Presentment",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=31",
+            "pdf_page": 31,
+            "pdf_page_label": "28",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-31:paragraph-3",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 11.3"
+          ],
+          "text": "Why did I get this notification?\nA transaction was processed without obtaining the required authorization, or the transaction\nwas not processed within the required transaction processing time limit.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=31",
+            "pdf_page": 31,
+            "pdf_page_label": "28",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E05",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-32:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.1"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 12.1, Late Presentment.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=32",
+            "pdf_page": 32,
+            "pdf_page_label": "29",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-32:paragraph-5",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.1"
+          ],
+          "text": "How should I respond?\n–                The transaction was completed within the time limit.\n   Provide a copy of the receipt to support the transaction date.\n–                          The transaction was completed later than the specified transaction processing time limit.\n   Accept the dispute.\n–                          Credit or reversal has already been processed for the transaction.\n   Provide documentation of the credit or reversal that includes the amount and the date it\n   was processed.\n–                The cardholder no longer disputes the transaction.\n   Provide a letter or email from the cardholder that states they no longer dispute the\n   transaction.\nHow to avoid this dispute in the future\n–                                   Send completed transactions to your card processor as soon as possible, preferably on the\n   day of the sale or within the timeframe specified in your merchant agreement.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=32",
+            "pdf_page": 32,
+            "pdf_page_label": "29",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E06",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-33:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.2"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 12.2, Incorrect Transaction Code.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=33",
+            "pdf_page": 33,
+            "pdf_page_label": "30",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-33:paragraph-3",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.2"
+          ],
+          "text": "Why did I get this notification?\nThe transaction was completed with an incorrect transaction code (i.e., you meant to send a\ncredit, but you actually sent a sale, and vice versa or a credit refund was processed instead of a\nreversal or an adjustment).",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=33",
+            "pdf_page": 33,
+            "pdf_page_label": "30",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E07",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-34:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.3"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 12.3, Incorrect Currency.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=34",
+            "pdf_page": 34,
+            "pdf_page_label": "31",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-34:paragraph-3",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.3"
+          ],
+          "text": "Why did I get this notification?\nThe transaction was processed with an incorrect currency code (i.e., the transaction currency is\ndifferent from the currency transmitted through Visa; or the cardholder was not advised or did\nnot agree that Dynamic Currency Conversion (DCC) would occur).",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=34",
+            "pdf_page": 34,
+            "pdf_page_label": "31",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E08",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-35:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.4"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 12.4, Incorrect Account Number.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=35",
+            "pdf_page": 35,
+            "pdf_page_label": "32",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-35:paragraph-5",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.4"
+          ],
+          "text": "How should I respond?\n–                The payment credential on the dispute matches the payment credential on your copy of the\n     receipt.\n     Provide a copy of the receipt and if the dispute relates to a transaction processed on a\n     payment credential not on the issuer’s master file, provide a copy of the authorization log.\n–               The payment credential on the dispute does not match the payment credential on your copy\n     of the receipt.\n     Accept the dispute.\n–               Transaction was not authorized.\n     Accept the dispute.\n–               Credit or reversal has already been processed for the transaction.\n     Provide documentation of the credit or reversal that includes the amount and the date it\n     was processed.\n–               The cardholder no longer disputes the transaction.\n     Provide a letter or email from the cardholder that states they no longer dispute the\n     transaction.\nHow to avoid this dispute in the future\nTrain your sales staff on the proper procedures for processing transactions, including the\nrecommendation that all transactions be swiped, or chip read.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=35",
+            "pdf_page": 35,
+            "pdf_page_label": "32",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E09",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-36:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.5"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 12.5, Incorrect Amount.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=36",
+            "pdf_page": 36,
+            "pdf_page_label": "33",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-36:paragraph-4",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.5"
+          ],
+          "text": "How should I respond?\n–               Transaction amount is correct.\n     Provide supporting documentation (i.e., copy of the transaction receipt).\n–                          The transaction amount used to settle the transaction was different from the actual\n     amount due.\n     Accept the dispute.\n–               Credit or reversal has already been processed for the transaction.\n     Provide documentation of the credit or reversal that includes the amount and the date it\n     was processed.\n–               The cardholder no longer disputes the transaction.\n     Provide a letter or email from the cardholder that states they no longer dispute the\n     transaction.\nHow to avoid this dispute in the future\n–                          Train your sales staff on the proper procedures for processing transactions ensuring\n     correct details are keyed in the terminal before submitting the transaction, including the\n     recommendation that all transactions be swiped, or chip read.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=36",
+            "pdf_page": 36,
+            "pdf_page_label": "33",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E10",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-37:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.6"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 12.6.1, Duplicate Processing.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=37",
+            "pdf_page": 37,
+            "pdf_page_label": "34",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-37:paragraph-3",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.6"
+          ],
+          "text": "Why did I get this notification?\nThe cardholder claims that a single transaction was processed more than once using the same\nPayment Credential on the same Transaction date, and for the same Transaction amount.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=37",
+            "pdf_page": 37,
+            "pdf_page_label": "34",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E11",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-38:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.6"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that you\nprocessed. The dispute falls under Condition 12.6.2, Paid by Other Means.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=38",
+            "pdf_page": 38,
+            "pdf_page_label": "35",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-38:paragraph-5",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 12.6"
+          ],
+          "text": "How should I respond?\n–                                   Visa card was the only form of payment used.\n    Provide the sales records or other documentation that shows no other form of payment\n    was used.\n–                                   The Visa card and other form of payment were for different merchandise or services.\n    Provide the sales records or other documentation to show that both payments were for\n    different merchandises or services\n–                                   The charges represent two separate transactions/purchases.\n    Provide documentation to show the two transactions represent the purchase of separate\n    merchandise or services.\n–                                   The transaction was paid using another form of payment.\n    Accept the dispute.\n–                          Credit or reversal has already been processed for the transaction.\n    Provide documentation of the credit or reversal that includes the amount and the date it\n    was processed.\n–                The cardholder no longer disputes the transaction.\n    Provide a letter or email from the cardholder that states they no longer dispute the\n    transaction.\nHow to avoid this dispute in the future\n–                                   If a customer asks to use another form of payment after you have processed the Visa card",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=38",
+            "pdf_page": 38,
+            "pdf_page_label": "35",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E12",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Visa"
+      },
+      "topic": "Exact reason code or its merchant-language paraphrase; preserve date/condition qualifications",
+      "answerability": "answerable",
+      "source_version": "June 2024 edition; downloaded edition awaiting extraction check",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-43:paragraph-2",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 13.3"
+          ],
+          "text": "Your card processor has notified you that a cardholder is disputing a transaction that\nyou processed. The dispute falls under Condition 13.3, Not as Described or Defective\nMerchandise/Services.",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=43",
+            "pdf_page": 43,
+            "pdf_page_label": "40",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "visa-dispute-management-june-2024:page-43:paragraph-3",
+          "headings": [
+            "Dispute Management Guidelines for Visa Merchants",
+            "Condition 13.3"
+          ],
+          "text": "Why did I get this notification?\nThe cardholder is claiming that the merchandise or services were one or more of these:\n–               Merchandise or services did not match the description on the transaction receipt or other\n   documentation presented at the time of purchase.\n–               Merchandise or services are not the same as your verbal description (for a telephone\n   transaction5).\n–               The merchandise was received damaged or defective.\n–               For travel agency merchant using a Visa Commercial Card Virtual Account that has failed to\n   honor the contractual agreement or the services provided by the travel agency merchant to\n   the Virtual Account holder were not as described in the contractual agreement.\n–               The cardholder disputes the quality of the merchandise or services.\nWhat caused the dispute?\nThere are several common causes for this type of dispute:\n–               You sent the wrong merchandise to the cardholder.\n–               You sent the merchandise, but it was damaged during shipment.\n–               You inaccurately described the merchandise or services at the time of purchase.\n–               You did not perform the services as described.\nHow should I respond?",
+          "locator": {
+            "reference": "https://usa.visa.com/content/dam/VCOM/global/support-legal/documents/merchants-dispute-management-guidelines.pdf#page=43",
+            "pdf_page": 43,
+            "pdf_page_label": "40",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E13",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard 4837; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-410:paragraph-5",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)"
+          ],
+          "text": "No Cardholder Authorization (Message Reason Code 4837/37)\n      This section provides the issuer and acquirer with the entire dispute process for no cardholder\n      authorization chargebacks from chargeback to second presentment through pre-arbitration\n      and arbitration case filing.\n      Refer to the UK Domestic Rules, 5.1.2 Reason Code 4837 UK - No Cardholder Authorisation, for\n      any rules that may apply.\n      The issuer may use this chargeback for any of the following:\n      •    Installment Billing Disputes: This chargeback may be used to charge back the first\n          installment submitted under a domestic installment payment arrangement for a fraud-\n          related reason. In order to keep the integrity of the Fraud Notification Service chargeback\n          counters, the issuer must use message reason code 4850-Installment Billing Dispute to\n          charge back any subsequent installment payments.\n      •    A Maestro transaction in which the card was issued in Europe, or the terminal was located in\n          Europe or both: Parking garage and tollway magnetic stripe transactions completed without\n          CVM.\n      •    Intra-European and inter-European Maestro transactions completed using signature as the\n          CVM at magnetic stripe reading-only POS terminals.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=410",
+            "pdf_page": 410,
+            "pdf_page_label": "410",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E14",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard 4853; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-127:paragraph-6",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Acquirer Response to an Arbitration Case"
+          ],
+          "text": "Cardholder Dispute Chargeback (Message Reason Code\n4853/53/4850/4854)",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=127",
+            "pdf_page": 127,
+            "pdf_page_label": "127",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-127:paragraph-7",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Acquirer Response to an Arbitration Case"
+          ],
+          "text": "      This section provides the issuer and acquirer with the entire dispute process for cardholder\n      dispute chargebacks from chargeback to second presentment through pre-arbitration and\n      arbitration case filing.\n      Use of the cardholder dispute chargeback requires that the cardholder engaged in the\n      transaction.\n      The issuer may use this chargeback when the cardholder contacted the issuer alleging one of the\n      following:\n      •    Goods or services were either not as described or defective, including shipped merchandise\n          was received damaged or not suitable for its intended purpose as well as the merchant didn’t\n          honor the terms and conditions of a contract.\n      •    Goods or services were not provided.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=127",
+            "pdf_page": 127,
+            "pdf_page_label": "127",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E15",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard Goods or Services Not Provided; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-713:paragraph-5",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Single Message System Chargebacks Goods or Services Not Provided"
+          ],
+          "text": "Goods or Services Not Provided\n      The issuer may use reason code 79 when the cardholder claims goods or services were not\n      received.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=713",
+            "pdf_page": 713,
+            "pdf_page_label": "713",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-713:paragraph-7",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Single Message System Chargebacks Goods or Services Not Provided"
+          ],
+          "text": "Chargeback Condition           The cardholder contacted the issuer alleging the cardholder’s account has been\n                               debited for goods or services that were to be shipped, delivered or otherwise\n                               provided and were not received by the expected delivery date.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=713",
+            "pdf_page": 713,
+            "pdf_page_label": "713",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E16",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard Goods or Services Were Either Not as Described; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-134:paragraph-2",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Issuer Chargeback"
+          ],
+          "text": "               –   The cardholder claims that the quality or workmanship of the product is not as\n                   described.\n               –   The cardholder claims that the specified color, size, or quantity is not as described.\n           –   The merchant did not honor the terms and conditions of the contract with the cardholder\n               including, but not limited to, 100 percent money back guarantee, written promises,\n               guaranteed delivery commitments, or return policy.\n      Supporting Documents:\n      A Cardholder email, letter, message or completed Dispute Resolution Form-Cardholder Dispute\n      Chargeback (Form 1221) must include both of the following:\n      •    A description of the cardholder’s complaint in sufficient detail to enable all parties to\n          understand the dispute. This means that the cardholder email, letter, message or completed\n          Dispute Resolution Form-Cardholder Dispute Chargeback (Form 1221) must document how\n          each of the above conditions was met.\n      •    A reasonably specific description of the goods/services purchased.\n      Supporting documentation must provide sufficient detail to enable all parties to understand the\n      nature of the dispute or rebuttal. Mastercard will determine whether the supporting\n      documentation contains sufficient detail.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=134",
+            "pdf_page": 134,
+            "pdf_page_label": "134",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-134:paragraph-3",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Issuer Chargeback"
+          ],
+          "text": "      The cardholder email, cardholder letter, and/or cardholder message (including through a\n      password-protected website) must come directly from the cardholder or, in the case of a\n      commercial card, the corporate entity. A completed Dispute Resolution Form must be the direct\n      result of a conversation with the cardholder.\n      When the cardholder is a corporate entity with a contractual relationship with the merchant\n      and the transaction is for an amount in excess of what is specified in the contract, the contract\n      must be provided when the merchant wasn’t contacted in an effort to resolve the dispute.\n      Optionally, documentation that supports the cardholder’s dispute:\n      •    For claims regarding the level of quality or misrepresentation: Documentation from an expert\n          or professional (on their business letterhead, with a business card attached, or validated by\n          other information demonstrating that the opinion expressed is that of an expert) that\n          supports the cardholder’s dispute about the level of quality or misrepresentation may be\n          required when the validity of the dispute is challenged by the merchant.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=134",
+            "pdf_page": 134,
+            "pdf_page_label": "134",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E17",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard recurring; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-261:paragraph-3",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Issuer Chargeback"
+          ],
+          "text": "      Issuer Chargeback\n      The issuer may chargeback a transaction when cardholder contacted the issuer claiming one of\n      the following conditions are met and are sufficiently detailed in the supporting documentation:\n      •    The cardholder notified the merchant to cancel the recurring transaction and the merchant\n          continued to bill the cardholder.\n      •    The cardholder was not aware that the cardholder was agreeing to a recurring transaction.\n      Supporting Documents:\n      A cardholder letter, email, message, or completed Dispute Resolution Form-Cardholder Dispute\n      Chargeback (Form 1221) describing the cardholder’s complaint in sufficient detail to enable all\n      parties to understand the dispute. This means that the cardholder email, letter, message or\n      completed Dispute Resolution Form-Cardholder Dispute Chargeback (Form 1221) must specify\n      one of the following:\n      •    The cardholder notified the merchant to cancel the recurring transaction and the date of the\n          notification.\n      •    The cardholder was not aware that the cardholder was agreeing to a recurring transaction.\n      The cardholder email, cardholder letter, and/or cardholder message (including through a\n      password-protected website) must come directly from the cardholder or, in the case of a",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=261",
+            "pdf_page": 261,
+            "pdf_page_label": "261",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-261:paragraph-4",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Issuer Chargeback"
+          ],
+          "text": "      commercial card, the corporate entity. A completed Dispute Resolution Form must be the direct\n      result of a conversation with the cardholder.\n      When the cardholder is a corporate entity with a contractual relationship with the merchant\n      and the transaction is for an amount in excess of what is specified in the contract, the contract\n      must be provided when the merchant wasn’t contacted in an effort to resolve the dispute.\n      Message Text: None.\n      Time Frame:\n      •    For Mainland China domestic transactions: Within 90-calendar days of transaction\n          settlement date.\n      •    For all other transactions: Within 120-calendar days of the Settlement Date or Central Site\n          Business Date of the transaction.\n      The Settlement Date is present in DE 15 (Date, Settlement) of the Single Message System\n      message. The Settlement Date of the disputed transaction is counted as day zero.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=261",
+            "pdf_page": 261,
+            "pdf_page_label": "261",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E18",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard Credit Not Processed; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-229:paragraph-3",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Issuer Chargeback"
+          ],
+          "text": "      Issuer Chargeback\n      The issuer may chargeback a transaction when the cardholder contacted the issuer claiming one\n      of the following conditions occurred and is sufficiently detailed in the supporting\n      documentation:\n      •    The merchant agreed to provide a refund and failed to process that refund.\n      •    The merchant failed to disclose its refund policy at the time of the transaction and is\n          unwilling to accept a return or cancellation of goods or services.\n      •    The merchant has not responded to the return or the cancellation of goods or services.\n      •    The merchant posted a refund for a reduced amount without proper disclosure.\n      •    The merchant failed to issue a Value Added Tax (VAT) credit.\n      Supporting Documents: One of the following:\n      •    A Cardholder letter, email, message, or Dispute Resolution Form-Cardholder Dispute\n          Chargeback (Form 1221) describing the cardholder’s complaint in sufficient detail to enable\n          all parties to understand the dispute. This means that the cardholder email, letter, message\n          or completed Dispute Resolution Form-Cardholder Dispute Chargeback (Form 1221) must\n          document all of the following:",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=229",
+            "pdf_page": 229,
+            "pdf_page_label": "229",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-229:paragraph-4",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Issuer Chargeback"
+          ],
+          "text": "          –   How one or more of the above chargeback conditions was met.\n          –   The cardholder must explain in sufficient detail why the cardholder is expecting a refund.\n          –   A reasonably specific description of the goods/services purchased.\n          Mastercard will determine whether the supporting documentation contains sufficient detail.\n      •    Merchant documentation to support a credit is due to the cardholder.\n      •    Proof of an improperly disclosed in-store credit and cardholder explanation.\n      The cardholder email, cardholder letter, and/or cardholder message (including through a\n      password-protected website) must come directly from the cardholder or, in the case of a\n      commercial card, the corporate entity. A completed Dispute Resolution Form-Cardholder Dispute\n      Chargeback must be the direct result of a conversation with the cardholder.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=229",
+            "pdf_page": 229,
+            "pdf_page_label": "229",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E19",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard Duplicate Transaction; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-704:paragraph-2",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Single Message System Chargebacks Duplicate Transaction"
+          ],
+          "text": "Duplicate Transaction\n      The issuer may use reason code 73 when the cardholder contacted the issuer alleging that the\n      cardholder’s account has been debited more than once for the same transaction (including\n      transactions involving cash back).\n      A cash back transaction is identified, in authorization or clearing messages, with a value of 09\n      (Purchase with Cashback) in DE 3 (Processing Code) subfield 1 (Cardholder Transaction Type).",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=704",
+            "pdf_page": 704,
+            "pdf_page_label": "704",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-704:paragraph-4",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Single Message System Chargebacks Duplicate Transaction"
+          ],
+          "text": "Chargeback Condition                         An issuer can determine that the transaction is a duplicate when the\n                                             ATM or POS terminal number, transaction amount, transaction date,\n                                             and authorization response code are identical for the transactions in\n                                             question.\nTime Frame                                   For Costa Rica domestic transactions: Within 10-calendar days of the\n                                             Settlement Date of the chargeback.\n                                             Between 5 and 120-calendar days from the transaction settlement\n                                             date",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=704",
+            "pdf_page": 704,
+            "pdf_page_label": "704",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-704:paragraph-9",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Single Message System Chargebacks Duplicate Transaction"
+          ],
+          "text": "Second Presentment Condition                 One of the following:\n                                             •     The acquirer can provide evidence to support two separate\n                                                 transactions, or proof that a credit was issued.\n                                             •     The chargeback was invalid.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=704",
+            "pdf_page": 704,
+            "pdf_page_label": "704",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E20",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard ATM; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-689:paragraph-11",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Single Message System Chargebacks Correction of a Chargeback"
+          ],
+          "text": "Cash Dispute-ATM Only\n      The issuer may use message reason code 17 to dispute an ATM cash withdrawal.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=689",
+            "pdf_page": 689,
+            "pdf_page_label": "689",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E21",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard Translation requirements and arbitration escalation; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-131:paragraph-2",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Supporting Documentation"
+          ],
+          "text": "      •    The issuer must provide an English translation of any section(s) of non-English\n          documentation that are relevant to the dispute in the chargeback, pre-arbitration case filing,\n          and arbitration case filing.\n      •    The acquirer must provide an English translation of section(s) of non-English documentation\n          that are relevant to the dispute in the second presentment and pre-arbitration response.\n      When Customers Share a Common Language. When the issuer and acquirer share a common\n      language, an English translation of the documentation is not necessary in the chargeback,\n      second presentment, pre-arbitration, or the pre-arbitration response.\n      However, when the issuer escalates a pre-arbitration case to an arbitration case:\n      •    For Brazil domestic transactions: When DE 43 (Card Acceptor Name/Location), subfield 6\n          (Card Acceptor Country Code) contains a value of BRA (Brazil): Information relevant to the\n          case must be in either English or Portuguese.\n          When an English translation is provided, the English translation must be provided in such a\n          way that the English translation clearly corresponds to the original non-English\n          documentation.\n      •    For all other transactions: The issuer must provide an English translation of the relevant",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=131",
+            "pdf_page": 131,
+            "pdf_page_label": "131",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-131:paragraph-3",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Supporting Documentation"
+          ],
+          "text": "          information from the:\n          –   Chargeback, second presentment, pre-arbitration, and pre-arbitration response; including\n              an English translation of the Sender Memo and supporting documentation.\n          –   Acquirer’s pre-arbitration response; including an English translation of the Receiver Memo\n              and supporting documentation.\n          The issuer must provide the English translation in such a way that the English translation\n          clearly corresponds to the original non-English documentation.\n          When the issuer does not provide the required translation(s), Mastercard will likely rule\n          against the issuer.\n          When the acquirer rejects an arbitration case, the acquirer may provide a rebuttal in English\n          in the Receiver Memo that specifically addresses the information contained in the arbitration\n          case filing.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=131",
+            "pdf_page": 131,
+            "pdf_page_label": "131",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E22",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard Refund properly documented; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-85:paragraph-2",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Refund previously issued"
+          ],
+          "text": "      Collection\" of the Global Clearing Management System Reference Manual. For a Mainland China\n      Customer, a domestic Fee Collection must be processed as documented in the China Switch\n      User Guide – Customer Portal.\n      For the avoidance of doubt:\n      •    A refund processed by the merchant includes the following:\n          –   A refund transaction identified with a value of 20 (Credit [Purchase Return] in DE 3\n              (Processing Code), subfield 1 (Cardholder transaction type) of the clearing record,\n          –   A MoneySend Payment Transaction Fast Refund to the original card as described in the\n              Mastercard MoneySend and Funding Transactions Program Standards,\n          –   By other means in accordance with the merchant policy for adjustments, refunds, returns,\n              or the like, which may include providing a cash, check, or prepaid card refund.\n          For more information refer to the Transaction Processing Rules, 3.14 Returned Products and\n          Canceled Services.\n      •    Refund properly documented in second presentment and within time frame: When a\n          refund was processed before the second presentment and the timely second presentment\n          properly documented the refund, the issuer must not continue the dispute for the refunded",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=85",
+            "pdf_page": 85,
+            "pdf_page_label": "85",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-85:paragraph-3",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Refund previously issued"
+          ],
+          "text": "          amount as the refund resolved the chargeback. Upon completion of all of the chargeback\n          cycles, if a properly documented pre-arbitration/arbitration case is filed, Mastercard will likely\n          rule in favor of the acquirer.\n          The two exceptions to the above are when:\n          –   The issuer or cardholder can clearly document that the refund applied to a different\n              transaction. With proper documentation from the cardholder, the issuer may continue\n              with the dispute.\n          –   The refund that was processed before the second presentment was for a partial amount\n              of the disputed transaction and the acquirer failed to provide a valid remedy for the\n              remainder of the disputed amount. The issuer may continue with the dispute for the\n              amount that was not refunded, when applicable.\n      •    Refund before second presentment and within time frame, but not properly documented in\n          second presentment: A refund is required to be documented in the second presentment and\n          not in the pre-arbitration/arbitration case filing. When the first chargeback is valid and\n          timely, if a case is filed with Mastercard involving a refund that was processed before the",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=85",
+            "pdf_page": 85,
+            "pdf_page_label": "85",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E23",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard No Cardholder Authorization; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-418:paragraph-3",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks No Cardholder Authorization"
+          ],
+          "text": "      No Cardholder Authorization\n      This section details the conditions for addressing a cardholder claim that the cardholder did not\n      authorize the transaction.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=418",
+            "pdf_page": 418,
+            "pdf_page_label": "418",
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "mastercard-chargeback-guide:page-418:paragraph-4",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks No Cardholder Authorization"
+          ],
+          "text": "      Issuer Chargeback\n      The issuer may chargeback the transaction when the dispute is not prohibited (refer to the\n      previous section), the following conditions are met, and are sufficiently detailed in the\n      supporting documentation:\n      •    The cardholder contacted the issuer claiming that the cardholder did not authorize the\n          transaction.\n          A company or government agency representative on behalf of a corporate card cardholder\n          (when the company or government agency no longer employs the authorized cardholder)\n          contacted the issuer claiming that the cardholder did not authorize the transaction.\n      •    Before processing a chargeback, the issuer must report the transaction as fraud on or before\n          the date of the chargeback:\n          –   For Mainland China domestic transactions: The transaction was reported to the Risk\n              Management as fraud in accordance with the China Switch User Guide - Customer Portal.\n          –   For all other transactions: The transaction was reported as fraud to the Fraud and Loss\n              Database in the Fraud Center application on Mastercard Connect in accordance with the\n              Fraud and Loss Database User Guide.",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=418",
+            "pdf_page": 418,
+            "pdf_page_label": "418",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E24",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": null,
+        "scheme": "Mastercard"
+      },
+      "topic": "Mastercard Transaction Amount; preserve actor, system and regional scope",
+      "answerability": "answerable",
+      "source_version": "13 May 2025 edition",
+      "source_region": "multiple",
+      "evidence": [
+        {
+          "passage_id": "mastercard-chargeback-guide:page-606:paragraph-4",
+          "headings": [
+            "Chargeback Guide (13 May 2025 edition)",
+            "Dual Message System Chargebacks Transaction Amount Differs"
+          ],
+          "text": "Transaction Amount Differs\n      This section details the conditions for addressing a cardholder claim that the cardholder claim\n      that the transaction amount was incorrect.\n      Only a partial transaction amount representing the difference between the correct and\n      incorrect amounts may be charged back.\n      This chargeback is not available for any of the following:",
+          "locator": {
+            "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=606",
+            "pdf_page": 606,
+            "pdf_page_label": "606",
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E25",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-dispute-flow:block-6",
+          "headings": [
+            "Dispute flow",
+            "Dispute flow overview"
+          ],
+          "text": "A chargeback takes place when a cardholder disputes a payment and asks their issuing bank to reverse it. To charge back the payment, the bank submits a formal dispute on behalf of the cardholder. Adyen processes the chargeback and debits the payment amount and the chargeback processing fee from your account. The dispute flow starts.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/understanding-disputes/dispute-process-and-flow#dispute-overview",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E26",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-dispute-flow:block-7",
+          "headings": [
+            "Dispute flow",
+            "Dispute flow overview"
+          ],
+          "text": "You can accept or defend the chargeback using the Customer Area or the Disputes API . If you defend the chargeback, you have to provide documents to support your defense.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/understanding-disputes/dispute-process-and-flow#dispute-overview",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E27",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-dispute-flow:block-8",
+          "headings": [
+            "Dispute flow",
+            "Dispute flow overview"
+          ],
+          "text": "The issuing bank reviews the information you supply and accepts or declines your defense. If the issuer accepts your defense, or if the cardholder cancels the chargeback, the funds will return to your account.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/understanding-disputes/dispute-process-and-flow#dispute-overview",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E28",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-dispute-flow:block-12",
+          "headings": [
+            "Dispute flow",
+            "Dispute stages"
+          ],
+          "text": "Stage | Description\nNotification of Fraud (NOF) (optional) | To notify you of fraud activity, Adyen sends equivalent of a Visa TC40 and Mastercard SAFE (System to Avoid Fraud Effectively) report. This is not a dispute, and no money is withdrawn from your account. This transaction can become a chargeback if there is no 3D Secure liability shift . Suggested actions: Actively review the NOF and decide if you want to issue a refund to avoid a chargeback. Block the shopper. Stop the shipment of goods if possible.\nRequest for Information (RFI) (optional) | The issuer requests more information about the transaction. At this stage, no money is withdrawn from your account. However, if you do not respond to the RFI in a timely manner, a chargeback may take place, and money may be withdrawn from your account. Suggested actions: Provide the requested transactional information to the issuer.\nNotification of Chargeback (NoC) | A chargeback has been initiated by the issuer, and can be defended. The NoC can come after the RFI, or immediately after the payment status is set to Settled or Refunded . Depending on the payment method, the chargeback debit happens a few days after you receive the NoC, or after you defend the dispute. The NoC marks the start of the defense period. Adyen automatically defends chargebacks that do not require action on your part. For example, a dispute can be auto-defended if the issuer opens a dispute on a transaction that was already refunded, or if it is a fraudulent chargeback for which there was a liability shift. If the chargeback is not auto-defended, the dispute goes to the Chargeback stage. Suggested actions: Review the dispute and decide if you want to defend or accept it. If you want to defend, collect and upload the relevant defense documents.\nChargeback | The disputed amount is withdrawn from your account. Suggested actions: Review the dispute and, if you have not already done so, decide if you want to defend or accept it. If you accept the chargeback or fail to upload your defense documents in time, this is the final stage.\nInformation Supplied | Adyen receives the supporting documents and forwards them to the scheme. It is no longer possible to change these documents.\nChargeback Reversed | The disputed amount is transferred back to your account. In this stage, the issuer reviews the defense. If they accept the defense, or the issuer response timeframe expires, this is the final stage.\nPre-arbitration (only some flows) | If the issuer declines your defense, they open pre-arbitration, which Adyen will review. If you are eligible and the dispute flow supports it, you can accept or decline the pre-arbitration case yourself. This requires additional configuration and approval from Adyen. Reach out to our Support Team or your Adyen contact for more details. If you accept the pre-arbitration, the dispute is lost. You receive a second chargeback. If you decline the pre-arbitration, the case can be sent to scheme arbitration. We recommend that you only decline if you are confident that the chargeback is not valid, and that the defense materials provided during the first chargeback defense were sufficient.\nScheme Arbitration (optional) | The scheme rules on the chargeback liability based on the information provided throughout chargeback defense timelines. This stage can only occur if you have enabled accepting or declining pre-arbitration yourself. If the scheme rules in favor of the issuer, you can incur a fee of up to USD 600. This fee is added to the second chargeback.\nSecond Chargeback | A second chargeback occurs when the issuer declines your defense, when you or Adyen accept a pre-arbitration case, or when you decline a pre-arbitration case and scheme arbitration rules in favor of the issuer. You cannot upload defense documents. This is the final stage.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/understanding-disputes/dispute-process-and-flow#dispute-process",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E29",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": "Visa"
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-visa-chargebacks:block-3",
+          "headings": [
+            "Visa chargebacks"
+          ],
+          "text": "The Allocation flow relates to all fraud and authorization cases.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "adyen-visa-chargebacks:block-4",
+          "headings": [
+            "Visa chargebacks"
+          ],
+          "text": "The Collaboration flow relates to all consumer disputes and processing errors.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E30",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": "Visa"
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-visa-chargebacks:block-27",
+          "headings": [
+            "Visa chargebacks",
+            "Visa Allocation Flow",
+            "Chargeback"
+          ],
+          "text": "Defend the dispute. You need to upload the relevant defense documents in your Customer Area or using the Disputes API . See Defense requirements for file formats and for defense documents per dispute type. Be sure to address the dispute reason and provide information that supports your position. An overview of the order details is not enough. You must provide your defense documents within 9 or 18 days . There is no opportunity later in the process to provide information or to update information you provided.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks#first-chargeback-process",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "adyen-visa-chargebacks:block-28",
+          "headings": [
+            "Visa chargebacks",
+            "Visa Allocation Flow",
+            "Chargeback"
+          ],
+          "text": "From 21 July 2025, the response timeframe for disputes opened on payments processed locally in the United States and Canada is 9 days. For disputes opened before this date in the United States or Canada, and for all other countries and regions, the response timeframe is 18 days.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks#first-chargeback-process",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E31",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": "Visa"
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-visa-chargebacks:block-30",
+          "headings": [
+            "Visa chargebacks",
+            "Visa Allocation Flow",
+            "Chargeback"
+          ],
+          "text": "For Allocation chargebacks, if you defend the dispute, the chargeback amount will not be immediately transferred back.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks#first-chargeback-process",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "adyen-visa-chargebacks:block-49",
+          "headings": [
+            "Visa chargebacks",
+            "Visa Collaboration flow",
+            "Chargeback Reversed"
+          ],
+          "text": "For Collaboration chargebacks (Consumer disputes and Processing errors categories), the disputed amount is returned after upload of the defense material.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks#Chargeback-Reversed-collaboration",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E32",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": "Adyen",
+        "scheme": "Visa"
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "global",
+      "evidence": [
+        {
+          "passage_id": "adyen-visa-chargebacks:block-65",
+          "headings": [
+            "Visa chargebacks",
+            "Visa Rapid Dispute Resolution flow",
+            "Differences between a regular chargeback and an RDR chargeback"
+          ],
+          "text": "You cannot defend an RDR chargeback because a transaction qualifies as an RDR only when it follows certain rules and parameters, and is resolved before becoming a dispute.",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks#visa-rapid-dispute-resolution-flow",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "adyen-visa-chargebacks:block-66",
+          "headings": [
+            "Visa chargebacks",
+            "Visa Rapid Dispute Resolution flow",
+            "Differences between a regular chargeback and an RDR chargeback"
+          ],
+          "text": "You will not be charged any chargeback or interchange fees for transactions that go through the RDR flow, and these transactions are not included in the dispute count .",
+          "locator": {
+            "reference": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks#visa-rapid-dispute-resolution-flow",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E33",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-6",
+          "headings": [
+            "Manage payment disputes",
+            "Before you begin"
+          ],
+          "text": "There are no fees for dispute management services for chargebacks – we cover the fee for every dispute that we work together to challenge.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#135b308ed83c53f1516b7c754566d1c4",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E34",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-7",
+          "headings": [
+            "Manage payment disputes",
+            "Before you begin"
+          ],
+          "text": "When the payment card issuer (such as Visa, Mastercard, etc) notifies us about your dispute, they also debit Square’s account to hold the disputed funds. We let you know about the dispute straight away and also place an immediate hold on the disputed funds by withholding funds from your Square balance or debiting your linked bank account.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#135b308ed83c53f1516b7c754566d1c4",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E35",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-8",
+          "headings": [
+            "Manage payment disputes",
+            "Before you begin"
+          ],
+          "text": "Once the bank makes their decision, the dispute outcome is final – Square won’t carry on challenging the dispute on your behalf.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#135b308ed83c53f1516b7c754566d1c4",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E36",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-11",
+          "headings": [
+            "Manage payment disputes",
+            "Before you begin"
+          ],
+          "text": "In addition to account owners, team members can view and respond to disputes if they have the ‘Respond to disputes’ permission enabled in Square Dashboard. Only team members with this permission will receive dispute notifications in Square Dashboard and by email or SMS. Full-access team members can be set up to get notifications in Square Dashboard, but team members with the ‘View disputes’ permission won’t receive any notifications.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#135b308ed83c53f1516b7c754566d1c4",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E37",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-28",
+          "headings": [
+            "Manage payment disputes",
+            "EMV chip card disputes"
+          ],
+          "text": "EMV chip cards provide a layer of protection against fraud when the card is dipped or tapped. To correctly process a transaction using an EMV-enabled chip card, the card will need to be tapped, dipped, or inserted so the chip can be read.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#sub_topic_switch_44226a6b",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E38",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-33",
+          "headings": [
+            "Manage payment disputes",
+            "Payments disputes process",
+            "Step 1: Review the information request form"
+          ],
+          "text": "Once you receive the initial notification email, you will have seven days to submit your information. Read over the details of the dispute on the form, and pay close attention to what your customer is claiming. Take a close look at the reason code and the amount disputed – this will help you determine which transaction is being disputed and which supporting evidence to send to us.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#5ee9b81e33027e84d39c429ba47c0311",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E39",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-48",
+          "headings": [
+            "Manage payment disputes",
+            "Resolved in your customer’s favour"
+          ],
+          "text": "If the case is resolved in your customer’s favour, the funds held will be returned to your customer. The processing fees for the payment aren’t refunded back to you. If the funds in your Square balance aren’t enough to cover the amount of the dispute, we will debit your linked bank account to cover the disputed amount.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#sub_topic_switch_27495a2c",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E40",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": "Square",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "square-uk-disputes:block-50",
+          "headings": [
+            "Manage payment disputes",
+            "Dispute cancellation"
+          ],
+          "text": "If your customer decides they no longer want to dispute a payment, they can contact their card-issuing bank and ask for an active dispute to be cancelled or withdrawn.",
+          "locator": {
+            "reference": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough#sub_topic_switch_76c7e8e6",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E41",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-4",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "What’s Eligible"
+          ],
+          "text": "They did not authorise, or benefit from, funds sent from their PayPal account (referred to as an “ Unauthorised Transaction \" claim) and the Unauthorised Transaction(s) occur in an environment hosted by PayPal.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "paypal-uk-seller-protection:block-5",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "What’s Eligible"
+          ],
+          "text": "They didn’t receive the item from you (referred to as an \" Item Not Received \" claim); provided, however, that Item Not Received claims that result from buyers filing chargeback claims with their issuers for card-funded transactions are not eligible for PayPal’s Seller Protection.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E42",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-10",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Basic Requirements"
+          ],
+          "text": "For Unauthorized Transaction claims, you must provide valid proof of shipment or proof of delivery that demonstrates that the item was shipped or provided to the buyer no later than two days after PayPal notified you of the dispute or reversal. For example, if PayPal notifies you of an Unauthorized Transaction claim on September 1, the valid proof of shipment must indicate that the item was shipped to the buyer no later than September 3 to be eligible for PayPal Seller Protection.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E43",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-12",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Basic Requirements"
+          ],
+          "text": "You must ship the item to the shipping address on the transaction details page in your PayPal account for the transaction. If you originally ship the item to the recipient's shipping address on the transaction details page but the item is later redirected to a different address, you will not be eligible for PayPal Seller Protection. We therefore recommend not using a shipping service that is arranged by the buyer, so that you will be able to provide valid proof of shipping and delivery.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E44",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-15",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Basic Requirements"
+          ],
+          "text": "If the sale involves pre-ordered or made-to-order goods, you must ship within the timeframe you specified in the listing. Otherwise, it is recommended that you ship all items within seven days after receipt of payment.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E45",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-18",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Basic Requirements"
+          ],
+          "text": "You must accept a single payment from one PayPal account for the purchase (partial payment and/or payment in instalments are excluded).",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E46",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-24",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Item Not Received Additional Requirements"
+          ],
+          "text": "You must provide proof of delivery as described below.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "paypal-uk-seller-protection:block-28",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Establishing proof of shipment or proof of delivery"
+          ],
+          "text": "Physical Goods The following is required as proof of shipment or delivery for physical goods:\nProof of shipment | Proof of delivery\nOnline or physical documentation from a shipping company that includes: An online and verifiable tracking number Date of shipment An address for the recipient that matches the shipping address on the \"Transaction Details\" page, or An address for the recipient showing at least the city/state, city/country, or zip/postal code (or international equivalent). | Online or physical documentation from a shipping company that includes: An online and verifiable tracking number Date of delivery and ‘delivered’ status An address for the recipient that matches the shipping address on the \"Transaction Details\" page An address for the recipient showing at least the city/state, city/country, or zip/postal code (or international equivalent). IMPORTANT: Your choice of carrier and shipment options with that carrier can have a big impact on your ability to meet the proof of delivery requirements. Please ensure, especially when shipping goods internationally, that your carrier can provide ‘delivered’ status at the correct address, or your Seller Protection claim may be denied.\nIntangible Goods The following is required as proof of delivery for intangible goods: | QR Code Transactions The following is required as proof of shipment or proof of delivery:\nFor intangible or digital goods, proof of delivery means compelling evidence to show the item was delivered or the purchase order was fulfilled. Compelling evidence could include a system of record showing the date the item was sent and that it was either: Electronically sent to the recipient, including the recipient’s address (email, IP, etc.), where applicable. Received or accessed by the recipient. | For QR code transactions you may be required to provide us with alternative evidence of delivery, or such additional documentation or information to the transaction.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E47",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-26",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Intangible Goods Additional Requirements"
+          ],
+          "text": "In the case of Unauthorised Transaction claims, PayPal has marked the intangible good transaction as \"eligible\" on the \"Transaction Details\" page or otherwise provided notice to you of eligibility in writing.",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "paypal-uk-seller-protection:block-27",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Intangible Goods Additional Requirements"
+          ],
+          "text": "Delivered the item and provide Proof of delivery for Intangible Goods .",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E48",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": "PayPal",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": "UK",
+      "evidence": [
+        {
+          "passage_id": "paypal-uk-seller-protection:block-44",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Ineligible Items and Transactions"
+          ],
+          "text": "Item where the buyer claims (either with us or their card issuer) that the item you sent isn't what was ordered (referred to as a “ Significantly Not as Described ” claim).",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "paypal-uk-seller-protection:block-45",
+          "headings": [
+            "PayPal’s Seller Protection Program",
+            "Ineligible Items and Transactions"
+          ],
+          "text": "Item Not Received claims filed by your buyer directly with their card issuer",
+          "locator": {
+            "reference": "https://www.paypal.com/uk/legalhub/paypal/seller-protection",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E49",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Stripe",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "stripe-respond-to-disputes:block-14",
+          "headings": [
+            "Respond to disputes",
+            "Review the dispute category",
+            "Inquiries"
+          ],
+          "text": "Inquiries appear as disputed payments in the Dashboard, but they actually represent a pre-dispute stage that’s typically issued when an account owner doesn’t recognize a transaction on their account. Respond in this stage to resolve any questions and prevent a formal dispute escalation, which saves you time, fees, and your rating with the card networks.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#inquiries",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "stripe-respond-to-disputes:block-15",
+          "headings": [
+            "Respond to disputes",
+            "Review the dispute category",
+            "Inquiries",
+            "Note"
+          ],
+          "text": "If an inquiry escalates to a chargeback, you must submit another response for the dispute.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#inquiries",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E50",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Stripe",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "stripe-respond-to-disputes:block-37",
+          "headings": [
+            "Respond to disputes",
+            "Accept or challenge the dispute"
+          ],
+          "text": "Stripe returns the dispute countered fee if you win the dispute. Unless otherwise stated in your Stripe contract, we never return the dispute received fee.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#decide",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "stripe-respond-to-disputes:block-38",
+          "headings": [
+            "Respond to disputes",
+            "Accept or challenge the dispute",
+            "Regional considerations Mexico Japan"
+          ],
+          "text": "The dispute countered fee doesn’t apply to businesses in Mexico and Japan.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#decide",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E51",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Stripe",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "stripe-respond-to-disputes:block-39",
+          "headings": [
+            "Respond to disputes",
+            "Submit evidence through the Dashboard"
+          ],
+          "text": "You’ve only one opportunity to submit your response. Stripe immediately forwards your response and all supporting files to the issuing bank. You can’t edit the response or submit additional files, so make sure you’ve assembled all your evidence before you submit.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#respond",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E52",
+      "split": "holdout",
+      "filters": {
+        "corpus": "real",
+        "provider": "Stripe",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "stripe-respond-to-disputes:block-48",
+          "headings": [
+            "Respond to disputes",
+            "Submit evidence through the Dashboard"
+          ],
+          "text": "Combine items of the same evidence type into a single file.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#respond",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "stripe-respond-to-disputes:block-49",
+          "headings": [
+            "Respond to disputes",
+            "Submit evidence through the Dashboard"
+          ],
+          "text": "Limit your evidence file size to the combined maximum of 4.5 MB.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#respond",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "stripe-respond-to-disputes:block-50",
+          "headings": [
+            "Respond to disputes",
+            "Submit evidence through the Dashboard"
+          ],
+          "text": "Limit your Mastercard evidence file length to the combined maximum of 19 pages.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#respond",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E53",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Stripe",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "stripe-respond-to-disputes:block-51",
+          "headings": [
+            "Respond to disputes",
+            "Submit evidence through the Dashboard"
+          ],
+          "text": "Banks evaluating the dispute won’t review any external content, so don’t include:",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#respond",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        },
+        {
+          "passage_id": "stripe-respond-to-disputes:block-54",
+          "headings": [
+            "Respond to disputes",
+            "Submit evidence through the Dashboard"
+          ],
+          "text": "Links to click for further information (for example, file downloads or links to tracking information)",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#respond",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E54",
+      "split": "dev",
+      "filters": {
+        "corpus": "real",
+        "provider": "Stripe",
+        "scheme": null
+      },
+      "topic": "Provider-specific merchant workflow; do not generalise to other providers",
+      "answerability": "answerable",
+      "source_version": "snapshot-2026-10-06",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "stripe-respond-to-disputes:block-23",
+          "headings": [
+            "Respond to disputes",
+            "Review the dispute category",
+            "Fraudulent disputes",
+            "Visa CE 3.0 Eligibility"
+          ],
+          "text": "For fraudulent disputes with the Visa 10.4 (Card absent fraud) code, Stripe automatically evaluates your transaction history to determine eligibility with Visa Compelling Evidence 3.0 . If your dispute is eligible, we notify you in the Dashboard and in the dispute email. In these cases, we encourage submitting evidence , because this eligibility typically translates to a significantly higher likelihood of overturning the dispute in your favor.",
+          "locator": {
+            "reference": "https://docs.stripe.com/disputes/responding#visa-ce-eligibility",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": null
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E55",
+      "split": "dev",
+      "filters": {
+        "corpus": "fixture",
+        "provider": "DisputeLens fictional provider",
+        "scheme": null
+      },
+      "topic": "Controlled fixture scenario: In our test provider's policy, tracking says delivered but the customer says the parcel never arrived. Is tracking alone enough, and what should I check?",
+      "answerability": "answerable",
+      "source_version": "1.0",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "delivery-policy:section-2",
+          "headings": [
+            "Delivery disputes",
+            "Customer says an order did not arrive"
+          ],
+          "text": "Check the order reference, agreed delivery address, promised delivery date and items purchased. Compare these with the carrier's tracking record and any available delivery confirmation. Keep relevant messages about delays, address changes or the customer's complaint.\n\nA tracking status of “delivered” is a useful record, but this policy does not treat that status alone as conclusive proof that the customer received the correct order at the agreed address. Check what the delivery confirmation actually shows.",
+          "locator": {
+            "reference": "data/sample/delivery.md:line-13",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 13
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E56",
+      "split": "holdout",
+      "filters": {
+        "corpus": "fixture",
+        "provider": "DisputeLens fictional provider",
+        "scheme": null
+      },
+      "topic": "Controlled fixture scenario: Under our test delivery policy, a customer ordered three items but only two arrived. What records should I gather?",
+      "answerability": "answerable",
+      "source_version": "1.0",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "delivery-policy:section-3",
+          "headings": [
+            "Delivery disputes",
+            "Partial delivery"
+          ],
+          "text": "If only some items arrived, identify the missing items. Keep shipment records for each parcel and any record of a replacement or refund. Do not describe a partially delivered order as fully delivered.",
+          "locator": {
+            "reference": "data/sample/delivery.md:line-19",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 19
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E57",
+      "split": "dev",
+      "filters": {
+        "corpus": "fixture",
+        "provider": "DisputeLens fictional provider",
+        "scheme": null
+      },
+      "topic": "Controlled fixture scenario: Under our test subscription policy, cancellation and renewal happened on the same day, but I have no timestamps or accepted cancellation terms. Can I decide whether the charge was allowed?",
+      "answerability": "needs_clarification",
+      "source_version": "1.0",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "subscription-policy:section-3",
+          "headings": [
+            "Subscription disputes",
+            "Customer says they cancelled"
+          ],
+          "text": "Find the cancellation request, the time it was received and any cancellation confirmation. Compare these records with the disputed payment's billing period and the cancellation terms accepted by the customer.\n\nUnder this fictional policy, a cancellation received before the next renewal prevents that renewal charge. A cancellation received after renewal prevents future renewal charges; whether the current period should be refunded depends on the applicable agreed refund terms. Do not infer the customer's refund entitlement from the cancellation date alone.",
+          "locator": {
+            "reference": "data/sample/subscriptions.md:line-17",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 17
+          }
+        },
+        {
+          "passage_id": "subscription-policy:section-4",
+          "headings": [
+            "Subscription disputes",
+            "Unclear dates or missing terms"
+          ],
+          "text": "If the renewal and cancellation order cannot be established, identify the missing timestamps and ask for clarification. If the accepted cancellation terms are unavailable, do not assume a notice period or create one.",
+          "locator": {
+            "reference": "data/sample/subscriptions.md:line-23",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 23
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E58",
+      "split": "dev",
+      "filters": {
+        "corpus": "fixture",
+        "provider": "DisputeLens fictional provider",
+        "scheme": null
+      },
+      "topic": "Controlled fixture scenario: According to our test refund policy, my refund is pending. Exactly how many days until it appears on the customer's statement?",
+      "answerability": "not_in_sources",
+      "source_version": "1.0",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "refund-policy:section-4",
+          "headings": [
+            "Refund disputes",
+            "Pending or failed refunds"
+          ],
+          "text": "If the provider shows a refund as pending or failed, state that status and request clarification from the provider. This policy does not specify how many days it takes a refund to appear on a customer's statement.",
+          "locator": {
+            "reference": "data/sample/refunds.md:line-23",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 23
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E59",
+      "split": "dev",
+      "filters": {
+        "corpus": "fixture",
+        "provider": "DisputeLens fictional provider",
+        "scheme": null
+      },
+      "topic": "Controlled fixture scenario: Our test provider's notification gives no response deadline. How long do I have to respond, and can you calculate the exact cutoff?",
+      "answerability": "conflicting_sources",
+      "source_version": "2.0",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "deadline-general-current:section-3",
+          "headings": [
+            "Chargeback response deadline — current general guidance",
+            "Notification without an explicit deadline"
+          ],
+          "text": "This guidance says the merchant has **seven calendar days** from the notification date to respond when the notification gives no explicit deadline. It does not explain whether the notification date counts as day one or specify a cutoff time. Ask the provider before calculating an exact cutoff.",
+          "locator": {
+            "reference": "data/sample/deadlines-current.md:line-17",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 17
+          }
+        },
+        {
+          "passage_id": "deadline-support-current:section-3",
+          "headings": [
+            "Chargeback response deadline — current support guidance",
+            "Notification without an explicit deadline"
+          ],
+          "text": "This support guidance says the merchant has **five business days** from the notification date to respond when the notification gives no explicit deadline. It does not define holidays, cutoff time or how to count the notification date. Do not calculate an exact deadline without those details.",
+          "locator": {
+            "reference": "data/sample/deadlines-support.md:line-17",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 17
+          }
+        },
+        {
+          "passage_id": "deadline-support-current:section-4",
+          "headings": [
+            "Chargeback response deadline — current support guidance",
+            "Relationship to other current guidance"
+          ],
+          "text": "The support guidance has the same stated authority as the current general guidance. Neither source contains a precedence rule. The general guidance instead states seven calendar days for the same situation. Neither the word “support” nor the version number establishes which source wins.",
+          "locator": {
+            "reference": "data/sample/deadlines-support.md:line-21",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 21
+          }
+        },
+        {
+          "passage_id": "deadline-support-current:section-5",
+          "headings": [
+            "Chargeback response deadline — current support guidance",
+            "What to do with this conflict"
+          ],
+          "text": "Cite both applicable sources, explain their different units and durations, and ask the provider to confirm the deadline. Do not blend them, choose the longer period or present one as authoritative without further evidence.",
+          "locator": {
+            "reference": "data/sample/deadlines-support.md:line-25",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 25
+          }
+        },
+        {
+          "passage_id": "deadline-general-current:section-5",
+          "headings": [
+            "Chargeback response deadline — current general guidance",
+            "Boundaries"
+          ],
+          "text": "Merchant response deadlines are not interchangeable with cardholder filing limits or scheme-level time limits. This policy does not define those limits. A previously superseded version must not be used as the current rule.",
+          "locator": {
+            "reference": "data/sample/deadlines-current.md:line-25",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 25
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "E60",
+      "split": "holdout",
+      "filters": {
+        "corpus": "fixture",
+        "provider": "DisputeLens fictional provider",
+        "scheme": null
+      },
+      "topic": "Ask whether the fixture specifies a bank response deadline in days; it does not. Distinguish missing source policy from cancellation policy.",
+      "answerability": "not_in_sources",
+      "source_version": "1.0",
+      "source_region": null,
+      "evidence": [
+        {
+          "passage_id": "subscription-policy:section-1",
+          "headings": [
+            "Subscription disputes"
+          ],
+          "text": "This policy is fictional and used for the DisputeLens evaluation.",
+          "locator": {
+            "reference": "data/sample/subscriptions.md:line-2",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 2
+          }
+        },
+        {
+          "passage_id": "subscription-policy:section-2",
+          "headings": [
+            "Subscription disputes",
+            "Customer disputes a recurring payment"
+          ],
+          "text": "Check the subscription agreement, billing frequency, amount and renewal date. Locate the record showing which terms the customer accepted and when. A successful payment alone does not establish that the customer agreed to recurring billing.",
+          "locator": {
+            "reference": "data/sample/subscriptions.md:line-13",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 13
+          }
+        },
+        {
+          "passage_id": "subscription-policy:section-3",
+          "headings": [
+            "Subscription disputes",
+            "Customer says they cancelled"
+          ],
+          "text": "Find the cancellation request, the time it was received and any cancellation confirmation. Compare these records with the disputed payment's billing period and the cancellation terms accepted by the customer.\n\nUnder this fictional policy, a cancellation received before the next renewal prevents that renewal charge. A cancellation received after renewal prevents future renewal charges; whether the current period should be refunded depends on the applicable agreed refund terms. Do not infer the customer's refund entitlement from the cancellation date alone.",
+          "locator": {
+            "reference": "data/sample/subscriptions.md:line-17",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 17
+          }
+        },
+        {
+          "passage_id": "subscription-policy:section-4",
+          "headings": [
+            "Subscription disputes",
+            "Unclear dates or missing terms"
+          ],
+          "text": "If the renewal and cancellation order cannot be established, identify the missing timestamps and ask for clarification. If the accepted cancellation terms are unavailable, do not assume a notice period or create one.",
+          "locator": {
+            "reference": "data/sample/subscriptions.md:line-23",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 23
+          }
+        },
+        {
+          "passage_id": "subscription-policy:section-5",
+          "headings": [
+            "Subscription disputes",
+            "Boundaries"
+          ],
+          "text": "This policy does not cover hotel no-shows, one-off purchases or service-quality disputes. It does not set a chargeback-response deadline, authorise continued billing after cancellation or guarantee a dispute outcome.",
+          "locator": {
+            "reference": "data/sample/subscriptions.md:line-27",
+            "pdf_page": null,
+            "pdf_page_label": null,
+            "start_line": 27
+          }
+        }
+      ]
+    }
+  ]
+}

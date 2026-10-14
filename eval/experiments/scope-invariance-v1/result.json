@@ -1,0 +1,251 @@
+{
+  "E22_baseline_claims": [
+    {
+      "claim": 1,
+      "text": "A refund can resolve the dispute, but only in the stated scenario. If ",
+      "quotes": [
+        {
+          "id": "S049",
+          "quote": "the issuer must not continue the dispute for the refunded am",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": true
+    },
+    {
+      "claim": 2,
+      "text": "There are two exceptions. The issuer may continue if the refund is cle",
+      "quotes": [
+        {
+          "id": "S049",
+          "quote": "The issuer or cardholder can clearly document that the refun",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        },
+        {
+          "id": "S049",
+          "quote": "the acquirer failed to provide a valid remedy for the",
+          "sections": 38,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": true
+    },
+    {
+      "claim": 3,
+      "text": "The refund must be documented in the second presentment, not first rai",
+      "quotes": [
+        {
+          "id": "S043",
+          "quote": "A refund is required to be documented in the second presentm",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        },
+        {
+          "id": "S044",
+          "quote": "Mastercard will likely hold the issuer responsible for the r",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": true
+    },
+    {
+      "claim": 4,
+      "text": "A refund processed by the merchant includes a refund transaction with ",
+      "quotes": [
+        {
+          "id": "S048",
+          "quote": "A refund transaction identified with a value of 20 (Credit [",
+          "sections": 37,
+          "families": 4,
+          "invariant": true
+        },
+        {
+          "id": "S048",
+          "quote": "By other means in accordance with the merchant policy for ad",
+          "sections": 37,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": true
+    }
+  ],
+  "E13_claims": [
+    {
+      "claim": 1,
+      "text": "For a domestic installment arrangement, the guide says the issuer may ",
+      "quotes": [],
+      "claim_invariant": false
+    },
+    {
+      "claim": 2,
+      "text": "The issuer must use 4850 for any subsequent installments the acquirer ",
+      "quotes": [
+        {
+          "id": "S019",
+          "quote": "The issuer must use this message reason code for any subsequ",
+          "sections": 1,
+          "families": 1,
+          "invariant": false
+        },
+        {
+          "id": "S019",
+          "quote": "The issuer must provide the original message reason code 483",
+          "sections": 1,
+          "families": 1,
+          "invariant": false
+        }
+      ],
+      "claim_invariant": false
+    },
+    {
+      "claim": 3,
+      "text": "The subsequent-installment chargeback carries the message text \"4837 C",
+      "quotes": [
+        {
+          "id": "S002",
+          "quote": "Message Text: 4837 CB REF NNNNNNN where NNNNNNN is replaced ",
+          "sections": 1,
+          "families": 1,
+          "invariant": false
+        },
+        {
+          "id": "S002",
+          "quote": "Supporting Documents: None.",
+          "sections": 75,
+          "families": 4,
+          "invariant": true
+        },
+        {
+          "id": "S002",
+          "quote": "Time Frame: Within 120-calendar days from the Central Site B",
+          "sections": 4,
+          "families": 1,
+          "invariant": false
+        }
+      ],
+      "claim_invariant": false
+    }
+  ],
+  "E22_attempt_claims": [
+    {
+      "claim": 1,
+      "text": "A refund can resolve the dispute, but only in the stated case: it was ",
+      "quotes": [
+        {
+          "id": "S020",
+          "quote": "the issuer must not continue the dispute for the refunded am",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": true
+    },
+    {
+      "claim": 2,
+      "text": "The refund has to be documented in the second presentment. It cannot b",
+      "quotes": [
+        {
+          "id": "S002",
+          "quote": "A refund is required to be documented in a timely manner in ",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": true
+    },
+    {
+      "claim": 3,
+      "text": "The issuer can still continue in two cases. One is when the issuer or ",
+      "quotes": [
+        {
+          "id": "S020",
+          "quote": "The issuer or cardholder can clearly document that the refun",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        },
+        {
+          "id": "S020",
+          "quote": "the acquirer failed to provide a valid remedy for the",
+          "sections": 38,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": true
+    },
+    {
+      "claim": 4,
+      "text": "A refund processed by the merchant includes a clearing refund transact",
+      "quotes": [
+        {
+          "id": "S015",
+          "quote": "A refund transaction identified with a value of 20 (Credit [",
+          "sections": 37,
+          "families": 4,
+          "invariant": true
+        },
+        {
+          "id": "S015",
+          "quote": "A MoneySend Payment Transaction Fast Refund to the original ",
+          "sections": 3,
+          "families": 3,
+          "invariant": false
+        },
+        {
+          "id": "S015",
+          "quote": "which may include providing a cash, check, or prepaid card r",
+          "sections": 36,
+          "families": 4,
+          "invariant": true
+        }
+      ],
+      "claim_invariant": false
+    }
+  ],
+  "negative_control": {
+    "quote": "Mainland China Customer, a domestic Fee Collection must be processed as",
+    "sections": 35,
+    "families": 4
+  },
+  "E13_v3_equals_v2": true,
+  "reported": {
+    "E22": {
+      "v2_action": "fail_closed",
+      "v3_action": "invariant_note",
+      "v3_status": "partial",
+      "v3_claims_kept_unprefixed": 4,
+      "v3_claims_of": 4,
+      "v3_note": "The guide gives this same wording in 36 reason-code sections; check your own reason code for additional conditions.",
+      "v3_valid": true
+    },
+    "E22-flagged-answer-v1": {
+      "v2_action": "fail_closed",
+      "v3_action": "conditionalised",
+      "v3_status": "partial",
+      "v3_claims_kept_unprefixed": 3,
+      "v3_claims_of": 4,
+      "v3_note": "The guide gives this same wording in 36 reason-code sections; check your own reason code for additional conditions.",
+      "v3_valid": true
+    }
+  },
+  "verdict": {
+    "I1": true,
+    "I2": false,
+    "I3": false,
+    "I4": true,
+    "overall_pass": false
+  },
+  "protocol_sha256": "a97fbfad8bee7daaecf1606b009fb55ef0ba764fc869b55be4b148c92e56fc55"
+}

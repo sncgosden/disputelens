@@ -1,0 +1,16 @@
+{
+  "name": "quote-match-v1",
+  "declared": "2026-10-08, before the matcher was written or run",
+  "purpose": "Offline: decide whether the citation quote check may ignore whitespace after a hyphen, because the guide's PDF layout writes 'fraud- related' and the model, quoting faithfully in meaning, wrote 'fraud-related'. The frozen production validate_answer is NOT changed; the experiment adds a separate matcher in its own module.",
+  "rule": "A quote matches if, after collapsing whitespace, it is a substring of the passage text; or, failing that, if it is a substring after removing whitespace that directly follows a hyphen from BOTH the quote and the passage. Nothing else is relaxed (case, punctuation, word order and every letter still have to match).",
+  "inputs": "The E13 flagged-answer-v1 attempt (raw response, failed on the hyphen), all 40 citation-valid baseline answers, and the 5 failed baseline attempts (E06, E17, E21, E54, E55; their saved raw responses). Development bundle only. No model call.",
+  "thresholds": {
+    "H1": "The E13 flagged-answer-v1 raw answer passes validation when the tolerant matcher replaces the strict quote test, all other checks unchanged",
+    "H2": "All 40 baseline answers still pass, with identical per-citation results",
+    "H3": "Report which of the 5 failed baseline attempts become valid. Frozen baseline records are not rewritten; any change is a reported finding. Expect E17 only if its mismatch is hyphenation",
+    "H4": "Six synthetic negative controls built from real passages are still rejected: one changed word, one changed number, a removed 'not', two stitched sentences, one altered letter next to a hyphen",
+    "H5": "validate_answer source is unchanged (hash recorded before and after)"
+  },
+  "decision_rule": "Pass only if H1, H2, H4 and H5 hold. H3 is reported. A pass recommends adopting the tolerant matcher in a separately versioned production change; it does not change production.",
+  "limits": ["One real instance of the failure (E13); E17 may add a second", "Accepting 'fraud-related' for 'fraud- related' is a judgement that layout whitespace is not meaning; it could in principle accept a quote that differs from the source by a space after a hyphen, which is the intent", "Negative controls are synthetic"]
+}

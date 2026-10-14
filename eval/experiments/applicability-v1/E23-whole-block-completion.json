@@ -1,0 +1,108 @@
+{
+  "case_id": "E23",
+  "status": "separate_diagnostic_evidence_not_baseline",
+  "reviewer": "Codex assisted source review",
+  "source_path": "data/normalized-expanded/documents.json",
+  "source_sha256": "a6e8f1806fa7e61001c36d770f1be66efb13523da3ed4680ba40e697f96bde9f",
+  "frozen_context_pack_sha256": "ecb7f383ef2bbf2180b2a563a20794cbe7a26e1ad00d3109fd17d843842459d7",
+  "pieces": [
+    {
+      "passage_id": "mastercard-chargeback-guide:page-418:paragraph-4",
+      "start": 0,
+      "end": 1246,
+      "text": "      Issuer Chargeback\n      The issuer may chargeback the transaction when the dispute is not prohibited (refer to the\n      previous section), the following conditions are met, and are sufficiently detailed in the\n      supporting documentation:\n      •    The cardholder contacted the issuer claiming that the cardholder did not authorize the\n          transaction.\n          A company or government agency representative on behalf of a corporate card cardholder\n          (when the company or government agency no longer employs the authorized cardholder)\n          contacted the issuer claiming that the cardholder did not authorize the transaction.\n      •    Before processing a chargeback, the issuer must report the transaction as fraud on or before\n          the date of the chargeback:\n          –   For Mainland China domestic transactions: The transaction was reported to the Risk\n              Management as fraud in accordance with the China Switch User Guide - Customer Portal.\n          –   For all other transactions: The transaction was reported as fraud to the Fraud and Loss\n              Database in the Fraud Center application on Mastercard Connect in accordance with the\n              Fraud and Loss Database User Guide.",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks No Cardholder Authorization"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=418",
+        "pdf_page": 418,
+        "pdf_page_label": "418",
+        "start_line": null
+      },
+      "source_text_sha256": "9b917853792c03e2540c924a5c07320a8f13ee6155ebb49cbe2b8df7ab6a1e70"
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-418:paragraph-5",
+      "start": 0,
+      "end": 613,
+      "text": "      In addition, for a card-read (not key-entered) transaction occurring at a CAT 2 device with a lost,\n      stolen, never received (NRI) card, the issuer must:\n      •    Block the account on its host.\n      •    For a contactless transaction involving a Mastercard token, deactivate the token.\n      •    For all transactions except Mainland China domestic transactions: List the primary account\n          number (PAN) on the Mastercard Stand-in Account File with a “capture card” response for\n          180-calendar days or until card expiration (whichever is shorter).\n          For the avoidance of doubt:",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks No Cardholder Authorization"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=418",
+        "pdf_page": 418,
+        "pdf_page_label": "418",
+        "start_line": null
+      },
+      "source_text_sha256": "474173a64008a9be2a7fb5cbb8e6dfd2d15431823f2352369cfbc204da08dfe8"
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-419:paragraph-2",
+      "start": 0,
+      "end": 1296,
+      "text": "          –   Listing the PAN on the Mastercard Stand-in Account File is required when the card was\n              issued in the Latin America and the Caribbean region.\n          –   Listing the PAN on the Mastercard Stand-in Account File is not required when the card\n              was issued under a BIN or BIN range assigned for Germany when the issuer’s stand-in\n              parameters are set to zero to decline all authorization attempts or are managed through\n              an alternate host.\n      Supporting Documents: One of the following documents must be provided to support the\n      chargeback:\n      •    Cardholder email, letter, or message (including through a password-protected website)\n          provided by the cardholder stating the cardholder did not authorize the transaction.\n          In addition, for a lost, stolen, never received (NRI) card-read (not key-entered) transaction\n          occurring at a CAT 2 device the cardholder must also state, or the issuer must otherwise\n          certify by means of a separate document accompanying the cardholder documentation, that\n          the card was lost, stolen, or never received (NRI) at the time of the transaction.\n      •    Issuer completed Dispute Resolution Form-Fraud (Form 0412) stating the cardholder did not",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Issuer Chargeback"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+        "pdf_page": 419,
+        "pdf_page_label": "419",
+        "start_line": null
+      },
+      "source_text_sha256": "b5ae76719c76ab157eb123d073ae4be473d9e40ccc386dcc8910690e618aae31"
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-419:paragraph-3",
+      "start": 0,
+      "end": 1331,
+      "text": "          authorize the transaction.\n          In addition, for a lost, stolen, never received (NRI) card-read (not key-entered) transaction\n          occurring at a CAT 2 device the Dispute Resolution Form-Fraud (Form 0412) must state, or\n          the issuer must otherwise certify by means of a separate document accompanying the form,\n          that the card was lost, stolen, or never received (NRI) at the time of the transaction.\n          A completed Dispute Resolution Form-Fraud (Form 0412) must be the direct result of a\n          conversation with the cardholder.\n          When using the Dispute Resolution Form-Fraud (Form 0412) the issuer must ensure all of the\n          following occurred before processing the chargeback:\n          –   The issuer closed the Mastercard card account.\n          –   The issuer blocked the account on its host.\n          –   The issuer listed the account number on the Mastercard Stand-in Account File with a\n              “capture card” response for 180-calendar days or until card expiration (whichever is\n              shorter).\n              This requirement does not apply when one of the following occurred:\n              –   The transaction was a Mainland China domestic transaction;\n              –   The card was issued in the Latin America and the Caribbean region, and the",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Issuer Chargeback"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+        "pdf_page": 419,
+        "pdf_page_label": "419",
+        "start_line": null
+      },
+      "source_text_sha256": "b302cc09d86d0b46fec91e2623906538dd6b1fd2ff572be9420094b2cf022e98"
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-419:paragraph-4",
+      "start": 0,
+      "end": 781,
+      "text": "                 transaction did not occur at a CAT 2 device; or\n              –   The card was issued under a BIN or BIN range assigned for Germany when the issuer’s\n                 stand-in parameters are set to zero to decline all authorization attempts or are\n                 managed through an alternate host.\n      •    Written complaint or a completed Dispute Resolution Form-Fraud (Form 0412) form provided\n          by a company or government agency representative on behalf of a corporate card cardholder\n          when the company or government agency no longer employs the authorized cardholder. A\n          completed Dispute Resolution Form-Fraud (Form 0412) must be the direct result of a\n          conversation with the company or government agency representative.",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Issuer Chargeback"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+        "pdf_page": 419,
+        "pdf_page_label": "419",
+        "start_line": null
+      },
+      "source_text_sha256": "e38ef205f47cf4d83f3783495511a0cbb6fc09f3e464e333b9ec6b1d17056414"
+    }
+  ],
+  "reviewed_obligations": [
+    "Report fraud by chargeback date; regional reporting branch",
+    "CAT2 lost/stolen/NRI card-read branch: block host, deactivate contactless Mastercard token, qualified PAN listing",
+    "Document option must certify loss/stolen/NRI status when the CAT2 branch applies",
+    "Form0412 follows direct cardholder conversation",
+    "Form0412 requires account closure and host blocking; exceptions waive listing only",
+    "LAC listing exception requires non-CAT2 transaction; Germany requires zero stand-in parameters or alternate host"
+  ],
+  "remaining_limits": [
+    "Dual Message System scope and complete prohibited-dispute assessment remain required",
+    "Manual development completion, not retrieval quality evidence",
+    "Independent review and model answer assessment remain open"
+  ]
+}

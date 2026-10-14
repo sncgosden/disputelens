@@ -1,0 +1,20 @@
+{
+  "name": "scope-detector-v3",
+  "declared": "2026-10-08, after the holdout (which exposed the E16 false positive) and after the stress-set labels were fixed and hashed, before any detector version was run on the stress set",
+  "stress_set": {"path": "eval/stress/mastercard-scope-v1/pairs.json", "sha256": "7538ab1d7cb6d98f39024516de5abbbc4b73d16c1e15396bc598ae956a79f527", "rows": "24 (12 scoped, 12 unscoped), labels written by Claude before running, not independent"},
+  "problem": "Holdout case E16 was falsely flagged: the question described the exact subtype in its own words, but the detector reads the family heading's codes and only exempts a question that prints the whole section title.",
+  "rule_v3": {
+    "base": "scope-detector v2 unchanged (codes in the deepest code-bearing heading, named phrases, R1 and R2)",
+    "added": "subtype-by-description: let S be the heading directly below the family heading (headings index 3, after guide, chapter and family). Take its content words: lowercase alphabetic tokens of 3 or more letters from the heading with parenthetical text removed, minus the stopwords (the, and, for, was, were, either, not, from, with, within, that, this, any, all) and minus the generic words (goods, services, charge, chargeback, dispute, transaction, issuer, acquirer, merchant, cardholder, purchase, amount, case), each stripped of one trailing s, es, ed or ing. The subtype is established if at least 50 percent of those words, and at least one word, occur in the question after the same stripping. If established, the codes inherited from the family heading are not flagged. Phrase qualifiers (participating countries, stand-in, x-code, required authorization) are unaffected and still flagged unless named in the question."
+  },
+  "thresholds": {
+    "T1": "v3 flags at least 11 of the 12 unscoped stress rows",
+    "T2": "v3 flags at most 2 of the 12 scoped stress rows",
+    "T3": "v3 flags strictly fewer scoped rows than v2 (v2 is run on the same rows as the baseline)",
+    "T4": "Development regression: across the 40 valid development answers, v3 flags exactly the same cited passages as v2 (E13 and E22 only) and every other answer is unchanged",
+    "T5": "Unit tests for the added rule pass, including one test that a subtype description cannot establish a different subtype's codes"
+  },
+  "reported_not_thresholded": ["v2 and v3 flag counts on each row", "E16 under v3: designed after seeing E16, so a known-case check, not validation", "which rows v3 gets wrong"],
+  "decision_rule": "Pass only if T1 to T5 hold. A pass supports a detector version change for the next evaluation; the holdout cannot validate it. If T1 fails the change is not adopted and v2 remains.",
+  "limits": ["Stress set labels are mine, written after seeing E16, and 24 rows is small", "Questions are written to be natural but are not real merchant questions", "Detector-level test: no model output, no gate end-to-end", "Word overlap is a crude proxy for 'the question identifies this subtype'", "Mastercard Chapter 2 only"]
+}

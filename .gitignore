@@ -19,9 +19,16 @@ data/private/
 data/raw/
 data/parsed/
 data/normalized/
+data/chunks/
+data/parsed-expanded/
+data/normalized-expanded/
+data/chunks-expanded/
+eval/expanded/raw/
 eval/raw/
 *.gguf
 *.safetensors
 
 # Keep the local planning workbook out of the code repository
 *.xlsx
+*.xlsx.inspect.ndjson
+*.xlsx.tmp.inspect.ndjson

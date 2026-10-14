@@ -1,0 +1,57 @@
+{
+  "labeller": "<name of the person rating>",
+  "independent": true,
+  "note": "Replace each ___ with yes, no or unsure. 'independent' must be true only if the labeller is not the author and did not see detector flags.",
+  "ratings": {
+    "F01": [
+      "___"
+    ],
+    "F02": [
+      "___",
+      "___",
+      "___",
+      "___"
+    ],
+    "F03": [
+      "___"
+    ],
+    "F04": [
+      "___",
+      "___",
+      "___",
+      "___"
+    ],
+    "F05": [
+      "___",
+      "___",
+      "___",
+      "___"
+    ],
+    "F06": [
+      "___",
+      "___",
+      "___",
+      "___"
+    ],
+    "F07": [],
+    "F08": [
+      "___"
+    ],
+    "F09": [],
+    "F10": [
+      "___",
+      "___",
+      "___",
+      "___"
+    ],
+    "F11": [
+      "___",
+      "___"
+    ],
+    "F12": [
+      "___",
+      "___",
+      "___"
+    ]
+  }
+}

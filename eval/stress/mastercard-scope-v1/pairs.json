@@ -1,0 +1,320 @@
+{
+  "name": "mastercard-scope-v1",
+  "written": "2026-10-08, labels fixed before any detector version was run on them",
+  "author": "Claude (assisted; not independent)",
+  "purpose": "Detector-level stress set: question plus the heading path of a plausibly cited passage. No model output, no holdout, no development case reused.",
+  "rows": [
+    {
+      "id": "S01",
+      "label": "scoped",
+      "question": "A guest was charged a no-show fee by a hotel but says they cancelled in time. What must the issuer show for that chargeback?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "\"No-Show” Hotel Charge",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S02",
+      "label": "scoped",
+      "question": "A cardholder says the designer handbag they bought was a counterfeit. What documentation does the issuer need?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Counterfeit Goods",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S03",
+      "label": "scoped",
+      "question": "A customer paid a deposit on a timeshare and wants out. How does the issuer chargeback work?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Timeshares",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S04",
+      "label": "scoped",
+      "question": "A customer says the ATM never gave them their cash. What is the time frame for the issuer chargeback?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "ATM Funds Not Dispensed",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S05",
+      "label": "scoped",
+      "question": "My customer was billed twice for the same order. How does the issuer chargeback for a duplicate charge work?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "Cardholder Debited More than Once for the Same Goods or Services",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S06",
+      "label": "scoped",
+      "question": "The cardholder says they were charged in the wrong currency. What applies to that chargeback?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "Currency Errors",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S07",
+      "label": "scoped",
+      "question": "A cardholder disputes a 20 euro purchase of digital goods. What are the rules for such a small digital purchase?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Digital Goods Purchase of USD/EUR 25 or Less",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S08",
+      "label": "scoped",
+      "question": "The cardholder cancelled a flight booking and was never refunded. What does the issuer have to provide?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Travel/Entertainment Services Cancelled/Returned and a Refund was Not Processed",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S09",
+      "label": "scoped",
+      "question": "A counterfeit chip card was used at my terminal with the magnetic stripe. How does the chip liability shift chargeback work?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+        "Chip Liability Shift (Message Reason Code 4870/70)",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S10",
+      "label": "scoped",
+      "question": "A merchant in Canada added an improper surcharge. How can the issuer charge that back?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "Improper Merchant Surcharge (Canada, Intra-European and Inter-European Transactions)",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S11",
+      "label": "scoped",
+      "question": "My refund was posted to the cardholder as a purchase instead of a credit. What chargeback does that trigger?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Refund Posted as a Purchase",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "S12",
+      "label": "scoped",
+      "question": "Transit first ride risk claims: what does the acquirer have to include in the second presentment?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Transit First Ride Risk (FRR) Claims",
+        "Acquirer Second Presentment"
+      ],
+      "rationale": "question identifies the subtype in its own words; scope is established"
+    },
+    {
+      "id": "U01",
+      "label": "unscoped",
+      "question": "What time frame do I have to respond to a chargeback?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Required Authorization Not Obtained",
+        "Issuer Chargeback"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U02",
+      "label": "unscoped",
+      "question": "What documents must the issuer provide to start a dispute?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Timeshares",
+        "Issuer Chargeback"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U03",
+      "label": "unscoped",
+      "question": "Can the issuer charge back only part of the amount?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "Unreasonable Amount (EEA, Gibraltar, United Kingdom)",
+        "Issuer Chargeback"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U04",
+      "label": "unscoped",
+      "question": "How does a merchant defend against a chargeback with a second presentment?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Counterfeit Goods",
+        "Acquirer Second Presentment"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U05",
+      "label": "unscoped",
+      "question": "Is the issuer allowed to submit a pre-arbitration case?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+        "Chip Liability Shift (Message Reason Code 4870/70)",
+        "Issuer Submission of a Pre-arbitration Case"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U06",
+      "label": "unscoped",
+      "question": "How long does the issuer have to file a chargeback?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Stand-in or X-Code Approval after Issuer Decline",
+        "Issuer Chargeback"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U07",
+      "label": "unscoped",
+      "question": "Do I need to refund the cardholder to end the dispute?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Installment Billing Dispute-Participating Countries (Reason Code 4850)",
+        "Acquirer Second Presentment"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U08",
+      "label": "unscoped",
+      "question": "What supporting documentation must the issuer include?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Addendum Dispute",
+        "Issuer Chargeback"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U09",
+      "label": "unscoped",
+      "question": "What if the cardholder keeps the merchandise?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Goods or Services Not Provided",
+        "Issuer Chargeback"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U10",
+      "label": "unscoped",
+      "question": "Can a chargeback be raised on a low-value transaction?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Digital Goods Purchase of USD/EUR 25 or Less",
+        "Issuer Chargeback"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U11",
+      "label": "unscoped",
+      "question": "The acquirer sent a second presentment. What happens next?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Fraud-related Chargebacks (Message Reason Codes 4837/37/4870/70/4871/4849/49)",
+        "Questionable Merchant Activity (Message Reason Code 4849/49)",
+        "Acquirer Second Presentment"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    },
+    {
+      "id": "U12",
+      "label": "unscoped",
+      "question": "What are the consequences if the merchant does not respond in time?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Cardholder Dispute of a Recurring Transaction",
+        "Acquirer Second Presentment"
+      ],
+      "rationale": "generic question; the cited passage belongs to one subtype the question does not identify"
+    }
+  ]
+}

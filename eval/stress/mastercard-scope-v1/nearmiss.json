@@ -1,0 +1,163 @@
+{
+  "name": "mastercard-scope-nearmiss-v1",
+  "written": "2026-10-08, labels fixed before any detector version was run on them; written after reading the v3 rule, so adversarial by design",
+  "author": "Claude (assisted; not independent)",
+  "rows": [
+    {
+      "id": "N01",
+      "label": "unscoped",
+      "question": "Can a refund end the dispute?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Refund Not Processed",
+        "Acquirer Second Presentment"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N02",
+      "label": "unscoped",
+      "question": "How do I stop recurring charges being disputed?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Cardholder Dispute of a Recurring Transaction",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N03",
+      "label": "unscoped",
+      "question": "Is the transaction complete once it is authorised?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Transaction Did Not Complete",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N04",
+      "label": "unscoped",
+      "question": "Which currency does the acquirer settle in?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "Currency Errors",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N05",
+      "label": "unscoped",
+      "question": "What happens if the card used was counterfeit?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Counterfeit Goods",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N06",
+      "label": "unscoped",
+      "question": "How do I refund a customer after a dispute?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Refund Posted as a Purchase",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N07",
+      "label": "unscoped",
+      "question": "Can the issuer file a chargeback more than once?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "Cardholder Debited More than Once for the Same Goods or Services",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N08",
+      "label": "unscoped",
+      "question": "What happens after the issuer declines the authorization request?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Stand-in or X-Code Approval after Issuer Decline",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N09",
+      "label": "unscoped",
+      "question": "What is the risk if my response is late?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Authorization-related Chargeback (Message Reason Code 4808/08)",
+        "Transit First Ride Risk (FRR) Claims",
+        "Acquirer Second Presentment"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N10",
+      "label": "unscoped",
+      "question": "Do travel merchants have special rules?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Failed Travel Merchant-Intra-EEA and Domestic European Transactions Only",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N11",
+      "label": "unscoped",
+      "question": "How are digital downloads disputed?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Cardholder Dispute Chargeback (Message Reason Code 4853/53/4850/4854)",
+        "Digital Goods Purchase of USD/EUR 25 or Less",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    },
+    {
+      "id": "N12",
+      "label": "unscoped",
+      "question": "Can a merchant add a surcharge to a card payment?",
+      "cited_headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Chapter 2 Dual Message System Chargebacks",
+        "Point-of-Interaction Error (Message Reason Code 4834/34)",
+        "Improper Merchant Surcharge (Canada, Intra-European and Inter-European Transactions)",
+        "Issuer Chargeback"
+      ],
+      "rationale": "question shares at least one word with the cited subtype title but does not identify the subtype"
+    }
+  ]
+}

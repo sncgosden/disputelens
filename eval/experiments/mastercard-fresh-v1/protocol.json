@@ -1,0 +1,93 @@
+{
+  "name": "mastercard-fresh-v1",
+  "declared": "2026-10-09, before any retrieval or generation for these 12 questions",
+  "purpose": "Produce a fresh set of Mastercard answers, outside the spent holdout and outside the development set, so that the two scope detectors (v2 and the semantic candidate) can be compared on answers whose scope correctness is judged by a person other than me. This run only generates and records; it does not decide which detector ships.",
+  "frozen_files_sha256": {
+    "src/disputelens/grounded_answer.py": "5ebe888a52b016a3e387e58ff87d7b4668fd33a009a7d871aeb27235a31c7fc2",
+    "src/disputelens/context_pack.py": "a956ee10b8ff8c4fd9d37ce81e9924ea52f2e7ed27c61555e049a90b09de4821",
+    "src/disputelens/scope_gate.py": "b5f24acc8b3e29f1e657d318b6f94833b7d3b442f19ab31068f9f1fe9a56bbc3",
+    "src/disputelens/scope_detector.py": "6496d921d740497a7a072951a43e0395ed87860896d6e390ffde06e287074cfd",
+    "src/disputelens/scope_detector_semantic.py": "3a12aae4288e3ad15bd076decdd34360b1f57ed8a68ef3af6159f3d5ae287135",
+    "src/disputelens/scope_invariance.py": "dad938ab828094fcf8ed1e42d9eabc2e68c1891d5718d8313dca68049aae8ee1",
+    "src/disputelens/quote_match.py": "9bb2ad8b6e8a30233667a203df2044af440f7b9db8e74bfb8ce1098a580fbfda",
+    "src/disputelens/holdout_final.py": "84fdaa75470eab8dc3c8dafea9afcf465cc0391cc48e4bed93465a844417bcd4",
+    "eval/experiments/scope-detector-semantic-v1/chosen.json": "66cbe58152a336aaa897e736cdf99e35b3b0b0d93eb08bc04d7b2c6dd7ba27fd",
+    "data/claude-pricing.json": "18c88aeff9c5549897a5c8be010f00ea7892ca52d4cc8faa0b2080e9bb1f0759",
+    "eval/fresh/mastercard-fresh-v1/cases.json": "99ab1d0475d0f33d094a2b4b38d982fd18a6b63b59181ebe6043a87638db511e",
+    "src/disputelens/fresh_mastercard.py": "065426ecd12eee0ba19301d1df6a8bd2fd32d080777a87214283eee8dccdba26",
+    "tests/test_fresh_mastercard.py": "58ba1990f900a326ad2fd8842a31d067daea3fdbb74e9af797d2c02ab92d87a8"
+  },
+  "freeze_rule": "Any change to these files after declaration invalidates the run. Runner refuses if a hash differs.",
+  "cases": {
+    "path": "eval/fresh/mastercard-fresh-v1/cases.json",
+    "n": 12,
+    "design": "6 questions that describe a subtype in everyday words, 6 generic or underspecified. Written by me before retrieval. 'intended_kind' is my label only; ground truth for scope is the independent labeller's rating of each answer's claims."
+  },
+  "generation": {
+    "model": "claude-sonnet-5-5",
+    "system": "grounded_answer.SYSTEM (same baseline prompt as development and holdout)",
+    "max_output_tokens": 4096,
+    "one_call_per_case": true,
+    "retries": 0,
+    "context": "frozen context builder (hybrid retrieval, 6000 words), no gold, no hand edits",
+    "stop_rule": "stop after 3 consecutive failures"
+  },
+  "budget": {
+    "max_calls": 12,
+    "max_usd": 1.0,
+    "basis": "holdout cost $0.443 for 15 calls; this is a cap, not an estimate"
+  },
+  "not_run": {
+    "schema_constrained_output": "Not tested here. At the one-in-fifteen malformed-JSON rate seen so far, 12 calls expect fewer than one failure, so the run could not show whether the fix works. Needs about 50 paired calls and is a separate protocol."
+  },
+  "preconditions": [
+    "frozen hashes match",
+    "Sebastian's go-ahead recorded with his words",
+    "budget of 12 calls and at most $1.00",
+    "a passing run-logged pytest log (generation stages only)",
+    "for the scoring stage only: labels from a named independent labeller; generation does not wait for them"
+  ],
+  "arms": {
+    "A": "answer as generated",
+    "B": "scope gate v2",
+    "C": "scope gate v4",
+    "D_detector_only": "per-passage flags: v2 detector and semantic detector with tau 0.75, delta 0.05 from chosen.json (not re-fitted)"
+  },
+  "measurements": {
+    "G1": "at least 10 of 12 answers are structurally valid (citations validated)",
+    "G2": "total spend at most $1.00 and no retry",
+    "reported_only": [
+      "per-answer action under gates B and C",
+      "per-passage flags under v2 and under the semantic detector, with agreement table",
+      "latency median and p90 (nearest rank)",
+      "cost per call"
+    ],
+    "labelled_after": "A person other than the author rates every claim in every valid answer: does it apply to the situation in the question (yes, no, unsure). They are given a packet without detector flags."
+  },
+  "decision_rule": {
+    "needs": "G1 and G2 hold and the independent labels exist",
+    "semantic_detector_becomes_a_shipping_candidate_only_if": [
+      "it misses no wrong-scope claim that v2 catches",
+      "it flags at least 25 percent fewer claims rated 'applies' than v2 does"
+    ],
+    "otherwise": "v2 stays the default. If fewer than 3 claims are rated 'no', the run cannot say anything about misses and the result is reported as inconclusive on safety, not as a pass.",
+    "unsure_ratings": "counted separately, never as yes or no"
+  },
+  "no_tuning_rule": "Detector settings, thresholds, prompts and gate rules are not changed after seeing any result from this run. Anything learned goes into a new versioned protocol on a new question set.",
+  "limits": [
+    "12 questions: counts, not rates",
+    "Questions and the intended-kind labels are mine",
+    "If the labeller is not independent the run is assisted, and must be reported as such",
+    "One model, one sample per question",
+    "Mastercard guide only"
+  ],
+  "runner": "python -m disputelens.fresh_mastercard --stage check|attach-tests|retrieve|count|run|detectors|packet|score|report",
+  "amendments": [
+    {
+      "at": "2026-10-09, after retrieval and token counts, before any paid call",
+      "change": "max_output_tokens 8192 -> 4096",
+      "reason": "The buffered worst-case reservation at 8192 was $1.449, above the approved $1.00 cap, so the runner correctly refused. Largest answer seen in 15 holdout calls was 729 output tokens. 4096 keeps 5x headroom and reserves about $0.95. An answer cut off at the limit is recorded as failed, never retried or counted as complete.",
+      "effect_on_results": "none expected; the cap is not part of the prompt. Packs and retrieval reused unchanged from the first declaration's folder."
+    }
+  ]
+}

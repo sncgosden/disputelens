@@ -10,7 +10,22 @@
   "holdout_cases_path": "eval/expanded/holdout-cases.json",
   "gold_map_path": "data/chunks-expanded/gold-evidence-map.json",
   "default_corpus_filter": "real",
-  "implementation_status": "Ingestion/chunking/gold mapping and applicability verified. Embedding/index/search implementation must consume these paths.",
+  "implementation_status": "Expanded ingestion, token-safe embeddings, local Qdrant and vector/BM25/hybrid development evaluation completed. Section hierarchy and payment-rail applicability gaps identified in E18 remain open. Grounded generation and holdout evaluation pending.",
+  "retrieval_experiment": {
+    "status": "section-scoped hybrid selected for next context experiment; current CLI defaults unchanged",
+    "chunk_target_words": 400,
+    "overlap_ceiling_words": 40,
+    "candidate_strategy": "hybrid",
+    "candidate_k_per_method": 20,
+    "fused_candidate_k": 20,
+    "rrf_rank_constant": 60,
+    "rerank_target_k": 5,
+    "comparison_baseline": "vector",
+    "selection_note": "Retain original 400-word-derived units. Section-scoped hybrid and vector recall@5 both reached 86.4%; hybrid recall@20 reached 97.8% versus vector 92.2%, without paired recall regressions against their original baselines. Scoped vector NDCG@5 remains higher (71.8% versus 70.9%). Hybrid fully covers 43/45 cases at twenty, not all 45. Qwen listwise reranking is excluded after two failed controls and 79.7-second latency on its sole completed trial.",
+    "scope_note": "Experimental evaluators enforce document filters plus publisher-heading exclusions for Non-Mastercard BIN Maestro and QR without a trusted QR setting. Original CLI still has document filters only. Broader section applicability remains unresolved; corrected full-heading rechunking was rejected for lower BM25 recall.",
+    "section_scope_evidence": "data/indexes/section-scope/21a0414db73393fc8ccfa5d1/comparison.json",
+    "configuration_note": "Records the next experiment design. Existing search CLI defaults remain explicit and unchanged; this object does not automatically change retrieval behavior."
+  },
   "generation_models": ["qwen3.5-4b", "qwen3.5-9b-mlx", "claude-sonnet-5-5"],
   "embedding_model": "text-embedding-nomic-embed-text-v1.5",
   "git_sync": "Sebastian runs all commits and pushes manually"

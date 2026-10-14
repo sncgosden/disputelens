@@ -1,0 +1,27 @@
+{
+  "status": "prepared_not_run",
+  "purpose": "Resume full programme local-model completion prerequisite without retrying historical failures.",
+  "case_id": "E10",
+  "model": "qwen3.5-4b",
+  "context_source": "full",
+  "context_pack_sha256": "2dd6d766674cb4f45383227c22644353cf759c099450ac6c69e2bd6f138ae1b3",
+  "max_output_tokens": 8192,
+  "temperature": 0.2,
+  "timeout_seconds": 300,
+  "prior_case_check": "No saved local E10 attempt found for either model before batch preparation.",
+  "success_criteria": [
+    "Fits loaded model context without truncating evidence.",
+    "One final response within existing 300-second timeout; retain actual latency.",
+    "Strict JSON/citation validator passes.",
+    "Assisted semantic review confirms same credential/date/amount duplicate criterion with no unsupported advice."
+  ],
+  "interpretation": "Single diagnostic success only permits preparation of broader local run; it is not a45-case benchmark or robustness result.",
+  "failure_policy": "Save failure and stop; no retry or prompt/validator relaxation. Further runtime change requires separately declared experiment.",
+  "executor": "User retains model execution; Codex executes routine offline preparation.",
+  "holdout_access": false,
+  "models": [
+    "qwen3.5-4b",
+    "qwen3.5-9b-mlx"
+  ],
+  "batch_policy": "Same E10 per model; one loaded LLM at a time; manual swap within one command. Stop if4B fails. Both require semantic review before45-case batches."
+}

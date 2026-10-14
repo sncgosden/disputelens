@@ -1,0 +1,22 @@
+{
+  "name": "scope-detector-semantic-v1",
+  "declared": "2026-10-08, before any embedding was computed for this experiment",
+  "purpose": "Replace the word-overlap test for 'the question identifies this subtype' (rejected in scope-detector-v3-nearmiss) with a semantic one using the project's local Nomic embeddings. Free; runs on Sebastian's machine with LM Studio. No generation, no paid call, no holdout.",
+  "rule": {
+    "candidates": "all distinct subtype titles (headings index 3) under the Chapter 2 families of the section-hierarchy guide, parent mastercard-chargeback-guide, with parenthetical text removed",
+    "similarity": "cosine between the question embedded as a query and each title embedded as a document, same prefixes as retrieval",
+    "established": "the cited passage's subtype is the single closest title to the question AND its cosine is at least tau AND it exceeds the second-closest title by at least delta. If established, family codes inherited by the passage are not flagged; phrase qualifiers (participating countries, stand-in, x-code, required authorization) are unaffected",
+    "otherwise": "scope-detector v2 behaviour (flag)"
+  },
+  "calibration": {"set": "eval/stress/mastercard-scope-v1/pairs.json", "sha256": "7538ab1d7cb6d98f39024516de5abbbc4b73d16c1e15396bc598ae956a79f527", "grid": {"tau": [0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80], "delta": [0.0, 0.01, 0.02, 0.03, 0.04, 0.05, 0.06]}, "selection": "among grid points that flag all 12 unscoped rows, take the one with the fewest scoped false flags; ties by larger tau, then larger delta; if none flags all 12, take the most unscoped flagged, then fewest scoped false flags. Chosen once, written to a file with its hash, before the test set is touched"},
+  "test": {"set": "eval/stress/mastercard-scope-v1/nearmiss.json", "sha256": "52a484c215c868896e6cef2b7c148961d645c0e57045ea228d68de1d3ed962d5", "use": "read once after calibration; the runner refuses a second test run"},
+  "thresholds": {
+    "S1": "On the near-miss test set the chosen detector clears (fails to flag) at most 3 of 12 rows",
+    "S2": "On the calibration set the chosen detector flags at least 11 of 12 unscoped rows and falsely flags at most 4 of 12 scoped rows (v2 falsely flags 7)",
+    "S3": "Development regression: on the 40 valid development answers it flags exactly the cited passages v2 flags (E13 and E22 only)",
+    "S4": "Unit tests for the decision rule and the grid selection pass"
+  },
+  "reported_not_thresholded": ["chosen tau and delta", "per-row nearest title, cosine and margin", "E16 under the chosen detector (known case, designed after seeing it)"],
+  "decision_rule": "Pass only if S1 to S4 hold. A pass makes it the candidate detector for a fresh end-to-end Mastercard evaluation. A fail leaves v2 as the default and the finding stands: neither string overlap nor embeddings separate 'described' from 'merely related' on these labels.",
+  "limits": ["Labels are mine; calibration and test sets are small (24 and 12 rows) and the test set was written to attack the word-overlap rule", "Only Mastercard Chapter 2 subtype titles are candidates", "Margin and threshold are fitted to 24 rows: expect optimism", "Embedding similarity to a short title is a noisy proxy for 'identifies the subtype'", "Needs LM Studio with the Nomic model loaded; embeddings cached by hash"]
+}

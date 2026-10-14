@@ -1,0 +1,8 @@
+{
+  "model": "claude-sonnet-5-5",
+  "checked_date": "2026-10-07",
+  "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+  "input_usd_per_million": 2,
+  "output_usd_per_million": 10,
+  "scope": "Standard first-party API, global inference, no cache, tools or batch discount. Excludes taxes."
+}

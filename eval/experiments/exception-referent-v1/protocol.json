@@ -1,0 +1,23 @@
+{
+  "name": "exception-referent-v1",
+  "declared": "2026-10-08, before the detector was run on any case",
+  "purpose": "Offline check: can a cited passage be flagged when it contains an exception sentence with a vague referent ('This requirement does not apply...') that follows a list of two or more items, so the exception could attach to any of them? Advisory; tells the product to fetch linked evidence or state the ambiguity.",
+  "finding_behind_it": "E23: S045 says 'This requirement does not apply when...' directly after three bullets (close, block, list). Linked complete evidence shows the exceptions waive listing only. The retrieved passage alone supports a broader reading, so the cause is evidence ambiguity, not a generation slip.",
+  "inputs": "Saved independent review bundle, cited passages only, development cases only. No model calls. Holdout not read.",
+  "rule": {
+    "exception_sentence": "a sentence matching: (this|these|that|the above) (requirement|requirements|rule|rules|condition|conditions|step|steps) (does|do) not apply, or the same with 'is not required' / 'are not required'",
+    "list_before": "the passage text before that sentence contains at least 2 list-item lines (lines starting with a dash, en dash, bullet or numbering)",
+    "flagged_if": "both hold in the same passage"
+  },
+  "known_defective_passages": {"E23": ["S045"]},
+  "controls": ["E10", "E30", "E46"],
+  "correctness_rating_source": "manual-review-batch-0*.json ratings.correctness (assisted)",
+  "thresholds": {
+    "T1_known_defect": "S045 in E23 flagged",
+    "T2_control_false_flags": "0 flagged cited passages in E10, E30, E46",
+    "T3_false_flag_rate": "at most 3 of the cases rated correctness 2 contain any flagged cited passage"
+  },
+  "decision_rule": "Pass only if T1, T2 and T3 all hold. Otherwise record as rejected for this version; revisions get a new version, not edits.",
+  "descriptive_only": "List every flagged passage and case with the exception sentence, for source review.",
+  "limits": ["One known defect only, so T1 is a single example, not recall", "Rule written after reading E23, so not independent; holdout is the independent test", "Pattern is English and Mastercard-guide shaped; other sources may phrase exceptions differently", "Advisory only; ambiguity flag does not say which reading is right"]
+}

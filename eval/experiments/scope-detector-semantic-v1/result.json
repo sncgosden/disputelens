@@ -1,0 +1,197 @@
+{
+  "protocol_sha256": "9ad8cc52371f8e2461d0637c4b78b9a4374bae39f9fe5ca725d4b282b522833d",
+  "chosen_sha256": "4d2fe7c455ce2165f3266024f0a1e06ed5a7076d624ea150d6be6bd4356e35dc",
+  "nearmiss_sha256": "52a484c215c868896e6cef2b7c148961d645c0e57045ea228d68de1d3ed962d5",
+  "chosen": {
+    "tau": 0.75,
+    "delta": 0.05,
+    "unscoped_flagged": 12,
+    "scoped_false_flags": 4
+  },
+  "nearmiss_cleared": 1,
+  "of": 12,
+  "near_miss_rows": [
+    {
+      "id": "N01",
+      "label": "unscoped",
+      "own": "Refund Not Processed",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Merchant Refund Correcting Error Resulted in Cardholder Currency Exchange Loss",
+      "sim": 0.6887,
+      "margin": 0.0198
+    },
+    {
+      "id": "N02",
+      "label": "unscoped",
+      "own": "Cardholder Dispute of a Recurring Transaction",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Cardholder Dispute of a Recurring Transaction",
+      "sim": 0.6766,
+      "margin": 0.005
+    },
+    {
+      "id": "N03",
+      "label": "unscoped",
+      "own": "Transaction Did Not Complete",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Transaction Did Not Complete",
+      "sim": 0.6886,
+      "margin": 0.06
+    },
+    {
+      "id": "N04",
+      "label": "unscoped",
+      "own": "Currency Errors",
+      "base": [
+        "4834"
+      ],
+      "best": "Digital Goods Purchase of USD/EUR 25 or Less",
+      "sim": 0.6737,
+      "margin": 0.0027
+    },
+    {
+      "id": "N05",
+      "label": "unscoped",
+      "own": "Counterfeit Goods",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Counterfeit Goods",
+      "sim": 0.6656,
+      "margin": 0.0266
+    },
+    {
+      "id": "N06",
+      "label": "unscoped",
+      "own": "Refund Posted as a Purchase",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Merchant Refund Correcting Error Resulted in Cardholder Currency Exchange Loss",
+      "sim": 0.6719,
+      "margin": 0.0056
+    },
+    {
+      "id": "N07",
+      "label": "unscoped",
+      "own": "Cardholder Debited More than Once for the Same Goods or Services",
+      "base": [
+        "4834"
+      ],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.7177,
+      "margin": 0.0091
+    },
+    {
+      "id": "N08",
+      "label": "unscoped",
+      "own": "Stand-in or X-Code Approval after Issuer Decline",
+      "base": [
+        "4808",
+        "stand-in",
+        "x-code"
+      ],
+      "best": "Stand-in or X-Code Approval after Issuer Decline",
+      "sim": 0.741,
+      "margin": 0.1133
+    },
+    {
+      "id": "N09",
+      "label": "unscoped",
+      "own": "Transit First Ride Risk Claims",
+      "base": [
+        "4808"
+      ],
+      "best": "Stand-in or X-Code Approval after Issuer Decline",
+      "sim": 0.6301,
+      "margin": 0.0299
+    },
+    {
+      "id": "N10",
+      "label": "unscoped",
+      "own": "Failed Travel Merchant-Intra-EEA and Domestic European Transactions Only",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Failed Travel Merchant-Intra-EEA and Domestic European Transactions Only",
+      "sim": 0.714,
+      "margin": 0.008
+    },
+    {
+      "id": "N11",
+      "label": "unscoped",
+      "own": "Digital Goods Purchase of USD/EUR 25 or Less",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Chip Liability Shift-Lost/Stolen/Never Received Issue Fraud",
+      "sim": 0.6197,
+      "margin": 0.0033
+    },
+    {
+      "id": "N12",
+      "label": "unscoped",
+      "own": "Improper Merchant Surcharge",
+      "base": [
+        "4834"
+      ],
+      "best": "Improper Merchant Surcharge",
+      "sim": 0.7583,
+      "margin": 0.1103
+    }
+  ],
+  "development": {
+    "v2": {
+      "E13": [
+        "S002",
+        "S019"
+      ],
+      "E22": [
+        "S043",
+        "S049",
+        "S044",
+        "S048"
+      ]
+    },
+    "semantic": {
+      "E13": [
+        "S002",
+        "S019"
+      ],
+      "E22": [
+        "S043",
+        "S049",
+        "S044",
+        "S048"
+      ]
+    },
+    "S3": true
+  },
+  "verdict": {
+    "S1": true,
+    "S2": true,
+    "S3": true,
+    "S4_note": "unit tests run separately: pytest tests/test_scope_detector_semantic.py",
+    "pass_excluding_S4": true
+  }
+}

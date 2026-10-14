@@ -1,0 +1,597 @@
+{
+  "protocol_sha256": "9ad8cc52371f8e2461d0637c4b78b9a4374bae39f9fe5ca725d4b282b522833d",
+  "pairs_sha256": "7538ab1d7cb6d98f39024516de5abbbc4b73d16c1e15396bc598ae956a79f527",
+  "titles": 49,
+  "chosen": {
+    "tau": 0.75,
+    "delta": 0.05,
+    "unscoped_flagged": 12,
+    "scoped_false_flags": 4
+  },
+  "S2": {
+    "unscoped_flagged": 12,
+    "of_unscoped": 12,
+    "scoped_false_flags": 4,
+    "of_scoped": 12,
+    "pass": true
+  },
+  "rows": [
+    {
+      "id": "S01",
+      "label": "scoped",
+      "own": "\"No-Show\u201d Hotel Charge",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "\"No-Show\u201d Hotel Charge",
+      "sim": 0.7613,
+      "margin": 0.0599
+    },
+    {
+      "id": "S02",
+      "label": "scoped",
+      "own": "Counterfeit Goods",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "No Cardholder Authorization",
+      "sim": 0.7095,
+      "margin": 0.0135
+    },
+    {
+      "id": "S03",
+      "label": "scoped",
+      "own": "Timeshares",
+      "base": [],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.7027,
+      "margin": 0.0119
+    },
+    {
+      "id": "S04",
+      "label": "scoped",
+      "own": "ATM Funds Not Dispensed",
+      "base": [],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.7069,
+      "margin": 0.0153
+    },
+    {
+      "id": "S05",
+      "label": "scoped",
+      "own": "Cardholder Debited More than Once for the Same Goods or Services",
+      "base": [],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.6716,
+      "margin": 0.0034
+    },
+    {
+      "id": "S06",
+      "label": "scoped",
+      "own": "Currency Errors",
+      "base": [
+        "4834"
+      ],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.8209,
+      "margin": 0.0077
+    },
+    {
+      "id": "S07",
+      "label": "scoped",
+      "own": "Digital Goods Purchase of USD/EUR 25 or Less",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Digital Goods Purchase of USD/EUR 25 or Less",
+      "sim": 0.7549,
+      "margin": 0.0564
+    },
+    {
+      "id": "S08",
+      "label": "scoped",
+      "own": "Travel/Entertainment Services Cancelled/Returned and a Refund was Not Processed",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "No Cardholder Authorization",
+      "sim": 0.7352,
+      "margin": 0.0151
+    },
+    {
+      "id": "S09",
+      "label": "scoped",
+      "own": "Chip Liability Shift",
+      "base": [],
+      "best": "Chip Liability Shift-Lost/Stolen/Never Received Issue Fraud",
+      "sim": 0.7184,
+      "margin": 0.0152
+    },
+    {
+      "id": "S10",
+      "label": "scoped",
+      "own": "Improper Merchant Surcharge",
+      "base": [
+        "4834"
+      ],
+      "best": "Improper Merchant Surcharge",
+      "sim": 0.7965,
+      "margin": 0.1337
+    },
+    {
+      "id": "S11",
+      "label": "scoped",
+      "own": "Refund Posted as a Purchase",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.754,
+      "margin": 0.0187
+    },
+    {
+      "id": "S12",
+      "label": "scoped",
+      "own": "Transit First Ride Risk Claims",
+      "base": [],
+      "best": "Transit First Ride Risk Claims",
+      "sim": 0.8019,
+      "margin": 0.2103
+    },
+    {
+      "id": "U01",
+      "label": "unscoped",
+      "own": "Required Authorization Not Obtained",
+      "base": [
+        "4808",
+        "required authorization"
+      ],
+      "best": "Expired Chargeback Protection Period",
+      "sim": 0.7227,
+      "margin": 0.0092
+    },
+    {
+      "id": "U02",
+      "label": "unscoped",
+      "own": "Timeshares",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Issuer Dispute of a Recurring Transaction",
+      "sim": 0.744,
+      "margin": 0.0161
+    },
+    {
+      "id": "U03",
+      "label": "unscoped",
+      "own": "Unreasonable Amount",
+      "base": [
+        "4834"
+      ],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.6965,
+      "margin": 0.0017
+    },
+    {
+      "id": "U04",
+      "label": "unscoped",
+      "own": "Counterfeit Goods",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+      "sim": 0.6654,
+      "margin": 0.0028
+    },
+    {
+      "id": "U05",
+      "label": "unscoped",
+      "own": "Chip Liability Shift",
+      "base": [
+        "4870"
+      ],
+      "best": "Issuer Submission of a Pre-arbitration Case",
+      "sim": 0.882,
+      "margin": 0.2043
+    },
+    {
+      "id": "U06",
+      "label": "unscoped",
+      "own": "Stand-in or X-Code Approval after Issuer Decline",
+      "base": [
+        "4808",
+        "stand-in",
+        "x-code"
+      ],
+      "best": "Expired Chargeback Protection Period",
+      "sim": 0.7269,
+      "margin": 0.0067
+    },
+    {
+      "id": "U07",
+      "label": "unscoped",
+      "own": "Installment Billing Dispute-Participating Countries",
+      "base": [
+        "4850",
+        "participating countries"
+      ],
+      "best": "Merchant Refund Correcting Error Resulted in Cardholder Currency Exchange Loss",
+      "sim": 0.754,
+      "margin": 0.0017
+    },
+    {
+      "id": "U08",
+      "label": "unscoped",
+      "own": "Addendum Dispute",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Supporting Documentation",
+      "sim": 0.7624,
+      "margin": 0.0641
+    },
+    {
+      "id": "U09",
+      "label": "unscoped",
+      "own": "Goods or Services Not Provided",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Cardholder Debited More than Once for the Same Goods or Services",
+      "sim": 0.7408,
+      "margin": 0.029
+    },
+    {
+      "id": "U10",
+      "label": "unscoped",
+      "own": "Digital Goods Purchase of USD/EUR 25 or Less",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Transactions ineligible for chargeback",
+      "sim": 0.7364,
+      "margin": 0.0391
+    },
+    {
+      "id": "U11",
+      "label": "unscoped",
+      "own": "Questionable Merchant Activity",
+      "base": [
+        "4849"
+      ],
+      "best": "Cardholder Debited More than Once for the Same Goods or Services",
+      "sim": 0.6484,
+      "margin": 0.0222
+    },
+    {
+      "id": "U12",
+      "label": "unscoped",
+      "own": "Cardholder Dispute of a Recurring Transaction",
+      "base": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "best": "Merchant Refund Correcting Error Resulted in Cardholder Currency Exchange Loss",
+      "sim": 0.6828,
+      "margin": 0.0438
+    }
+  ],
+  "grid": [
+    {
+      "tau": 0.5,
+      "delta": 0.0,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.5,
+      "delta": 0.01,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.5,
+      "delta": 0.02,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.5,
+      "delta": 0.03,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.5,
+      "delta": 0.04,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.5,
+      "delta": 0.05,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.5,
+      "delta": 0.06,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 6
+    },
+    {
+      "tau": 0.55,
+      "delta": 0.0,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.55,
+      "delta": 0.01,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.55,
+      "delta": 0.02,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.55,
+      "delta": 0.03,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.55,
+      "delta": 0.04,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.55,
+      "delta": 0.05,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.55,
+      "delta": 0.06,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 6
+    },
+    {
+      "tau": 0.6,
+      "delta": 0.0,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.6,
+      "delta": 0.01,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.6,
+      "delta": 0.02,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.6,
+      "delta": 0.03,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.6,
+      "delta": 0.04,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.6,
+      "delta": 0.05,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.6,
+      "delta": 0.06,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 6
+    },
+    {
+      "tau": 0.65,
+      "delta": 0.0,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.65,
+      "delta": 0.01,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.65,
+      "delta": 0.02,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.65,
+      "delta": 0.03,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.65,
+      "delta": 0.04,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.65,
+      "delta": 0.05,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.65,
+      "delta": 0.06,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 6
+    },
+    {
+      "tau": 0.7,
+      "delta": 0.0,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.7,
+      "delta": 0.01,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.7,
+      "delta": 0.02,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.7,
+      "delta": 0.03,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.7,
+      "delta": 0.04,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.7,
+      "delta": 0.05,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.7,
+      "delta": 0.06,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 6
+    },
+    {
+      "tau": 0.75,
+      "delta": 0.0,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.75,
+      "delta": 0.01,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.75,
+      "delta": 0.02,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.75,
+      "delta": 0.03,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.75,
+      "delta": 0.04,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.75,
+      "delta": 0.05,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 4
+    },
+    {
+      "tau": 0.75,
+      "delta": 0.06,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 6
+    },
+    {
+      "tau": 0.8,
+      "delta": 0.0,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 7
+    },
+    {
+      "tau": 0.8,
+      "delta": 0.01,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 7
+    },
+    {
+      "tau": 0.8,
+      "delta": 0.02,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 7
+    },
+    {
+      "tau": 0.8,
+      "delta": 0.03,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 7
+    },
+    {
+      "tau": 0.8,
+      "delta": 0.04,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 7
+    },
+    {
+      "tau": 0.8,
+      "delta": 0.05,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 7
+    },
+    {
+      "tau": 0.8,
+      "delta": 0.06,
+      "unscoped_flagged": 12,
+      "scoped_false_flags": 7
+    }
+  ],
+  "chosen_sha256": "4d2fe7c455ce2165f3266024f0a1e06ed5a7076d624ea150d6be6bd4356e35dc"
+}

@@ -1,0 +1,384 @@
+{
+  "F01": {
+    "question": "A customer who bought a vacation-ownership package from my resort says they want out of the contract. What does the Mastercard guide say about how the issuer can dispute it?",
+    "nearest_title": "No Cardholder Authorization",
+    "sim": 0.6358,
+    "margin": 0.0025,
+    "gate_v2_action": "unchanged",
+    "gate_v4_action": "unchanged",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "The only timeshare-specific dispute language in the pack is in the Single Message System arbitration case filing section, for a 75-Refund Not Received case. The cardholder's statement there can say the account has not been credited for a canceled timeshare agreement, with the cancellation made within the applicable time frame.",
+        "cited": [
+          "S033",
+          "S034"
+        ],
+        "v2": false,
+        "semantic": false
+      }
+    ]
+  },
+  "F02": {
+    "question": "A customer's card was charged twice for one delivery, two identical charges a minute apart. What does Mastercard's guide say the issuer has to show?",
+    "nearest_title": "Cardholder Debited More than Once for the Same Goods or Services",
+    "sim": 0.7363,
+    "margin": 0.0677,
+    "gate_v2_action": "conditionalised",
+    "gate_v4_action": "conditionalised",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "Dual Message System, reason code 4834 (Cardholder Debited More than Once for the Same Goods or Services): the issuer may charge back when the cardholder contacted the issuer and the claim is sufficiently detailed in the supporting documentation, where required. The condition listed is that the cardholder's account was debited more than once for the same transaction.",
+        "cited": [
+          "S018"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 2,
+        "text": "For duplicate Maestro transactions where the card was issued in Europe or the terminal was in Europe (not both), the POS terminal transaction amount and the date and time must be the same for the transactions in question.",
+        "cited": [
+          "S019"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 3,
+        "text": "Single Message System, reason code 73 (Duplicate Transaction): the issuer can determine a duplicate when the terminal number, amount, date and authorization response code are identical across the transactions in question.",
+        "cited": [
+          "S070"
+        ],
+        "v2": false,
+        "semantic": false
+      },
+      {
+        "claim": 4,
+        "text": "Under Single Message System reason code 73, the guide lists no supporting documents for the chargeback.",
+        "cited": [
+          "S072"
+        ],
+        "v2": false,
+        "semantic": false
+      }
+    ]
+  },
+  "F03": {
+    "question": "A cardholder says the cash machine at my kiosk gave out no cash but their account was debited. What must the issuer provide to charge it back?",
+    "nearest_title": "Cardholder Debited More than Once for the Same Goods or Services",
+    "sim": 0.6867,
+    "margin": 0.0059,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "fail_closed",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "In the Dual Message System, the Point-of-Interaction Error chargeback (4834/34) may be used when the cardholder contacts the issuer and alleges that cash was not properly dispensed by an ATM.",
+        "cited": [
+          "S016"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  },
+  "F04": {
+    "question": "I run a subscription box. A customer says they cancelled before the renewal and I charged them anyway. How does the guide treat that kind of dispute?",
+    "nearest_title": "Change of Reason within the Cardholder Dispute Chargeback",
+    "sim": 0.6335,
+    "margin": 0.001,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "fail_closed",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "The guide covers this under Cardholder Dispute chargebacks (4853) in a section on a recurring transaction that was cancelled, or that the cardholder did not know was recurring. A recurring transaction is continuous billing without a specified end date, and the disputed transaction must be recurring, not installment billing.",
+        "cited": [
+          "S054",
+          "S054"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 2,
+        "text": "The issuer may charge back when the cardholder says they notified the merchant to cancel and the merchant kept billing. The issuer may also charge back when the cardholder says they were not aware they were agreeing to a recurring transaction.",
+        "cited": [
+          "S048",
+          "S048"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 3,
+        "text": "The issuer's supporting documentation must be a cardholder letter, email, message or Form 1221. For a cancellation claim it must specify that the cardholder notified the merchant to cancel, and the date of the notification.",
+        "cited": [
+          "S048"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 4,
+        "text": "The guide also lists other issuer grounds for a recurring-transaction dispute (other than Mainland China domestic): the issuer listed the account in the Payment Cancellation Service, previously charged back a disputed recurring transaction with the same PAN and merchant, or previously notified the merchant or acquirer to cancel before the disputed transaction. If the issuer continues after your second presentment, the cardholder reasserting the cancellation claim is one pre-arbitration ground.",
+        "cited": [
+          "S028",
+          "S014"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  },
+  "F05": {
+    "question": "A cardholder says the designer bag I sold was a fake. What does the guide require for that kind of dispute?",
+    "nearest_title": "Cardholder Dispute of a Recurring Transaction",
+    "sim": 0.6846,
+    "margin": 0.0027,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "fail_closed",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "For the general Dual Message System counterfeit-goods chargeback, the supporting documentation must include a reasonably specific description of the goods purchased. It should also say what happened to the goods, for example held by customs, held by the cardholder, discarded, or returned to the merchant.",
+        "cited": [
+          "S010",
+          "S010"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 2,
+        "text": "The cardholder's email, letter or message must come directly from the cardholder (or the corporate entity for a commercial card). A completed dispute form must be the direct result of a conversation with the cardholder.",
+        "cited": [
+          "S010"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 3,
+        "text": "The time frame is generally 120 calendar days from the Settlement Date or Central Site Business Date. For Mainland China domestic transactions it is 90 calendar days from the settlement date. Delayed-delivery variations also exist.",
+        "cited": [
+          "S011",
+          "S011"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 4,
+        "text": "If the dispute escalates to pre-arbitration, the issuer's documentation can include evidence from a bona fide expert that the goods are counterfeit. It can alternatively show the merchant was closed by a governmental agency for selling counterfeit goods.",
+        "cited": [
+          "S005",
+          "S005"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  },
+  "F06": {
+    "question": "A customer was billed for damage to a rental car after returning it. What does the guide say about disputing charges for damage?",
+    "nearest_title": "Charges for Loss, Theft, or Damages",
+    "sim": 0.6805,
+    "margin": 0.0281,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "fail_closed",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "Where the cardholder was billed for damage in the same transaction as the underlying initial service, the issuer may charge it back under Point-of-Interaction Error (reason code 4834), provided the cardholder contacted the issuer and the claim is sufficiently detailed in the supporting documentation.",
+        "cited": [
+          "S004"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 2,
+        "text": "Where the damage charge was processed as a separate (addendum) transaction, the guide directs the issuer to the Cardholder Dispute chargeback (reason code 4853) instead.",
+        "cited": [
+          "S004"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 3,
+        "text": "The guide says a cardholder is not responsible for a damage charge unless the transaction was completed as described in Transaction Processing Rules section 3.12, which applies to Mastercard POS transactions only.",
+        "cited": [
+          "S036"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 4,
+        "text": "For an addendum dispute over damage charges, the acquirer's second presentment must include documentation substantiating that the transaction was completed as described in section 3.12. The guide gives the original rental agreement as an example.",
+        "cited": [
+          "S017",
+          "S017"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  },
+  "F07": {
+    "question": "A customer disputes a charge from three months ago. Is a chargeback still allowed, and what time limits apply?",
+    "nearest_title": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+    "sim": 0.7377,
+    "margin": 0.0112,
+    "gate_v2_action": "unchanged",
+    "gate_v4_action": "unchanged",
+    "claims": []
+  },
+  "F08": {
+    "question": "What documents can the issuer send with a chargeback, and what must they contain?",
+    "nearest_title": "Change of Chargeback Reason to an Authorization-related Chargeback",
+    "sim": 0.7318,
+    "margin": 0.0116,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "fail_closed",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "Supporting documentation is evidence, typically from the cardholder or merchant, that the issuer attaches to the chargeback. The permitted documents and their required contents vary by dispute type, so a single general list cannot be given.",
+        "cited": [
+          "S027",
+          "S027"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  },
+  "F09": {
+    "question": "We resubmitted the transaction after the cardholder complained. Can the issuer still charge it back?",
+    "nearest_title": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+    "sim": 0.7384,
+    "margin": 0.0017,
+    "gate_v2_action": "unchanged",
+    "gate_v4_action": "unchanged",
+    "claims": []
+  },
+  "F10": {
+    "question": "My acquirer says the issuer filed a pre-arbitration case against me. What happens next and what can I expect?",
+    "nearest_title": "Issuer Submission of a Pre-arbitration Case",
+    "sim": 0.7058,
+    "margin": 0.0697,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "conditionalised",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "After a pre-arbitration filing, the acquirer (not the merchant directly) chooses a response. One option is to accept the case, which means taking financial responsibility for the disputed transaction.",
+        "cited": [
+          "S065"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 2,
+        "text": "If the acquirer takes no action, Mastercom automatically accepts the case on the acquirer's behalf after 30 calendar days, which also means financial responsibility for the transaction.",
+        "cited": [
+          "S068",
+          "S068"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 3,
+        "text": "The acquirer can instead reject the pre-arbitration case with a rebuttal and any relevant documentation.",
+        "cited": [
+          "S068"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 4,
+        "text": "If the issuer files an arbitration case before the 30 calendar days have passed, the acquirer's response options move from the pre-arbitration step to the arbitration step. The guide says the available actions are the same across chargebacks.",
+        "cited": [
+          "S062",
+          "S064"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  },
+  "F11": {
+    "question": "What happens when the issuer disagrees with my response to a chargeback? Can they escalate?",
+    "nearest_title": "Change of Chargeback Reason to a Cardholder Dispute Chargeback",
+    "sim": 0.7355,
+    "margin": 0.0039,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "conditionalised",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "Yes, in the cardholder dispute \"Transaction Did Not Complete\" section, the issuer may escalate a rejected pre-arbitration case to an arbitration case. This applies if the issuer still believes the chargeback is valid and the acquirer failed to remedy the pre-arbitration case.",
+        "cited": [
+          "S005",
+          "S005"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 2,
+        "text": "Once an arbitration case is filed, the acquirer may accept it and take financial responsibility for the disputed transaction at any time before Mastercard rules on the case.",
+        "cited": [
+          "S009"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  },
+  "F12": {
+    "question": "A customer says the amount on the receipt was different from what they were charged. What are the options for the issuer?",
+    "nearest_title": "Change of Reason within the Cardholder Dispute Chargeback",
+    "sim": 0.7071,
+    "margin": 0.0037,
+    "gate_v2_action": "fail_closed",
+    "gate_v4_action": "fail_closed",
+    "claims": [
+      {
+        "claim": 1,
+        "text": "For a Mastercard dispute where the cardholder says they were billed an incorrect amount, the issuer's option shown in the pack is a Point-of-Interaction Error (4834/34) chargeback under \"Transaction Amount Differs\". The cardholder must have contacted the issuer with this claim, and it must be sufficiently detailed in the supporting documentation when required.",
+        "cited": [
+          "S030"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 2,
+        "text": "If the disputed difference involves a gratuity amount, the supporting documents are a cardholder letter, email, message or Form 1240. It must describe the complaint and state the transaction amount that should have been billed.",
+        "cited": [
+          "S030"
+        ],
+        "v2": true,
+        "semantic": true
+      },
+      {
+        "claim": 3,
+        "text": "If the difference arises from currency handling, a separate Currency Errors chargeback (4834/34) is available. One of its conditions is that currency conversion was performed incorrectly and an incorrect amount was deducted from the cardholder's account.",
+        "cited": [
+          "S038"
+        ],
+        "v2": true,
+        "semantic": true
+      }
+    ]
+  }
+}

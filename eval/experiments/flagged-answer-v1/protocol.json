@@ -1,0 +1,19 @@
+{
+  "name": "flagged-answer-v1",
+  "declared": "2026-10-08, before any request was built or sent",
+  "purpose": "Test whether telling the generator which of its cited passages have unestablished scope (scope-detector v2, run on the first answer's citations) makes it keep established claims, state flagged material only conditionally, and ask for the missing field.",
+  "design": "Two-stage: first answer is the saved baseline answer; the detector runs on the passages it cites; only flagged cases get a second generation. Detector is NOT run on the whole evidence pack: a pack-level run flags 27 to 52 passages per case in E13, E18, E22 and E23, which cannot be a useful prompt. Unflagged cases keep their baseline answer by construction (no second call).",
+  "cases": {"E13": "flagged S002 (participating countries) and S019 (4850, participating countries)", "E22": "flagged S043, S044 (4808, required authorization), S048, S049 (4850, participating countries)"},
+  "controls": "E10, E30, E46 and the other 35 valid answers: detector v2 flags nothing on their cited passages, so no second call and no change; verified offline by scorer, not regenerated.",
+  "intervention": "Baseline system prompt unchanged, plus a short addendum, and the user JSON gains a scope_not_established map of flagged source IDs to the unestablished qualifiers. Same frozen evidence pack, same model, max 8192 output tokens.",
+  "budget": {"model": "claude-sonnet-5-5", "max_calls": 2, "max_usd": 0.30, "retries": 0, "free_token_count_calls": 2, "stop_on_first_failure": true, "holdout": "not touched"},
+  "criteria": {
+    "M1": "Structural: validate_answer passes for both outputs",
+    "M2": "No claim that cites a flagged passage lacks a conditional marker ('only if', 'only when', 'applies only', 'if your', 'if you', 'if the'), and no claim cites a passage the detector flags that was not in the notice without a marker either. Necessary, not sufficient.",
+    "M3": "E22: status is needs_clarification or partial, and missing_information names the reason code or dispute type",
+    "M4": "E13: at least one unconditional claim cites an unflagged passage (the 4837/4850 core rule survives)",
+    "M5": "Source review (assisted, same assistant) finds no flagged procedure stated as an instruction to the merchant in either output"
+  },
+  "decision_rule": "Pass only if M1 to M5 hold for both cases. A pass is one sample per case, assisted review, no aggregate claim. A fail is recorded, not retried.",
+  "limits": ["Designed after reading E13 and E22; they are also the cases the detector was tuned on, so this shows the behaviour is achievable, not that it generalises", "One output per case; model variance not measured", "Mechanical marker check is crude", "Does not test exception binding (E23) or completeness trade-offs", "Needs explicit bounded paid-call authorisation"]
+}

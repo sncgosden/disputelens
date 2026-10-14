@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {"source_id": "adyen-dispute-flow", "provider": "Adyen", "scheme": null, "region": "global", "document_type": "html", "title": "Dispute flow", "url": "https://docs.adyen.com/risk-management/understanding-disputes/dispute-process-and-flow"},
+    {"source_id": "adyen-visa-chargebacks", "provider": "Adyen", "scheme": "Visa", "region": "global", "document_type": "html", "title": "Visa chargebacks", "url": "https://docs.adyen.com/risk-management/chargeback-guidelines/visa-chargebacks"},
+    {"source_id": "square-uk-disputes", "provider": "Square", "scheme": null, "region": "UK", "document_type": "html", "title": "Manage payment disputes", "url": "https://squareup.com/help/gb/en/article/3882-payment-disputes-walkthrough"},
+    {"source_id": "paypal-uk-seller-protection", "provider": "PayPal", "scheme": null, "region": "UK", "document_type": "html", "title": "PayPal Seller Protection", "url": "https://www.paypal.com/uk/legalhub/paypal/seller-protection"},
+    {"source_id": "mastercard-chargeback-guide", "provider": null, "scheme": "Mastercard", "region": "multiple", "document_type": "pdf", "title": "Chargeback Guide (13 May 2025 edition)", "url": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf"}
+  ],
+  "visa_scope": "All pages of the existing downloaded Visa June 2024 guide; actual file has 67 PDF pages.",
+  "access_policy": "Public provider applicability filtering is distinct from tenant authorization. Never apply a different provider's workflow to the merchant. A scheme guide is usable only when that scheme is specified. True tenant-isolation tests use separate fictional private tenant records."
+}

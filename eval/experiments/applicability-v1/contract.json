@@ -1,0 +1,32 @@
+{
+  "version": "applicability-v1",
+  "status": "prepared_not_implemented_or_validated",
+  "purpose": "Separate source-text support from proof that a rule applies to the merchant situation.",
+  "trusted_scope": [
+    "provider",
+    "scheme",
+    "message_system",
+    "reason_code",
+    "dispute_subtype",
+    "region",
+    "participating_countries_membership"
+  ],
+  "scope_origin": "Explicit structured settings with provenance; neither retrieval similarity nor model inference establishes scope. Free-text assertions must be confirmed as structured settings before authorizing specialized advice.",
+  "decisions": {
+    "applicable": "Every reviewed requirement matches established trusted scope. Evidence can support claims within that scope.",
+    "requires_clarification": "At least one essential setting is unknown and none contradicts. Retain provenance for diagnosis; do not assert specialized advice. Request specific setting.",
+    "inapplicable": "At least one established setting contradicts a reviewed requirement. Exclude from answer evidence even if another setting is unknown.",
+    "unreviewed": "No reviewed scope map exists for specialized evidence. Quarantine for source review; absence of known exclusions is not authorization."
+  },
+  "requirements": [
+    "Use full publisher ancestry and most-specific subsection.",
+    "Map requirements from source review, not from gold membership.",
+    "Distinguish named subtype from broad reason-code family; matching code alone is insufficient.",
+    "A country name cannot establish Participating Countries membership.",
+    "Exceptions modify only their explicit referent; incomplete exception clauses cannot waive other requirements.",
+    "Retain applicable general evidence so safe partial answers remain possible.",
+    "Applicability does not establish semantic support or citation entailment.",
+    "No production use until scoped coverage, wrong-scope exclusion and no-blanket-abstention gates are measured."
+  ],
+  "baseline_policy": "Frozen dev cases, gold, packs, attempts and scores unchanged; all additions separately versioned. Holdout untouched."
+}

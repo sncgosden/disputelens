@@ -1,0 +1,42 @@
+{
+  "status": "diagnostic_supplement_not_frozen_context",
+  "reason": "Exception list continues across normalized paragraph boundary; cannot authorize incomplete clause.",
+  "normalized_path": "data/normalized-expanded/documents.json",
+  "normalized_sha256": "a6e8f1806fa7e61001c36d770f1be66efb13523da3ed4680ba40e697f96bde9f",
+  "passages": [
+    {
+      "passage_id": "mastercard-chargeback-guide:page-419:paragraph-3",
+      "text": "          authorize the transaction.\n          In addition, for a lost, stolen, never received (NRI) card-read (not key-entered) transaction\n          occurring at a CAT 2 device the Dispute Resolution Form-Fraud (Form 0412) must state, or\n          the issuer must otherwise certify by means of a separate document accompanying the form,\n          that the card was lost, stolen, or never received (NRI) at the time of the transaction.\n          A completed Dispute Resolution Form-Fraud (Form 0412) must be the direct result of a\n          conversation with the cardholder.\n          When using the Dispute Resolution Form-Fraud (Form 0412) the issuer must ensure all of the\n          following occurred before processing the chargeback:\n          \u2013   The issuer closed the Mastercard card account.\n          \u2013   The issuer blocked the account on its host.\n          \u2013   The issuer listed the account number on the Mastercard Stand-in Account File with a\n              \u201ccapture card\u201d response for 180-calendar days or until card expiration (whichever is\n              shorter).\n              This requirement does not apply when one of the following occurred:\n              \u2013   The transaction was a Mainland China domestic transaction;\n              \u2013   The card was issued in the Latin America and the Caribbean region, and the",
+      "text_sha256": "b302cc09d86d0b46fec91e2623906538dd6b1fd2ff572be9420094b2cf022e98",
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+        "pdf_page": 419,
+        "pdf_page_label": "419",
+        "start_line": null
+      }
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-419:paragraph-4",
+      "text": "                 transaction did not occur at a CAT 2 device; or\n              \u2013   The card was issued under a BIN or BIN range assigned for Germany when the issuer\u2019s\n                 stand-in parameters are set to zero to decline all authorization attempts or are\n                 managed through an alternate host.\n      \u2022    Written complaint or a completed Dispute Resolution Form-Fraud (Form 0412) form provided\n          by a company or government agency representative on behalf of a corporate card cardholder\n          when the company or government agency no longer employs the authorized cardholder. A\n          completed Dispute Resolution Form-Fraud (Form 0412) must be the direct result of a\n          conversation with the company or government agency representative.",
+      "text_sha256": "e38ef205f47cf4d83f3783495511a0cbb6fc09f3e464e333b9ec6b1d17056414",
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=419",
+        "pdf_page": 419,
+        "pdf_page_label": "419",
+        "start_line": null
+      }
+    }
+  ],
+  "reviewer": "Codex assisted; independent validation pending",
+  "referent": "Only Stand-in Account File listing, not account closure or host blocking.",
+  "complete_conditions": [
+    "Mainland China domestic transaction",
+    "Card issued in Latin America and Caribbean AND transaction not at CAT2",
+    "Card issued under Germany BIN/range AND stand-in parameters zero to decline all authorizations OR managed through alternate host"
+  ],
+  "boundaries": [
+    "No original pack, answer, gold or score amended.",
+    "Supplement is not evidence that was available to baseline generation.",
+    "Regional settings remain unknown; describe branches conditionally or request essential settings."
+  ]
+}

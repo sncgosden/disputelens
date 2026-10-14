@@ -1,0 +1,131 @@
+{
+  "reviewed_on": "2026-10-06",
+  "reviewer": "Codex under user-delegated PM judgement",
+  "draft_author": "Claude Sonnet 5.5 API",
+  "independent_human_labelling": false,
+  "sebastian_independent_review": "Optional additional review, not recorded as completed",
+  "method": "All 60 questions and gold claims inspected against the selected original extracted passages. Visa page 31 and Mastercard pages 85/689 sampled visually. Corrections preserve original drafts.",
+  "reviewed_case_ids": [
+    "E01",
+    "E02",
+    "E03",
+    "E04",
+    "E05",
+    "E06",
+    "E07",
+    "E08",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17",
+    "E18",
+    "E19",
+    "E20",
+    "E21",
+    "E22",
+    "E23",
+    "E24",
+    "E25",
+    "E26",
+    "E27",
+    "E28",
+    "E29",
+    "E30",
+    "E31",
+    "E32",
+    "E33",
+    "E34",
+    "E35",
+    "E36",
+    "E37",
+    "E38",
+    "E39",
+    "E40",
+    "E41",
+    "E42",
+    "E43",
+    "E44",
+    "E45",
+    "E46",
+    "E47",
+    "E48",
+    "E49",
+    "E50",
+    "E51",
+    "E52",
+    "E53",
+    "E54",
+    "E55",
+    "E56",
+    "E57",
+    "E58",
+    "E59",
+    "E60"
+  ],
+  "corrections": [
+    {
+      "case_id": "E02",
+      "reason": "Restore the adjacent continuation with matching-data and effective-date qualifications."
+    },
+    {
+      "case_id": "E04",
+      "reason": "Make the transaction date explicit and restore the heading effective date."
+    },
+    {
+      "case_id": "E05",
+      "reason": "Make the transaction date explicit and restore the heading effective date."
+    },
+    {
+      "case_id": "E18",
+      "reason": "Use Mastercard section terminology rather than the Visa category label."
+    },
+    {
+      "case_id": "E21",
+      "reason": "Remove an unqualified general translation claim; retain the common-language exception and arbitration qualifications."
+    },
+    {
+      "case_id": "E30",
+      "reason": "Exercise both sides of the natural regional/date exception, not just two 18-day examples."
+    },
+    {
+      "case_id": "E33",
+      "reason": "Introduce a real cross-provider distractor without changing trusted Square applicability."
+    },
+    {
+      "case_id": "E41",
+      "reason": "Restore conditional eligibility instead of implying a listed claim is automatically protected."
+    },
+    {
+      "case_id": "E46",
+      "reason": "Remove an invented OR between separate address requirements in the source table."
+    },
+    {
+      "case_id": "E47",
+      "reason": "Restore parent-section prerequisite; eligibility and digital delivery are not sufficient by themselves."
+    },
+    {
+      "case_id": "E48",
+      "reason": "Remove the Item Not Received subquestion that duplicated a development gold fact; retain distinct held-out SNAD coverage."
+    },
+    {
+      "case_id": "E58",
+      "reason": "Add the supported action expected for this clarification case."
+    },
+    {
+      "case_id": "E60",
+      "reason": "Test a fee absent from the whole applicable fixture corpus, rather than a deadline available in another fixture. No positive passage is gold for absent evidence; exclude from recall/NDCG denominators."
+    }
+  ],
+  "split_rule": "Every fourth case assigned to holdout before drafting; no retrieval/generation tuning has run.",
+  "dev_sha256": "75c69e0acf5a568019fb18fc43d8a297b8e165e3eea9c881494d4d2d35378e82",
+  "holdout_sha256": "9f653c7b58565f679d4f18ca54bf843278685358847f8c48eff98dfc83d73ae0",
+  "normalized_sha256": "a6e8f1806fa7e61001c36d770f1be66efb13523da3ed4680ba40e697f96bde9f",
+  "model_answer_runs": 0,
+  "retrieval_experiments": 0,
+  "scope": "60 synthetic merchant questions: 54 use real policy, 6 use controlled fixtures. Source-referenced gold reviewed by the coding assistant, not an independent merchant sample."
+}

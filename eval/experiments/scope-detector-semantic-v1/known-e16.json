@@ -1,0 +1,28 @@
+{
+  "chosen": {
+    "tau": 0.75,
+    "delta": 0.05,
+    "unscoped_flagged": 12,
+    "scoped_false_flags": 4
+  },
+  "nearest": "Merchant Refund Correcting Error Resulted in Cardholder Currency Exchange Loss",
+  "sim": 0.669,
+  "margin": 0.0086,
+  "passages": [
+    {
+      "id": "S002",
+      "subtype": "Goods or Services Were Either Not as Described or Defective",
+      "v2_flags": [
+        "4850",
+        "4853",
+        "4854"
+      ],
+      "semantic_flags": [
+        "4850",
+        "4853",
+        "4854"
+      ]
+    }
+  ],
+  "note": "known case, designed after seeing it; not validation"
+}

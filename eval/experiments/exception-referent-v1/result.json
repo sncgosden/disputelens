@@ -1,0 +1,24 @@
+{
+  "flags": {
+    "E23": {
+      "S045": "This requirement does not apply when one of the following occurred: \u2013 The transaction was a Mai"
+    }
+  },
+  "verdict": {
+    "T1_known_defect": {
+      "value": "flagged",
+      "pass": true
+    },
+    "T2_control_false_flags": {
+      "value": "none",
+      "pass": true
+    },
+    "T3_false_flag_rate": {
+      "value": "0/34",
+      "cases": [],
+      "pass": true
+    }
+  },
+  "overall_pass": true,
+  "protocol_sha256": "e7bd17c16916cb1e264c1752bcd58b83056d4295f6c2e82bf014646e6900e609"
+}

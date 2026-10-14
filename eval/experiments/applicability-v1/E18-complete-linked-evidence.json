@@ -1,0 +1,124 @@
+{
+  "case_id": "E18",
+  "status": "separate_diagnostic_evidence_not_baseline",
+  "reviewer": "Codex assisted source review",
+  "source_path": "data/normalized-expanded/documents.json",
+  "source_sha256": "a6e8f1806fa7e61001c36d770f1be66efb13523da3ed4680ba40e697f96bde9f",
+  "frozen_context_pack_sha256": "7712563c187ff548deddf658620e435b4ab7d40eb600e39a054d18a1ff1d51e9",
+  "pieces": [
+    {
+      "passage_id": "mastercard-chargeback-guide:page-228:paragraph-6",
+      "start": 0,
+      "end": 1142,
+      "text": "Refund Not Processed\n      This section details the conditions for addressing a cardholder claim that a refund was\n      promised/expected and a refund was not processed.\n      Issuers must note that merchants that are unwilling to accept “buyer’s remorse” returns and\n      cancellations or that want to have special terms including (but not limited to) restocking fees or\n      in-store credits, must disclose these terms at the time of the transaction. The cardholder must\n      be informed of the refund policy as described in the Transaction Processing Rules, 3.11 Specific\n      Terms of Transaction. Failure to disclose a refund policy will result in the merchant’s requirement\n      to accept the goods for return and issue a credit.\n      When the merchant informed the cardholder of its refund policy at the time of purchase, the\n      cardholder must abide by that policy. For example, the cardholder’s receipt clearly indicates that\n      the refund policy is “in-store credit only” or “no refunds.”\n      Refer to the UK Domestic Rules, 5.1.5 Reason Code 4853 UK - Credit Not Processed, for\n      additional rules that may apply.",
+      "source_text_sha256": "4a053b62212851a9e2c90e11cd7f8882d9e0dda94829c73d24d6a27843da932c",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Acquirer Response to an Arbitration Case"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=228",
+        "pdf_page": 228,
+        "pdf_page_label": "228",
+        "start_line": null
+      }
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-228:paragraph-7",
+      "start": 0,
+      "end": 453,
+      "text": "      This chargeback is not available transactions identified with one of the following MCCs: 3000\n      through 3999, 4411, 4511, 4722, 6513, 7011, 7512, 7519, or 7922 and the merchant provided\n      a voucher for future use and that provision of voucher was properly disclosed in the merchant’s\n      terms and conditions. Refer to the Travel/Entertainment Services Cancelled/Returned and\n      Credit Not Processed section for a possible chargeback.",
+      "source_text_sha256": "caf46dc4dc434218e1bd53b678c0e45bb4354cb72d5776235dc00eb8f2ab34bf",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Acquirer Response to an Arbitration Case"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=228",
+        "pdf_page": 228,
+        "pdf_page_label": "228",
+        "start_line": null
+      }
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-229:paragraph-3",
+      "start": 0,
+      "end": 1238,
+      "text": "      Issuer Chargeback\n      The issuer may chargeback a transaction when the cardholder contacted the issuer claiming one\n      of the following conditions occurred and is sufficiently detailed in the supporting\n      documentation:\n      •    The merchant agreed to provide a refund and failed to process that refund.\n      •    The merchant failed to disclose its refund policy at the time of the transaction and is\n          unwilling to accept a return or cancellation of goods or services.\n      •    The merchant has not responded to the return or the cancellation of goods or services.\n      •    The merchant posted a refund for a reduced amount without proper disclosure.\n      •    The merchant failed to issue a Value Added Tax (VAT) credit.\n      Supporting Documents: One of the following:\n      •    A Cardholder letter, email, message, or Dispute Resolution Form-Cardholder Dispute\n          Chargeback (Form 1221) describing the cardholder’s complaint in sufficient detail to enable\n          all parties to understand the dispute. This means that the cardholder email, letter, message\n          or completed Dispute Resolution Form-Cardholder Dispute Chargeback (Form 1221) must\n          document all of the following:",
+      "source_text_sha256": "0f94c3ec82addd93025afc8110b4b4fc1dac2da2a58f9cb1adc95ab18b542e87",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Issuer Chargeback"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=229",
+        "pdf_page": 229,
+        "pdf_page_label": "229",
+        "start_line": null
+      }
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-229:paragraph-4",
+      "start": 0,
+      "end": 898,
+      "text": "          –   How one or more of the above chargeback conditions was met.\n          –   The cardholder must explain in sufficient detail why the cardholder is expecting a refund.\n          –   A reasonably specific description of the goods/services purchased.\n          Mastercard will determine whether the supporting documentation contains sufficient detail.\n      •    Merchant documentation to support a credit is due to the cardholder.\n      •    Proof of an improperly disclosed in-store credit and cardholder explanation.\n      The cardholder email, cardholder letter, and/or cardholder message (including through a\n      password-protected website) must come directly from the cardholder or, in the case of a\n      commercial card, the corporate entity. A completed Dispute Resolution Form-Cardholder Dispute\n      Chargeback must be the direct result of a conversation with the cardholder.",
+      "source_text_sha256": "015dcd3f1d32f303eb102de04de2800b1338beda3a8ba4d9b245d2ac48a48b4a",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Issuer Chargeback"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=229",
+        "pdf_page": 229,
+        "pdf_page_label": "229",
+        "start_line": null
+      }
+    },
+    {
+      "passage_id": "mastercard-chargeback-guide:page-230:paragraph-2",
+      "start": 0,
+      "end": 1277,
+      "text": "      When the cardholder is a corporate entity with a contractual relationship with the merchant\n      and the transaction is for an amount in excess of what is specified in the contract, the contract\n      must be provided when the merchant wasn’t contacted in an effort to resolve the dispute.\n      Message Text:\n      For improperly disclosed partial credit only:\n      •    For Mainland China domestic transactions: Include NNNNNNNNNNNNNNNNNNNNNNN in\n          comment field as documented in China Switch User Guide – Customer Portal where\n          NNNNNNNNNNNNNNNNNNNNNN is replaced with the Network Reference Number (NRN)\n          of the credit transaction.\n      •    For all other transactions: Include NNNNNNNNNNNNNNNNNNNNNNN in DE 72 (Data\n          Record) where NNNNNNNNNNNNNNNNNNNNNNN is replaced with the Acquirer Reference\n          Data (ARD) of the credit transaction.\n      For all other: None.\n      Time Frame:\n      •    For Mainland China domestic transactions, one of the following:\n          –   Between 15 and 90-calendar days from the date on the credit documentation, or the\n             date the service was canceled, or the goods were returned.\n             When waiting the 15-calendar days would cause the issuer to exceed the 90-calendar day",
+      "source_text_sha256": "79da4e2a6fd87e0816e9ff47819bce88ff31fceadc7fee9e1edd21483c3b756b",
+      "headings": [
+        "Chargeback Guide (13 May 2025 edition)",
+        "Dual Message System Chargebacks Issuer Chargeback"
+      ],
+      "locator": {
+        "reference": "https://www.mastercard.com/content/dam/public/mastercardcom/na/global-site/documents/chargeback-guide.pdf#page=230",
+        "pdf_page": 230,
+        "pdf_page_label": "230",
+        "start_line": null
+      }
+    }
+  ],
+  "new_passage_ids": [
+    "mastercard-chargeback-guide:page-228:paragraph-6",
+    "mastercard-chargeback-guide:page-228:paragraph-7",
+    "mastercard-chargeback-guide:page-229:paragraph-3"
+  ],
+  "complaint_conditions": [
+    "Merchant agreed to refund but failed to process it",
+    "Refund policy not disclosed and return/cancellation refused",
+    "No response to return/cancellation",
+    "Reduced refund without proper disclosure",
+    "VAT credit not issued"
+  ],
+  "supporting_document_options": [
+    "Cardholder letter/email/message or Form 1221 with all three required details",
+    "Merchant documentation supporting credit due",
+    "Proof of improperly disclosed in-store credit plus cardholder explanation"
+  ],
+  "required_cardholder_document_details": [
+    "How a qualifying condition was met",
+    "Why a refund is expected",
+    "Specific goods/services description"
+  ],
+  "scope_limits": [
+    "Dual Message System section; eligibility and relevant domestic rules still require checking",
+    "Disclosed refund policy governs; disclosed voucher/MCC exclusions apply",
+    "Corporate excess-contract scenario has an additional conditional contract requirement"
+  ],
+  "citation_policy": "Each source piece stays individually attributable; no combined quote asserted",
+  "remaining_work": "Candidate context routing/budget test and authorized model regeneration; no quality improvement measured"
+}

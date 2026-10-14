@@ -1,0 +1,19 @@
+{
+  "name": "exception-resolver-v2",
+  "declared": "2026-10-08, before v2 was run",
+  "supersedes": "exception-resolver-v1 (left unchanged with its result and decision)",
+  "reason_for_change": "v1 passed its thresholds but source review found two spurious resolutions (E13 S030 and S034): the matched sentence was an exception item that merely mentioned the Stand-in file, not a statement of the requirement.",
+  "honest_status": "Designed after seeing v1 results on the same 12 flagged passages, so v2 is a regression check, not independent validation. The holdout is the independent test.",
+  "rule_change": "A resolving sentence must be a requirement statement: it starts (after optional bullet, dash or 'or') with the gerund of one stem (Listing, Closing, Blocking) and contains 'required'. Sentences that begin with 'or', start with a different word, or are exception items do not count.",
+  "unchanged": ["exception tokens", "same-group sibling search", "outcome types: resolved, conflicting, ambiguous"],
+  "thresholds": {
+    "T1": "E23 S045 resolves to the single stem 'list', by S044",
+    "T2": "E15 S085 resolves to the single stem 'list', by S084",
+    "T3": "E13 S030 and E13 S034 return ambiguous",
+    "T4": "no passage in E23 resolves to close or block",
+    "T5": "every one of the 12 flagged passages gets exactly one outcome"
+  },
+  "decision_rule": "Pass only if T1 to T5 all hold. Otherwise record v2 as rejected; further changes get v3.",
+  "descriptive_only": "Report the outcome distribution over the 12 passages and list any resolution not covered by T1 to T3 for source review.",
+  "limits": ["Tuned on 12 passages from one document family", "The requirement-statement form (Listing ... is required) is specific to this guide's wording", "Advisory; not wired into any pipeline"]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "exception-resolver-v1",
+  "declared": "2026-10-08, before the resolver was run",
+  "purpose": "Offline: for a passage flagged by exception-referent-v1, look for sibling evidence already in the same retrieved section group that says which listed requirement the exception attaches to. If found, bind the exception to that requirement; if not, report 'ambiguous - state it or fetch more'. No generation.",
+  "design_choice": "Use evidence already in context first (zero extra words); fetch neighbours only when nothing resolves it. Reason: in E23 the resolving passage S044 was already retrieved; the failure was binding, not retrieval.",
+  "rule": {
+    "list_items": "the list-item lines before the exception sentence; each reduced to a stem: close, block or list (listing/listed/Stand-in)",
+    "exception_tokens": "distinctive places or devices in the exception items: Mainland China, Latin America and the Caribbean, Germany, CAT 2",
+    "resolver": "another passage in the same group whose sentence contains at least one exception token AND exactly one list-item stem",
+    "outcome": "resolved(stem) if every matching sentence names the same stem; conflicting if sentences name different stems; ambiguous if none"
+  },
+  "inputs": "Saved independent review bundle, all retrieved passages in development cases. No model calls. Holdout not read.",
+  "thresholds": {
+    "T1": "E23 S045 resolves to the single stem 'list'",
+    "T2": "no passage in E23 resolves to 'close' or 'block'",
+    "T3": "every flagged passage gets exactly one outcome (resolved, conflicting or ambiguous); none is silently dropped"
+  },
+  "decision_rule": "Pass only if T1 to T3 hold. Report the outcome distribution over all 12 flagged passages without a threshold, and list any resolved passage outside E23 for source review before trusting it.",
+  "limits": ["One known case (E23); written after reading it, so not independent", "Token list is Mastercard-guide shaped; unseen sections need new tokens", "A resolver sentence in the same group is not proof it covers that exact exception; review before use", "Advisory; no generation behaviour changed"]
+}

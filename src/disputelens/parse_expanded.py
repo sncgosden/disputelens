@@ -9,6 +9,7 @@ from pypdf import PdfReader
 
 from .parse_sources import parse_source
 from .read_html import read_article
+from .pdf_sections import bookmark_sections, apply_section_headings
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -77,7 +78,11 @@ def full_pdf(source):
             })
     if empty:
         raise ValueError(f'No text extracted on PDF pages {empty}; inspect blank/scanned pages before accepting full ingestion.')
+    section_audit = None
+    if source['source_id'] == 'mastercard-chargeback-guide':
+        section_audit = apply_section_headings(blocks, bookmark_sections(reader), source['title'])
     return {'source': source, 'source_sha256': fingerprint, 'blocks': blocks,
+            'section_heading_audit': section_audit,
             'warnings': ['Full PDF layout extraction preserves spacing; table/footnote/cross-reference fidelity requires sampling before retrieval experiments.'],
             'page_count': len(reader.pages), 'pages_extracted': len(reader.pages)}
 

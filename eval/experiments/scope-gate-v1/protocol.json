@@ -1,0 +1,22 @@
+{
+  "name": "scope-gate-v1",
+  "declared": "2026-10-08, before the gate was written or run",
+  "purpose": "Offline: replace the failed prompt-notice control (flagged-answer-v1) with a deterministic gate outside the model. Scope-detector v2 runs on the passages an answer cites; the gate then rewrites the answer by fixed template. No model call, no cost, no holdout.",
+  "gate": {
+    "no_flagged_claims": "answer returned byte-identical",
+    "some_flagged": "claims citing a flagged passage are kept with their citations and quotes but their text is prefixed 'Only if this applies to you (<qualifiers>): '. Unflagged claims unchanged. Status 'answered' becomes 'partial'. One missing_information line is appended asking for the unestablished qualifier(s).",
+    "all_flagged": "no claims. Status needs_clarification. missing_information holds one template sentence naming the unestablished qualifiers and asking which reason code or program applies. The withheld claims are written to an audit record, not shown.",
+    "no_generated_text": "all new wording comes from fixed templates filled with detector qualifiers"
+  },
+  "inputs": "The 40 citation-valid saved baseline answers, the E13 and E22 baseline answers (inside the 40), and the E22 flagged-answer-v1 attempt (4 claims citing S020, S002, S015). Development bundle only.",
+  "thresholds": {
+    "G1": "After gating, no claim that cites a flagged passage lacks the 'Only if this applies to you' prefix, for every input (checked mechanically)",
+    "G2": "Gate changes exactly 2 of the 40 baseline answers (E13, E22); the other 38 are returned byte-identical",
+    "G3": "E13 baseline keeps at least 1 unconditional claim and conditionalises exactly the claims citing S002/S019; E22 baseline and the E22 flagged-answer-v1 attempt both become needs_clarification with no claims",
+    "G4": "Every gated output passes validate_answer against its frozen pack with quotes unchanged",
+    "G5": "Two runs produce identical output hashes",
+    "G6": "Report information withheld: number of claims and words moved behind a conditional or withheld, per changed answer"
+  },
+  "decision_rule": "Pass only if G1 to G5 hold. G6 is reported, not thresholded. A pass shows the gate is safe and cheap on development data, not that it generalises: detector recall on unseen packs is what the holdout will test.",
+  "limits": ["Tuned on E13 and E22, the cases that defined the detector", "Gate is only as good as detector recall; an unflagged wrong-scope claim passes through", "Conditional prefix is a template, so wording can be clumsy", "Failing closed withholds the whole E22 answer until scope is supplied; accepted trade-off from flagged-answer-behaviour.md", "Does not address exception binding (E23) or completeness", "Advisory prototype, not wired into generation"]
+}
