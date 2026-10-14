@@ -1,6 +1,6 @@
 # DisputeLens: Verifiable Chargeback Guidance
 
-A RAG portfolio product for small merchants who need to understand a dispute request, find applicable guidance and verify each answer against its source. The product covers shops, subscriptions, travel and services. Product scope, decision rules and trade-offs are the author's; implementation and source review were done with AI assistance (see How this was built).
+A RAG product for small merchants who need to understand a dispute request, find applicable guidance and verify each answer against its source. The product covers shops, subscriptions, travel and services. Product scope, decision rules and trade-offs are the author's; implementation and source review were done with AI assistance (see How this was built).
 
 ## The short version
 
